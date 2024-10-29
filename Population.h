@@ -11,7 +11,7 @@ class Population : public CityGrowth
         int size = 0;
     
     public:
-        bool grow() 
+        bool grow() override
         {
             size ++;
 
@@ -24,7 +24,7 @@ class Population : public CityGrowth
                 return false;
             }
         };
-        bool shrink()
+        bool shrink() override
         {
             if(size == 0)
             {
@@ -43,7 +43,7 @@ class Population : public CityGrowth
                 return false;
             }
         };
-        int get() const
+        int get() const override
         {
             return size;
         };
