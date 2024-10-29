@@ -33,14 +33,25 @@ int main()
 {
     cout << "Bank before: " << cityBank->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
     cityGrow("population");
+    cout << "Population: " << population->get() << endl;
+    cityShrink("population");
+    cout << "Population: " << population->get() << endl;
     collectTax();
     cout << "Bank after: " << cityBank->get() << endl;
     
