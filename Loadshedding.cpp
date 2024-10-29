@@ -1,5 +1,10 @@
 #include "Loadshedding.h"
 
 void Loadshedding::execute(){
-    // Do something
+    // collectTax();
+    // cout << "Loadshedding has occured in the city. Taxes have been collected." << endl;
+    // cityShrink("population");
+    // cout << "Population has decreased. No Electricity killed" << (rand() % 1000) << endl;
+    // userResource("electricity");
+    // cout << "Electricity has been reduced." << endl;
 }

@@ -7,8 +7,8 @@ using namespace std;
 #include "Government.h"
 #include "TransportationSystem.h"
 
-
-ConcreteCitizen::ConcreteCitizen(Buildings* buildings, Government* goverment){
+// ConcreteCitizen::ConcreteCitizen(Buildings* buildings, Government* goverment){
+ConcreteCitizen::ConcreteCitizen(){
     Government::cityGrow("population");
     this->housing = 0;
     this->employed = 0;

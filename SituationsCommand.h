@@ -2,7 +2,7 @@
 #define SITUATIONSCOMMAND_H
 
 class SituationsCommand{
-    void execute();
+    virtual void execute() = 0;
 };
 
 #endif
