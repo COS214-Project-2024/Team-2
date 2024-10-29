@@ -19,6 +19,10 @@ class Population : public CityGrowth
             {
                 return true;
             }
+            // if(size == 2)
+            // {
+            //     return true;
+            // }
             else
             {
                 return false;
@@ -38,6 +42,10 @@ class Population : public CityGrowth
             {
                 return true;
             }
+            // if(size == 2)
+            // {
+            //     return true;
+            // }
             else
             {
                 return false;
