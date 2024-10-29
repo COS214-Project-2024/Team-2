@@ -12,7 +12,8 @@ class ConcreteCitizen: public Citizen{
         TransportationSystem* transportationSystem;
 
     public:
-        ConcreteCitizen(Buildings* buildings, Government* goverment, TransportationSystem* transportationSystem);
+        // ConcreteCitizen(Buildings* buildings, Government* goverment);
+        ConcreteCitizen();
         Citizen* clone(Citizen& other);
         bool getHouse();
         bool getEmployment();
