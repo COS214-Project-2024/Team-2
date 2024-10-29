@@ -1,7 +1,9 @@
 #ifndef CRIME_H
 #define CRIME_H
 
-class Crime{
+#include "SituationsCommand.h"
+
+class Crime: public SituationsCommand{
     void execute();
 };
 

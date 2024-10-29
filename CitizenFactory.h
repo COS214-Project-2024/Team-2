@@ -5,7 +5,7 @@ class Citizen;
 
 class CitizenFactory{
     private:
-        Citizen* createCitizen();
+        Citizen* createCitizen() = 0;
 };
 
 #endif

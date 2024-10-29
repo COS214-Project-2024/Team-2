@@ -1,7 +1,9 @@
 #ifndef LOADSHEDDING_H
 #define LOADSHEDDING_H
 
-class Loadshedding{
+#include "SituationsCommand.h"
+
+class Loadshedding: public SituationsCommand{
     void execute();
 };
 
