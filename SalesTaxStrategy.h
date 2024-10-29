@@ -6,7 +6,7 @@
 class SalesTaxStrategy : public TaxStrategy
 {
     public:
-        double calculateTax(int total) override
+        int calculateTax(int total) override
         {
             return total * (15/100);            
         };

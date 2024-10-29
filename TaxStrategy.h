@@ -5,7 +5,7 @@
 class TaxStrategy
 {
     public:
-        virtual double calculateTax(int total) = 0;
+        virtual int calculateTax(int total) = 0;
 };
 
 #endif
