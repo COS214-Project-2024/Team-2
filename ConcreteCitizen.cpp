@@ -66,3 +66,8 @@ bool ConcreteCitizen::useTransport()
 {
     TransportationSystem::move(bank->budget());
 }
+
+void ConcreteCitizen::getTax(double tax)
+{
+    bank->decrement(tax);
+}
