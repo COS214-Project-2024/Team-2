@@ -6,7 +6,7 @@
 
 Wood::Wood(StateOfResources* initialState, int initialQuantity) : state(initialState), quantity(initialQuantity) {
     fullState = new FullState();
-    emptyState = new EmptyState();
+    emptyState = new EmptyState(this);
     normalState = new NormalState();
 }
 
@@ -20,6 +20,18 @@ void Wood::useResource(int quantity) {
         setState(normalState);
     } else {
         setState(fullState);
+    }
+}
+
+void Wood::generateResource(int quantity) {
+    this->quantity += quantity;
+    if (this->quantity >= getMaxCapacity()) {
+        this->quantity = getMaxCapacity();
+        setState(fullState);
+    } else if (this->quantity > 0) {
+        setState(normalState);
+    } else {
+        setState(emptyState);
     }
 }
 
