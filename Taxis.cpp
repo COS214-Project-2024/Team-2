@@ -6,7 +6,7 @@ using namespace std;
 
 void Taxis::move(Bank bank)
 {
-    if(bank->get() > this->price){
+    if(Bank::bank->get() > this->price){
         cout << "Citizen used taxis transportation." << endl;
         cout << "They are traveling at a maximum speed of " << this->speedOfVehicle << endl;
         Bank::decrement(this->price);
