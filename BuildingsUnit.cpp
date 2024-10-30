@@ -4,6 +4,9 @@
 #include <map>
 #include <list>
 #include "BuildingsUnit.h"
+#include "MaterialFactory.h";
+#include "WaterSupply.h";
+#include "PowerPlant.h";
 
 using namespace std;
 
@@ -15,7 +18,7 @@ BuildingsUnit::BuildingsUnit(Government* gover)
 void BuildingsUnit::add(Buildings* childrenp) 
 {
     requestUtilities();
-    CityGrowth and SatisfactionRate
+    // CityGrowth and SatisfactionRate
     children.push_back(childrenp);
 }
 
@@ -132,7 +135,18 @@ bool BuildingsUnit::getEmployment()
 
 void BuildingsUnit::requestUtilities()
 {
-    handleRequests(govern);
+    MaterialFactory* materialFactory = new MaterialFactory();
+    WaterSupply* waterSupply = new WaterSupply();
+    PowerPlant* powerPlant = new PowerPlant();
+
+    materialFactory->setNext(waterSupply);
+    waterSupply->setNext(powerPlant);
+
+    materialFactory->handleRequest(govern);
+
+    delete materialFactory;
+    delete waterSupply;
+    delete powerPlant;
 }
 
 BuildingsUnit::~BuildingsUnit() 
