@@ -7,4 +7,6 @@ void Loadshedding::execute(){
     // cout << "Population has decreased. No Electricity killed" << (rand() % 1000) << endl;
     // userResource("electricity");
     // cout << "Electricity has been reduced." << endl;
+    // Government::setTransport(false);
+    // cout << "Transportation has been halted for the time being." << endl;
 }

@@ -17,7 +17,7 @@ class ConcreteCitizen: public Citizen{
         Citizen* clone(Citizen& other);
         bool getHouse();
         bool getEmployment();
-        bool useTransport();
+        bool useTransport(String transport);
         void getTax(double tax);
 }
 
