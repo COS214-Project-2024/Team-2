@@ -17,6 +17,7 @@ class BuildingsUnit : public Buildings
     private:
         std::vector<Buildings*> children;
         Government* govern;
+        Utilities* utilities;
     public:
         BuildingsUnit(Government* g);
         void add(Buildings* comp);
