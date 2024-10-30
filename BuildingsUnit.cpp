@@ -133,7 +133,7 @@ bool BuildingsUnit::getEmployment()
     return false;
 }
 
-void BuildingsUnit::requestUtilities()
+void BuildingsUnit::requestUtilities() 
 {
     MaterialFactory* materialFactory = new MaterialFactory();
     WaterSupply* waterSupply = new WaterSupply();
