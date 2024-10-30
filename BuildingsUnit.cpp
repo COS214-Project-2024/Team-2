@@ -130,9 +130,19 @@ bool BuildingsUnit::getEmployment()
     return false;
 }
 
-void BuildingsUnit::requestUtilities()
-{
-    handleRequests(govern);
+void BuildingsUnit::requestUtilities() {
+    MaterialFactory* materialFactory = new MaterialFactory();
+    WaterSupply* waterSupply = new WaterSupply();
+    PowerPlant* powerPlant = new PowerPlant();
+
+    materialFactory->setNext(waterSupply);
+    waterSupply->setNext(powerPlant);
+
+    materialFactory->handleRequest(govern);
+
+    delete materialFactory;
+    delete waterSupply;
+    delete powerPlant;
 }
 
 BuildingsUnit::~BuildingsUnit() 
