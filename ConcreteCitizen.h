@@ -4,16 +4,16 @@
 #include "Citizen.h"
 
 class Bank;
-class TransportationSystem;
 
 class ConcreteCitizen: public Citizen{
     private:
         Bank* bank;
-        TransportationSystem* transportationSystem;
+        Buildings* buildings;
+        Government* goverment;
 
     public:
-        // ConcreteCitizen(Buildings* buildings, Government* goverment);
-        ConcreteCitizen();
+        ConcreteCitizen(Buildings* buildings, Government* goverment);
+        // ConcreteCitizen();
         Citizen* clone(Citizen& other);
         bool getHouse();
         bool getEmployment();
