@@ -10,13 +10,15 @@ using namespace std;
 #include "Airport.h"
 #include "Train.h"
 
-// ConcreteCitizen::ConcreteCitizen(Buildings* buildings, Government* goverment){
-ConcreteCitizen::ConcreteCitizen()
+// ConcreteCitizen::ConcreteCitizen()
+ConcreteCitizen::ConcreteCitizen(Buildings* buildings, Government* goverment){
 {
     Government::cityGrow("population");
     this->housing = 0;
     this->employed = 0;
     this->bank = new Bank();
+    this->buildings = buildings;
+    this->goverment = goverment;
 }
 
 Citizen *clone(Ciziten &other)
@@ -24,6 +26,8 @@ Citizen *clone(Ciziten &other)
     Citizen *citizen = new Citizen();
     citizen->housing = other.housing;
     citizen->employed = other.employed;
+    this->buildings = other.buildings;
+    this->goverment = other.goverment;
     return citizen;
 }
 
@@ -33,13 +37,13 @@ bool Citizen::getHouse()
     {
         vector<Buildings *>::iterator it;
         int count = 0;
-        for (it = children.begin(); it != children.end(); ++it)
+        for (it = this->buildings.begin(); it != this->buildings.end(); ++it)
         {
-            if (children[count]->getType() == "residential" || children[count]->getType() == "commercial")
+            if (this->buildings[count]->getType() == "residential" || this->buildings[count]->getType() == "commercial")
             {
-                if (!(children[count]->getTaken()))
+                if (!(this->buildings[count]->getTaken()))
                 {
-                    children[count]->setTaken(true);
+                    this->buildings[count]->setTaken(true);
                     bank->decrement(500);
                     cout << "You have bought a house." << endl;
                     return true;
@@ -62,13 +66,13 @@ bool Citizen::getEmployment()
 {
     vector<Buildings *>::iterator it;
         int count = 0;
-        for (it = children.begin(); it != children.end(); ++it)
+        for (it = this->buildings.begin(); it != this->buildings.end(); ++it)
         {
-            if (children[count]->getType() == "industrial" || children[count]->getType() == "landmarks")
+            if (this->buildings[count]->getType() == "industrial" || this->buildings[count]->getType() == "landmarks")
             {
-                if (!(children[count]->getTaken()))
+                if (!(this->buildings[count]->getTaken()))
                 {
-                    children[count]->setTaken(true);
+                    this->buildings[count]->setTaken(true);
                     bank->increment(2000);
                     cout << "You have found employment." << endl;
                     return true;
