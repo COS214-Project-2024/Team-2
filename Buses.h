@@ -7,7 +7,7 @@ class Bank;
 
 class Buses : public TransportationSystem{
     public:
-        void move(Bank bank);
+        void move(Bank* bank);
     private:
         const int speedOfVehicle = 80;
         const int price = 50;

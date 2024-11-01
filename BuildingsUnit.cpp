@@ -4,9 +4,6 @@
 #include <map>
 #include <list>
 #include "BuildingsUnit.h"
-#include "MaterialFactory.h";
-#include "WaterSupply.h";
-#include "PowerPlant.h";
 
 using namespace std;
 
@@ -19,6 +16,7 @@ void BuildingsUnit::add(Buildings* childrenp)
 {
     requestUtilities();
     // CityGrowth and SatisfactionRate
+    govern->cityGrow(childrenp->getType());
     children.push_back(childrenp);
 }
 
@@ -31,6 +29,7 @@ void BuildingsUnit::remove(int i)
         {
             if(*it == children[i]) 
             {
+                govern->cityShrink(children[i]->getType());
                 children.erase(it);
                 break;
             }
@@ -135,12 +134,12 @@ bool BuildingsUnit::getEmployment()
 
 void BuildingsUnit::requestUtilities() 
 {
-    MaterialFactory* materialFactory = new MaterialFactory();
-    WaterSupply* waterSupply = new WaterSupply();
-    PowerPlant* powerPlant = new PowerPlant();
+    Utilities* materialFactory = new MaterialFactory();
+    Utilities* waterSupply = new WaterSupply();
+    Utilities* powerPlant = new PowerPlant();
 
-    materialFactory->setNext(waterSupply);
-    waterSupply->setNext(powerPlant);
+    // materialFactory->setNext(waterSupply);
+    // waterSupply->setNext(powerPlant);
 
     materialFactory->handleRequest(govern);
 

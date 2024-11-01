@@ -3,14 +3,12 @@
 
 #include "CitizenFactory.h"
 
-class Buildings;
+class BuildingsUnit;
 class Government;
 
 class ConcreteCitizenFactory : public CitizenFactory {
     public:
-        Citizen* createCitizen(Buildings* buildings, Government* goverment);
-        // bool attach(Government* goverment);
-        // bool detach(Government* goverment);
+        ConcreteCitizen* createCitizen(BuildingsUnit* buildings, Government* goverment);
 };
 
 #endif

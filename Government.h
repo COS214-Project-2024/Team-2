@@ -9,7 +9,7 @@
 #include "IncomeTaxStrategy.h"
 #include "PropertyTaxStrategy.h"
 #include "SalesTaxStrategy.h"
-#include "Department.h"
+// #include "Department.h"
 #include "TaxStrategy.h"
 #include "Bank.h"
 #include "CityGrowth.h"
@@ -17,24 +17,28 @@
 #include "Housing.h"
 #include "Economic.h"
 #include "Infrastructure.h"
-#include "Resources.h"
-#include "Materials.h"
-#include "Energy.h"
-#include "Water.h"
-#include "Wood.h"
-#include "Steel.h"
-#include "Concrete.h"
-#include "StateOfResources.h"
-#include "FullState.h"
-#include "NormalState.h"
-#include "EmptyState.h"
+#include "./Resources/Resources.h"
+#include "./Resources/Materials.h"
+#include "./Resources/Energy.h"
+#include "./Resources/Water.h"
+#include "./Resources/Wood.h"
+#include "./Resources/Steel.h"
+#include "./Resources/Concrete.h"
+#include "./Resources/StateOfResources.h"
+#include "./Resources/FullState.h"
+#include "./Resources/NormalState.h"
+#include "./Resources/EmptyState.h"
+#include "SituationsCommand.h"
+#include "Accident.h"
+#include "Loadshedding.h"
+#include "Crime.h"
 
 using namespace std;
 
 class Government
 {
     private:
-        Department* department;
+        // Department* department;
         TaxStrategy* strategy = new IncomeTaxStrategy();
         Bank* cityBank;
         string cheatCode = "weewooweewoo";
@@ -42,15 +46,15 @@ class Government
         CityGrowth* housing = new Housing();
         CityGrowth* economic = new Economic();
         CityGrowth* infrastructure = new Infrastructure();
-        Resources* energy = new Energy();
-        Resources* water = new Water();
-        Resources* wood = new Wood();
-        Resources* steel = new Steel();
-        Resources* concrete = new Concrete();
-        bool transportAllowed = true;
+        // Resources* energy = new Energy();
+        // Resources* water = new Water();
+        // Resources* wood = new Wood();
+        // Resources* steel = new Steel();
+        // Resources* concrete = new Concrete();
+        bool transportAllowed;
         string currentCG = "population";
     public:
-        Government()
+        Government();
         void cityGrow(string who);
         void cityShrink(string who);
         void setStrategy(TaxStrategy* strat);
@@ -58,7 +62,8 @@ class Government
         void cheat(string cheatCode);
         void userResource(string who);
         bool getTransport();
-        void setTranposrt(bool t);
+        void setTransport(bool t);
+        void randomEvent();
 };
 
 #endif

@@ -5,7 +5,7 @@ class Citizen;
 
 class CitizenFactory{
     private:
-        Citizen* createCitizen() = 0;
+        virtual Citizen* createCitizen() = 0;
 };
 
 #endif

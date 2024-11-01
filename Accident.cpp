@@ -3,22 +3,21 @@
 #include "Government.h"
 using namespace std;
 
-void Accident::execute(){
+bool Accident::execute()
+{
     string response;
-    cout << "An accident has occured in the city.\n
-    Transportation has been halted for the time being.\n
-    Do you want to resolve it? (Y or N)" << endl;
-    Government::setTransport(false);
+    cout << "An accident has occured in the city.\n Resolve issue by typing Y: " << endl;
     cin >> response;
-    
-    if (response == "Y")
+    int randomValue = std::rand() % 2;
+    if (randomValue == 1)
     {
         cout << "The accident has been resolved and transportation has been resumed" << endl;
-        Government::setTransport(true);
+        return true;
     }
     else
     {
         cout << "The accident has not been resolved." << endl;
+        return false;
     }
-    
+    return false;
 }

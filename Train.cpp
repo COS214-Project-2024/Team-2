@@ -4,12 +4,12 @@ using namespace std;
 #include "Train.h"
 #include "Bank.h"
 
-void Train::move(Bank bank)
+void Train::move(Bank* bank)
 {
-    if(Bank::bank->get() > this->price){
+    if(bank->get() > this->price){
         cout << "Citizen used train transportation." << endl;
         cout << "They are traveling at a maximum speed of " << this->speedOfVehicle << endl;
-        Bank::decrement(this->price);
+        bank->decrement(this->price);
     }else{
         cout << "Citizen did not use train transportation, they are too poor." << endl;
     }

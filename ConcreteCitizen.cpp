@@ -1,93 +1,47 @@
-// #include<cstdlib>
 #include <iostream>
 using namespace std;
 
+#include "ConcreteCitizen.h"
 #include "Citizen.h"
-#include "Buildings.h"
+#include "BuildingsUnit.h"
 #include "Government.h"
 #include "Taxis.h"
 #include "Buses.h"
 #include "Airport.h"
 #include "Train.h"
 
-// ConcreteCitizen::ConcreteCitizen()
-ConcreteCitizen::ConcreteCitizen(Buildings* buildings, Government* goverment){
+ConcreteCitizen::ConcreteCitizen(BuildingsUnit* buildings, Government* government)
 {
-    Government::cityGrow("population");
+    government->cityGrow("population");
     this->housing = 0;
     this->employed = 0;
     this->bank = new Bank();
     this->buildings = buildings;
-    this->goverment = goverment;
+    this->government = government;
 }
 
-Citizen *clone(Ciziten &other)
+ConcreteCitizen* ConcreteCitizen::clone(ConcreteCitizen &other)
 {
-    Citizen *citizen = new Citizen();
+    ConcreteCitizen* citizen = new ConcreteCitizen(other.buildings, other.government);
     citizen->housing = other.housing;
     citizen->employed = other.employed;
-    this->buildings = other.buildings;
-    this->goverment = other.goverment;
+    citizen->bank = other.bank;
     return citizen;
 }
 
-bool Citizen::getHouse()
+bool ConcreteCitizen::getHouse()
 {
-    if (bank->budget() > 500)
-    {
-        vector<Buildings *>::iterator it;
-        int count = 0;
-        for (it = this->buildings.begin(); it != this->buildings.end(); ++it)
-        {
-            if (this->buildings[count]->getType() == "residential" || this->buildings[count]->getType() == "commercial")
-            {
-                if (!(this->buildings[count]->getTaken()))
-                {
-                    this->buildings[count]->setTaken(true);
-                    bank->decrement(500);
-                    cout << "You have bought a house." << endl;
-                    return true;
-                }
-            }
-            ++count;
-        }
-
-        cout << "There are no houses available." << endl;
-        return false;
-    }
-    else
-    {
-        cout << "You do not have enough money to buy a house." << endl;
-        return false;
-    }
+    this->buildings->getHouse();
 }
 
-bool Citizen::getEmployment()
+bool ConcreteCitizen::getEmployment()
 {
-    vector<Buildings *>::iterator it;
-        int count = 0;
-        for (it = this->buildings.begin(); it != this->buildings.end(); ++it)
-        {
-            if (this->buildings[count]->getType() == "industrial" || this->buildings[count]->getType() == "landmarks")
-            {
-                if (!(this->buildings[count]->getTaken()))
-                {
-                    this->buildings[count]->setTaken(true);
-                    bank->increment(2000);
-                    cout << "You have found employment." << endl;
-                    return true;
-                }
-            }
-            ++count;
-        }
-
-    cout << "There are no employment opportunities available." << endl;
-    return false;
+    this->buildings->getEmployment();
 }
 
-bool ConcreteCitizen::useTransport(String transport)
+bool ConcreteCitizen::useTransport(string transport)
 {
-    if (Government::getTransport() == false)
+    if (government->getTransport() == false)
     {
         cout << "Sorry transportation services are not operational at this time." << endl;
         return false;
@@ -98,19 +52,23 @@ bool ConcreteCitizen::useTransport(String transport)
 
         if (transport == "Taxis")
         {
-            Taxis::move(bank->budget());
+            Taxis* taxis = new Taxis();
+            taxis->move(this->bank);
         }
         else if (transport == "Buses")
         {
-            Buses::move(bank->budget());
+            Buses* buses = new Buses();
+            buses->move(this->bank);
         }
         else if (transport == "Airport")
         {
-            Airport::move(bank->budget());
+            Airport* airport = new Airport();
+            airport->move(this->bank);
         }
         else if (transport == "Train")
         {
-            Train::move(bank->budget());
+            Train* train = new Train();
+            train->move(this->bank);
         }
         else
         {
