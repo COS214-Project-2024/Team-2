@@ -3,8 +3,7 @@
 
 #include "Bank.h"
 
-class BuildingsUnit;
-class Government;
+class ConcreteCitizen;
 
 class Citizen{
     private:

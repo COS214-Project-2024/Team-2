@@ -48,7 +48,8 @@ class Government
         CityGrowth* infrastructure = new Infrastructure();
         // Resources* energy = new Energy();
         // Resources* water = new Water();
-        // Resources* wood = new Wood();
+        Wood* wood = new Wood(nullptr, 100);
+        StateOfResources* empty = new EmptyState(wood);
         // Resources* steel = new Steel();
         // Resources* concrete = new Concrete();
         bool transportAllowed;
