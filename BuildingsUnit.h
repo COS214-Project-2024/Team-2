@@ -7,7 +7,10 @@
 #include <map>
 #include <list>
 #include "Buildings.h"
-#include "Utilities.h"
+#include "./Utilities/Utilities.h"
+#include "./Utilities/MaterialFactory.h"
+#include "./Utilities/WaterSupply.h"
+#include "./Utilities/PowerPlant.h"
 #include "Government.h"
 
 using namespace std;
