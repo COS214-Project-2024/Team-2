@@ -3,25 +3,54 @@
 #include "Government.h"
 using namespace std;
 
-void Crime::execute(){
+bool Crime::execute()
+{
     string response;
-    cout << "Crime has occured in the city.\n
-    On which superhero will you call, if any? (Batman, Superman, Spiderman or None)" << endl;
-    cout << "Taxes have been collected due to crimes." << endl;
-    collectTax();
-    Government::setTransport(false);
+    cout << "Crime has occured in the city.\n On which superhero will you call, if any? (Batman, Superman, Spiderman or None)" << endl;
     cin >> response;
-    
-    if (response == "Batman"){
-        cout << "Batman pays crime stoppers to do the job for him." << endl;
-    }else if (response == "Superman"){
-        cout << "Superman stops the crime with ease" << endl;
-    }else if (response == "Spiderman"){
-        cout << "" << endl;
-    }else {
-        cout << "No superhero has been called.\n
-        Crime will continue to run rampant" << endl;
-        cout << "Transportation has been halted for the time being." << endl;
+    int randomValue = std::rand() % 2;
+    if (response == "Batman")
+    {
+        if(randomValue == 1)
+        {
+            cout << "Batman pays crime stoppers to do the job for him." << endl;
+            return true;
+        }
+        else
+        {
+            cout << "Superhero got lost on his way here,\n Crime will continue to run rampant" << endl;
+            return false;
+        }
     }
-    
+    else if (response == "Superman")
+    {
+        if(randomValue == 1)
+        {
+            cout << "Superman stops the crime with ease" << endl;
+            return true;
+        }
+        else
+        {
+            cout << "Superhero got lost on his way here,\n Crime will continue to run rampant" << endl;
+            return false;
+        }
+    }
+    else if (response == "Spiderman")
+    {
+        if(randomValue == 1)
+        {
+            cout << "Spiderman just swings I geuss..." << endl;
+            return true;
+        }
+        else
+        {
+            cout << "Superhero got lost on his way here,\n Crime will continue to run rampant" << endl;
+            return false;
+        }
+    }
+    else 
+    {
+        cout << "No superhero has been called.\n Crime will continue to run rampant" << endl;
+    }
+    return false;
 }

@@ -5,7 +5,7 @@ class Bank;
 
 class TransportationSystem{
     public:
-        virtual void move(Bank bank) = 0;
-}
+        virtual void move(Bank* bank) = 0;
+};
 
 #endif

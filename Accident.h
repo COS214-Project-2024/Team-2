@@ -4,7 +4,8 @@
 #include "SituationsCommand.h"
 
 class Accident: public SituationsCommand{
-    void execute();
+    public:
+        bool execute();
 };
 
 #endif

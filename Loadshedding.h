@@ -4,7 +4,8 @@
 #include "SituationsCommand.h"
 
 class Loadshedding: public SituationsCommand{
-    void execute();
+    public:
+        bool execute();
 };
 
 #endif

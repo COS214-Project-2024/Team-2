@@ -3,22 +3,21 @@
 #include "Government.h"
 using namespace std;
 
-void Loadshedding::execute(){
+bool Loadshedding::execute()
+{
     string response;
-    cout << "Loadshedding has occured in the city. Tax has been collected." << endl;
-    Government::collectTax();
-    Government::setTransport(false);
-    cout << "Electricity has been reduced.\n
-    Do you want to stop loadshedding? (Y or N)" << endl;
-    useResource("energy");
+    cout << "Loadshedding has occured in the city." << endl;
+    cout << "Electricity has been reduced.\n Resolve issue by typing Y: " << endl;
     cin >> response;
-    if (response == "Y")
+    int randomValue = std::rand() % 2;
+    if (randomValue == 1)
     {
         cout << "Loadshedding has been stopped and transportation has been resumed" << endl;
-        Government::setTransport(true);
+        return true;
     }
     else
     {
         cout << "Loadshedding has not been stopped." << endl;
+        return false;
     }
 }

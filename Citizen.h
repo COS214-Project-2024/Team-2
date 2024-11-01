@@ -3,16 +3,13 @@
 
 #include "Bank.h"
 
-class Buildings;
-class Government;
+class ConcreteCitizen;
 
 class Citizen{
     private:
-        bool employed;
-        bool housing;
-        Citizen* clone(Citizen& citizen) = 0;
-        bool getHouse() = 0;
-        bool getEmployment() = 0;
+        virtual ConcreteCitizen* clone(ConcreteCitizen& citizen) = 0;
+        virtual bool getHouse() = 0;
+        virtual bool getEmployment() = 0;        
 };
 
 #endif
