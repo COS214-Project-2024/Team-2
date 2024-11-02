@@ -1,4 +1,9 @@
-# IDK
+# 🌆 City Builder Simulation
+
+Welcome to our COS 214 **City Builder Simulation** project! 
+Built as a 2nd year group project, this C++ simulation allows players to engage with various aspects of a virtual city, integrating key urban components like infrastructure, citizen satisfaction, resource management, and more. Designed with flexibility and scalability, this simulation employs numerous design patterns to achieve a complex, dynamic urban environment.
+
+# The Team : IDK
 u23587832 Hannah Koorbanally<br/>
 u23673941 Louise Bruwer<br/>
 u23530996 Kiara Hodgson<br/>
@@ -7,7 +12,8 @@ u21439631 Euan Botha<br/>
 u21437883 Nolan Kühn<br/>
 u23782219 Ruan le Roux
 
-# Run:
+# Guide to running:
+Run:
 make clean<br/>
 make<br/>
 ./main
