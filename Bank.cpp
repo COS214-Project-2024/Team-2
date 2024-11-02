@@ -2,7 +2,7 @@
 
 int Bank::get()
 {
-    return budget;
+    return balance;
 }
 
 void Bank::increment(int amount)

@@ -6,8 +6,8 @@ using namespace std;
 bool Loadshedding::execute()
 {
     string response;
-    cout << "Loadshedding has occured in the city." << endl;
-    cout << "Electricity has been reduced.\n Resolve issue by typing Y: " << endl;
+    cout << endl << endl << "-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\nLoadshedding has occured in the city." << endl;
+    cout << "Electricity has been reduced.\nResolve issue by typing Y: ";
     cin >> response;
     int randomValue = std::rand() % 2;
     if (randomValue == 1)

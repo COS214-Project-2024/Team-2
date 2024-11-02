@@ -3,11 +3,11 @@
 #include <vector>
 #include <map>
 #include <list>
-#include "Residential.h"
+#include "Industrial.h"
 
 using namespace std;
 
-Residential::Residential(string t)
+Industrial::Industrial(string t)
 {
     for(int i = 0; i < 3; i++)
     {
@@ -18,37 +18,37 @@ Residential::Residential(string t)
     }
 }
 
-string Residential::getType()
+string Industrial::getType()
 {
     return myType;
 }
 
-int Residential::getPrice()
+int Industrial::getPrice()
 {
     return price[position];
 }
 
-int Residential::getPosition()
+int Industrial::getPosition()
 {
     return position;
 }
 
-int Residential::getSatisfaction()
+int Industrial::getSatisfaction()
 {
     return satisfactionRate;
 }
 
-void Residential::setPrice(int pric)
+void Industrial::setPrice(int pric)
 {
     price[position] = pric;
 }
 
-bool Residential::getTaken()
+bool Industrial::getTaken()
 {
     return taken;
 }
 
-void Residential::setTaken(bool tak)
+void Industrial::setTaken(bool tak)
 {
     taken = tak;
 }

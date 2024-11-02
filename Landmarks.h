@@ -13,7 +13,7 @@ using namespace std;
 class Landmarks : public Buildings
 {
     private:
-        string type[3] = {"parks", "monuments", "culturcenters"};
+        string type[3] = {"parks", "monuments", "culturecenters"};
         int price[3] = {300, 500, 350};
         int position;
         int satisfactionRate = 2;

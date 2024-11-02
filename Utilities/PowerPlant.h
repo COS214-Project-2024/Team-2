@@ -1,6 +1,5 @@
 #include "Utilities.h"
-#include "Government.h"
-#include "Energy.h"
+#include "../Government.h"
 
 class PowerPlant :public Utilities 
 {

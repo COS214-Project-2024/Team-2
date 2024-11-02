@@ -1,6 +1,5 @@
 #include "Utilities.h"
-#include "Government.h"
-#include "Water.h"
+#include "../Government.h"
 
 class WaterSupply :public Utilities 
 {

@@ -15,7 +15,7 @@ class Infrastructure : public CityGrowth
         {
             size ++;
 
-            if(size % 50 == 0)
+            if(size % 2 == 0)
             {
                 return true;
             }
@@ -34,7 +34,7 @@ class Infrastructure : public CityGrowth
 
             size--;
 
-            if(size % 50 == 0)
+            if(size % 2 == 0)
             {
                 return true;
             }
