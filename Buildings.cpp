@@ -29,3 +29,13 @@ void Buildings::setPrice(int p)
 {
     throw std::logic_error("Operation not supported");
 }
+
+bool Buildings::getTaken() 
+{
+    throw std::logic_error("Operation not supported");
+}
+
+void Buildings::setTaken(bool b) 
+{
+    throw std::logic_error("Operation not supported");
+}
