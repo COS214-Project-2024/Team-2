@@ -23,6 +23,10 @@
 #include "Commercial.h"
 #include "Industrial.h"
 #include "Landmarks.h"
+#include "Citizen.h"
+#include "CitizenFactory.h"
+#include "ConcreteCitizen.h"
+#include "ConcreteCitizenFactory.h"
 
 using namespace std;
 
@@ -82,8 +86,92 @@ int main()
     cout << "---------Get New Residential Prices---------" << endl;
     BUI->setTreePrice("residential", 50);
 
+    //Print Tree of Buildings
+    cout << endl << endl << "---------Print Current Tree of Buildings---------" << endl;
+    cout << "Get child 0: "  << BUI->getChild(0)->getType() << ": " << BUI->getChild(0)->getPrice() << " money " << "Taken: " << BUI->getChild(0)->getTaken() << endl;
+    cout << "Get child 1: "  << BUI->getChild(1)->getType() << ": " << BUI->getChild(1)->getPrice() << " money " << "Taken: " << BUI->getChild(1)->getTaken() << endl;
+    cout << "Get child 2: "  << BUI->getChild(2)->getType() << ": " << BUI->getChild(2)->getPrice() << " money " << "Taken: " << BUI->getChild(2)->getTaken() << endl;
+    cout << "Get child 3: "  << BUI->getChild(3)->getType() << ": " << BUI->getChild(3)->getPrice() << " money " << "Taken: " << BUI->getChild(3)->getTaken() << endl;
+    cout << "Get child 4: "  << BUI->getChild(4)->getType() << ": " << BUI->getChild(4)->getPrice() << " money " << "Taken: " << BUI->getChild(4)->getTaken() << endl;
+    cout << "Get child 5: "  << BUI->getChild(5)->getType() << ": " << BUI->getChild(5)->getPrice() << " money " << "Taken: " << BUI->getChild(5)->getTaken() << endl;
+    cout << "Get child 6: "  << BUI->getChild(6)->getType() << ": " << BUI->getChild(6)->getPrice() << " money " << "Taken: " << BUI->getChild(6)->getTaken() << endl;
+    cout << "Get child 7: "  << BUI->getChild(7)->getType() << ": " << BUI->getChild(7)->getPrice() << " money " << "Taken: " << BUI->getChild(7)->getTaken() << endl;
+    cout << "Get child 8: "  << BUI->getChild(8)->getType() << ": " << BUI->getChild(8)->getPrice() << " money " << "Taken: " << BUI->getChild(8)->getTaken() << endl;
+    cout << "Get child 9: "  << BUI->getChild(9)->getType() << ": " << BUI->getChild(9)->getPrice() << " money " << "Taken: " << BUI->getChild(9)->getTaken() << endl;
+    cout << "Get child 10: "  << BUI->getChild(10)->getType() << ": " << BUI->getChild(10)->getPrice() << " money " << "Taken: " << BUI->getChild(10)->getTaken() << endl;
 
-    cout << "Get child 0: "  << BUI->getChild(0)->getType() << ": " << BUI->getChild(0)->getPrice() << " money ";
+    //Initialize Citizen
+    cout << endl << "---------Initialize Citizen---------" << endl;
+    CitizenFactory* CITF = new ConcreteCitizenFactory(BUI, globalGovern);
+    ConcreteCitizen* CC1 = CITF->createCitizen();
+    ConcreteCitizen* CC2 = CITF->createCitizen();
+
+    //Give citizen houses and employments
+    cout << endl << endl << "---------Give citizen's houses and employments---------" << endl;
+    CC1->getHouse();
+    CC1->getHouse();
+    CC1->getHouse();
+    CC1->getEmployment();
+    CC1->getHouse();
+    cout << endl;
+    CC2->getEmployment();
+    CC2->getHouse();
+
+    cout << endl << "---------Clone Citizen 1---------" << endl;
+    ConcreteCitizen* CC3 = CC1->clone();
+
+    //Print Tree of Buildings
+    cout << endl << endl << "---------Print Current Tree of Buildings---------" << endl;
+    cout << "Get child 0: "  << BUI->getChild(0)->getType() << ": " << BUI->getChild(0)->getPrice() << " money " << "Taken: " << BUI->getChild(0)->getTaken() << endl;
+    cout << "Get child 1: "  << BUI->getChild(1)->getType() << ": " << BUI->getChild(1)->getPrice() << " money " << "Taken: " << BUI->getChild(1)->getTaken() << endl;
+    cout << "Get child 2: "  << BUI->getChild(2)->getType() << ": " << BUI->getChild(2)->getPrice() << " money " << "Taken: " << BUI->getChild(2)->getTaken() << endl;
+    cout << "Get child 3: "  << BUI->getChild(3)->getType() << ": " << BUI->getChild(3)->getPrice() << " money " << "Taken: " << BUI->getChild(3)->getTaken() << endl;
+    cout << "Get child 4: "  << BUI->getChild(4)->getType() << ": " << BUI->getChild(4)->getPrice() << " money " << "Taken: " << BUI->getChild(4)->getTaken() << endl;
+    cout << "Get child 5: "  << BUI->getChild(5)->getType() << ": " << BUI->getChild(5)->getPrice() << " money " << "Taken: " << BUI->getChild(5)->getTaken() << endl;
+    cout << "Get child 6: "  << BUI->getChild(6)->getType() << ": " << BUI->getChild(6)->getPrice() << " money " << "Taken: " << BUI->getChild(6)->getTaken() << endl;
+    cout << "Get child 7: "  << BUI->getChild(7)->getType() << ": " << BUI->getChild(7)->getPrice() << " money " << "Taken: " << BUI->getChild(7)->getTaken() << endl;
+    cout << "Get child 8: "  << BUI->getChild(8)->getType() << ": " << BUI->getChild(8)->getPrice() << " money " << "Taken: " << BUI->getChild(8)->getTaken() << endl;
+    cout << "Get child 9: "  << BUI->getChild(9)->getType() << ": " << BUI->getChild(9)->getPrice() << " money " << "Taken: " << BUI->getChild(9)->getTaken() << endl;
+    cout << "Get child 10: "  << BUI->getChild(10)->getType() << ": " << BUI->getChild(10)->getPrice() << " money " << "Taken: " << BUI->getChild(10)->getTaken() << endl;
+
+
+    cout << endl << "---------Collect Taxes---------" << endl;
+    cout << "Current City Bank Amount: " << globalGovern->get() << " money" << endl;
+    cout << "Collecting Tax's according to: IncomeTaxStrategy" << endl;
+    int taxAmount = globalGovern->collectTax();
+    cout << "Taxes amount per person: " << taxAmount << " money" << endl;
+    cout << endl << "Before Taxes: " << endl;
+    cout << "CC1: " << CC1->bank->get() << " money" << endl;
+    cout << "CC2: " << CC2->bank->get() << " money" << endl;
+    cout << "CC3: " << CC3->bank->get() << " money" << endl;
+    CC1->getTax(taxAmount);
+    CC2->getTax(taxAmount);
+    cout << endl << "After Taxes: " << endl;
+    cout << "CC1: " << CC1->bank->get() << " money" << endl;
+    cout << "CC2: " << CC2->bank->get() << " money" << endl;
+    cout << "CC3: " << CC3->bank->get() << " money" << endl;
+    cout << endl << "New City Bank Amount: " << globalGovern->get() << " money" << endl;
+
+    cout << endl << "---------Citizen Using all transportation forms---------" << endl;
+    cout << "CC2: " << CC2->bank->get() << " money\nTaxis" << endl;
+    CC2->useTransport("Taxis");
+    cout << endl;
+    cout << "CC2: " << CC2->bank->get() << " money\nBuses" << endl;
+    CC2->useTransport("Buses");
+    cout << endl;
+    cout << "CC2: " << CC2->bank->get() << " money\nAirport" << endl;
+    CC2->useTransport("Airport");
+    cout << endl;
+    cout << "CC2: " << CC2->bank->get() << " money\nTrain" << endl;
+    CC2->useTransport("Train");
+    cout << endl << "Total Money left for CC2: " << CC2->bank->get() << " money" << endl;
+
+    cout << endl << "---------Situations getting causes---------" << endl;
+    for(int i  = 0; i < 23; i++)
+    {
+        globalGovern->randomEvent();
+    }
     
+
     return 0;
 }

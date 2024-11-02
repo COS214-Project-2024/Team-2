@@ -1,11 +1,14 @@
 #ifndef CITIZENFACTORY_H
 #define CITIZENFACTORY_H
 
+#include "Citizen.h"
+#include "ConcreteCitizen.h"
+
 class Citizen;
 
 class CitizenFactory{
-    private:
-        virtual Citizen* createCitizen() = 0;
+    public:
+        virtual ConcreteCitizen* createCitizen() = 0;
 };
 
 #endif

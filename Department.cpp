@@ -23,7 +23,7 @@ void Department::setSatisfaction(int level, Bank* bank)
         int randomValue = std::rand() % 2;
         string temp;
         cout << "Your citizen satisfaction rate is 0!" << endl;
-        cout << std::rand() % 3 << " Houses got broken down during a riot!\nHeres a tip! ;p  use the cheatCode \"weewooweewoo\": ";
+        cout << 3 << " Houses got broken down during a riot!\nHeres a tip! ;p  use the cheatCode \"weewooweewoo\": ";
         cin >> temp;
         if(temp == "weewooweewoo")
         {

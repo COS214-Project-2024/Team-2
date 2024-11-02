@@ -7,7 +7,7 @@ class ConcreteCitizen;
 
 class Citizen{
     private:
-        virtual ConcreteCitizen* clone(ConcreteCitizen& citizen) = 0;
+        virtual ConcreteCitizen* clone() = 0;
         virtual bool getHouse() = 0;
         virtual bool getEmployment() = 0;        
 };

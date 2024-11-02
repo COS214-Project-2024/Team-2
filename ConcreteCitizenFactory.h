@@ -10,8 +10,12 @@ class BuildingsUnit;
 class Government;
 
 class ConcreteCitizenFactory : public CitizenFactory {
+    private:
+        BuildingsUnit* buildings;
+        Government* goverment;
     public:
-        ConcreteCitizen* createCitizen(BuildingsUnit* buildings, Government* goverment);
+        ConcreteCitizenFactory(BuildingsUnit* building, Government* govermet);
+        ConcreteCitizen* createCitizen();
 };
 
 #endif
