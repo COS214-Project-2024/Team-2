@@ -1,5 +1,12 @@
 #include "ConcreteCitizenFactory.h"
 
-ConcreteCitizen* ConcreteCitizenFactory::createCitizen(BuildingsUnit* buildings, Government* government){
-    return new ConcreteCitizen(buildings, government);
+ConcreteCitizenFactory::ConcreteCitizenFactory(BuildingsUnit* b, Government* g)
+{
+    buildings = b;
+    goverment = g;
+}
+
+ConcreteCitizen* ConcreteCitizenFactory::createCitizen()
+{
+    return new ConcreteCitizen(buildings, goverment);
 }

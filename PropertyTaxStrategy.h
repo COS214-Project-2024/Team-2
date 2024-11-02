@@ -6,9 +6,9 @@
 class PropertyTaxStrategy : public TaxStrategy
 {
     public:
-        int calculateTax(int total) override
+        int calculateTax(int total)
         {
-            return total * (2/100);            
+            return (total * 0.2);            
         };
 };
 

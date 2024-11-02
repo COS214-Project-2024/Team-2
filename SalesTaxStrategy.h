@@ -8,7 +8,7 @@ class SalesTaxStrategy : public TaxStrategy
     public:
         int calculateTax(int total) override
         {
-            return total * (15/100);            
+            return (total * 0.15);            
         };
 };
 

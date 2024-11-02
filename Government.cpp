@@ -215,32 +215,32 @@ int Government::collectTax()
         cout << "Collecting taxes: " << endl;
         cityBank->increment(strategy->calculateTax((population->get() * 1500)));
         cout << "Your current bank: " << cityBank->get() << " money" << endl;
-        return strategy->calculateTax(population->get() * 1500);
         randomEvent();
+        return strategy->calculateTax(population->get() * 1500);
     }
     else if(currentCG == "housing")
     {
         cout << "Collecting taxes: " << endl;
         cityBank->increment(strategy->calculateTax((housing->get() * 1500)));
         cout << "Your current bank: " << cityBank->get() << " money" << endl;
-        return strategy->calculateTax(population->get() * 1500);
         randomEvent();
+        return strategy->calculateTax(population->get() * 1500);
     }
     else if(currentCG == "economic")
     {
         cout << "Collecting taxes: " << endl;
         cityBank->increment(strategy->calculateTax((economic->get() * 1500)));
         cout << "Your current bank: " << cityBank->get() << " money" << endl;
-        return strategy->calculateTax(population->get() * 1500);
         randomEvent();
+        return strategy->calculateTax(population->get() * 1500);
     }
     else if(currentCG == "infrastructure")
     {
         cout << "Collecting taxes: " << endl;
         cityBank->increment(strategy->calculateTax((infrastructure->get() * 1500)));
         cout << "Your current bank: " << cityBank->get() << " money" << endl;
-        return strategy->calculateTax(population->get() * 1500);
         randomEvent();
+        return strategy->calculateTax(population->get() * 1500);
     }
 }
 
@@ -249,7 +249,7 @@ void Government::cheat(string cheatCode)
     if(cheatCode == "weewooweewoo")
     {
         cout << "Cheat code succesfull, we'll keep this a secret... ;P" << endl;
-        cityBank->increment(10000);
+        cityBank->increment(20000);
     }
 }
 
@@ -304,8 +304,8 @@ void Government::useResource(string wh)
 
 bool Government::getTransport()
 {
-    return transportAllowed;
     randomEvent();
+    return transportAllowed;
 }
 
 int Government::getSatisfaction()
