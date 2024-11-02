@@ -7,7 +7,7 @@ u21439631 Euan Botha<br/>
 u21437883 Nolan Kühn<br/>
 U23782219 Ruan le Roux
 
-Run:
-make clean
-make
+# Run:
+make clean<br/>
+make<br/>
 ./main
