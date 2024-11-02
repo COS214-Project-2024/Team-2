@@ -9,7 +9,7 @@
 #include "IncomeTaxStrategy.h"
 #include "PropertyTaxStrategy.h"
 #include "SalesTaxStrategy.h"
-// #include "Department.h"
+#include "Department.h"
 #include "TaxStrategy.h"
 #include "Bank.h"
 #include "CityGrowth.h"
@@ -38,7 +38,7 @@ using namespace std;
 class Government
 {
     private:
-        // Department* department;
+        Department* department = new Department();
         TaxStrategy* strategy = new IncomeTaxStrategy();
         Bank* cityBank;
         string cheatCode = "weewooweewoo";
@@ -46,12 +46,16 @@ class Government
         CityGrowth* housing = new Housing();
         CityGrowth* economic = new Economic();
         CityGrowth* infrastructure = new Infrastructure();
-        // Resources* energy = new Energy();
-        // Resources* water = new Water();
-        Wood* wood = new Wood(nullptr, 100);
-        StateOfResources* empty = new EmptyState(wood);
-        // Resources* steel = new Steel();
-        // Resources* concrete = new Concrete();
+        StateOfResources* emptyStateE = new EmptyState(energy);
+        StateOfResources* emptyStateWa = new EmptyState(water);
+        StateOfResources* emptyStateWo = new EmptyState(wood);
+        StateOfResources* emptyStateS = new EmptyState(steel);
+        StateOfResources* emptyStateC = new EmptyState(concrete);
+        Energy* energy = new Energy(emptyStateE, 0);
+        Water* water = new Water(emptyStateWa, 0);
+        Wood* wood = new Wood(emptyStateWo, 0);
+        Steel* steel = new Steel(emptyStateS, 0);
+        Concrete* concrete = new Concrete(emptyStateC, 0);
         bool transportAllowed;
         string currentCG = "population";
     public:
@@ -61,10 +65,12 @@ class Government
         void setStrategy(TaxStrategy* strat);
         double collectTax();
         void cheat(string cheatCode);
-        void userResource(string who);
+        void useResource(string who);
         bool getTransport();
         void setTransport(bool t);
         void randomEvent();
+        int getSatisfaction();
+        void setSatisfaction(int level);
 };
 
 #endif
