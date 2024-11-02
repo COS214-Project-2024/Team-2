@@ -77,7 +77,7 @@ void Government::randomEvent()
     {
         while(loadshedding->execute() == false)
         {
-            userResource("energy");
+            useResource("energy");
         }
     }
     else if (randomValue == 17)
@@ -150,32 +150,42 @@ void Government::cheat(string cheatCode)
     }
 }
 
-// void Government::useResource(string wh)
-// {
-//     if(wh == "energy")
-//     {
-//         energy->useResource();
-//     }
-//     else if(wh == "energy")
-//     {
-//         energy->useResource();
-//     }
-//     else if(wh == "wood")
-//     {
-//         wood->useResource();
-//     }
-//     else if(wh == "steel")
-//     {
-//         steel->useResource();
-//     }
-//     else if(wh == "concrete")
-//     {
-//         concrete->useResource();
-//     }
-// }
+void Government::useResource(string wh)
+{
+    if(wh == "energy")
+    {
+        energy->useResource(20);
+    }
+    else if(wh == "water")
+    {
+        water->useResource(20);
+    }
+    else if(wh == "wood")
+    {
+        wood->useResource(20);
+    }
+    else if(wh == "steel")
+    {
+        steel->useResource(20);
+    }
+    else if(wh == "concrete")
+    {
+        concrete->useResource(20);
+    }
+}
 
 bool Government::getTransport()
 {
     return transportAllowed;
     randomEvent();
+}
+
+int Government::getSatisfaction()
+{
+    return department->getSatisfaction();
+}
+
+void Government::setSatisfaction(int lvl)
+{
+    department->setSatisfaction(lvl, cityBank);
 }
