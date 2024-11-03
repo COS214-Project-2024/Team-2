@@ -25,4 +25,15 @@ Built as a 2nd year group project, this C++ simulation allows players to engage 
 Run:
 make clean<br/>
 make<br/>
-./main
+
+demo:
+./main<br/>
+Y<br/>
+Batman<br/>
+Batman<br/>
+Y<br/>
+None<br/>
+None<br/>
+None<br/>
+Batman<br/>
+weewooweewoo<br/>
