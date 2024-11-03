@@ -7,6 +7,7 @@
 Welcome to our COS 214 **City Builder Simulation** project! 
 Built as a 2nd year group project, this C++ simulation allows players to engage with various aspects of a virtual city, integrating key urban components like infrastructure, citizen satisfaction, resource management, and more. Designed with flexibility and scalability, this simulation employs numerous design patterns to achieve a complex, dynamic urban environment.
 
+---
 ## 👥 The Team: **IDK**
 
 | Student Number | Name               |
@@ -20,9 +21,23 @@ Built as a 2nd year group project, this C++ simulation allows players to engage 
 | u23782219      | Ruan le Roux       |
 
 ---
+## 🧠 Design Patterns
+
+This project utilises various software design patterns to manage different components of the city.
+These include, but are not limited to:
+
+1. State
+2. Strategy
+3. Mediator
+4. Composite
+
+UML Diagrams and more details on patterns can be found in the project documentation
+
+
+---
 
 ## 💻 Guide to running:
-Run:
+``` Run:
 make clean<br/>
 make<br/>
 
@@ -36,4 +51,7 @@ None<br/>
 None<br/>
 None<br/>
 Batman<br/>
-weewooweewoo<br/>
+weewooweewoo<br/>```
+
+---
+
