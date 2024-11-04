@@ -221,7 +221,7 @@ int main()
     cout << endl;
     cout << "CC2: " << CC2->bank->get() << " money\nTrain" << endl;
     CC2->useTransport("Train");
-    cout << endl << "Total Money left for CC2: " << CC2->bank2->get() << " moneylaskjdhfgak" << endl;
+    cout << endl << "Total Money left for CC2: " << CC2->bank->get() << " money" << endl;
 
     cout << endl << "---------Situations getting causes---------" << endl;
     for(int i  = 0; i < 23; i++)
