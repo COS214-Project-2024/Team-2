@@ -149,20 +149,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">Commercial::Commercial </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Constructs a <a class="el" href="classCommercial.html" title="Represents commercial buildings in the city.">Commercial</a> object with the specified type. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>The type of the commercial building (e.g., "shops", "offices", "malls").</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This constructor initializes the <a class="el" href="classCommercial.html" title="Represents commercial buildings in the city.">Commercial</a> object based on the provided type of building. It assigns the corresponding position in the type array.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">t</td><td>The type of the commercial building (e.g., "shops", "offices", "malls"). </td></tr>
@@ -189,8 +182,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the position of the commercial building in the type array. </p>
-<dl class="section return"><dt>Returns</dt><dd>An integer representing the position.</dd></dl>
-<p>This method returns the index of the commercial building's type in the predefined type array.</p>
 <dl class="section return"><dt>Returns</dt><dd>An integer representing the position. </dd></dl>
 
 </div>
@@ -219,8 +210,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the price of the commercial building. </p>
-<dl class="section return"><dt>Returns</dt><dd>The price of the building as an integer.</dd></dl>
-<p>This method retrieves the price of the building based on its position in the type array.</p>
 <dl class="section return"><dt>Returns</dt><dd>The price of the building as an integer. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classBuildings.html#a4812213ed8b85fa5dfa15a9307acd5ba">Buildings</a>.</p>
@@ -243,8 +232,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the satisfaction rate of the commercial building. </p>
-<dl class="section return"><dt>Returns</dt><dd>The satisfaction rate as an integer.</dd></dl>
-<p>This method returns the current satisfaction rate of the building.</p>
 <dl class="section return"><dt>Returns</dt><dd>The satisfaction rate as an integer. </dd></dl>
 
 </div>
@@ -273,8 +260,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the commercial building is occupied. </p>
-<dl class="section return"><dt>Returns</dt><dd>true if the building is occupied, false otherwise.</dd></dl>
-<p>This method returns the occupancy status of the commercial building.</p>
 <dl class="section return"><dt>Returns</dt><dd>true if the building is occupied, false otherwise. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classBuildings.html#a025eed67a659b27440348623e31b4ce7">Buildings</a>.</p>
@@ -305,8 +290,6 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Gets the type of the commercial building. </p>
-<dl class="section return"><dt>Returns</dt><dd>A string representing the type of the building.</dd></dl>
-<p>This method returns the type identifier of the commercial building.</p>
 <dl class="section return"><dt>Returns</dt><dd>A string representing the type of the building. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classBuildings.html#a47b2092a289c9c317d4ad953f381974f">Buildings</a>.</p>
@@ -326,7 +309,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Commercial::setPrice </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pric</em></td><td>)</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -340,14 +323,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the price of the commercial building. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>The new price to set for the building.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method updates the price of the commercial building based on its current position in the type array.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">pric</td><td>The new price to set for the building. </td></tr>
+    <tr><td class="paramname">p</td><td>The new price to set for the building. </td></tr>
   </table>
   </dd>
 </dl>
@@ -369,7 +345,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void Commercial::setTaken </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>tak</em></td><td>)</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -383,14 +359,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets the occupancy status of the commercial building. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>A boolean indicating whether the building is occupied (true) or not (false).</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method updates the occupancy status of the commercial building.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">tak</td><td>A boolean indicating whether the building is occupied (true) or not (false). </td></tr>
+    <tr><td class="paramname">t</td><td>A boolean indicating whether the building is occupied (true) or not (false). </td></tr>
   </table>
   </dd>
 </dl>

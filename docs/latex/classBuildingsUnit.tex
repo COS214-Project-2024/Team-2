@@ -81,7 +81,7 @@ Represents a unit of buildings within a city that is governed by a central autho
 \index{BuildingsUnit@{BuildingsUnit}!BuildingsUnit@{BuildingsUnit}}
 \index{BuildingsUnit@{BuildingsUnit}!BuildingsUnit@{BuildingsUnit}}
 \doxysubsubsection{\texorpdfstring{BuildingsUnit()}{BuildingsUnit()}}
-{\footnotesize\ttfamily Buildings\+Unit\+::\+Buildings\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}}]{gover }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Buildings\+Unit\+::\+Buildings\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}}]{g }\end{DoxyParamCaption})}
 
 
 
@@ -89,9 +89,7 @@ Constructs a \doxylink{classBuildingsUnit}{Buildings\+Unit} with a specified \do
 
 
 \begin{DoxyParams}{Parameters}
-{\em g} & Pointer to the \doxylink{classGovernment}{Government} instance managing this \doxylink{classBuildingsUnit}{Buildings\+Unit}.\\
-\hline
-{\em gover} & Pointer to the \doxylink{classGovernment}{Government} instance managing this \doxylink{classBuildingsUnit}{Buildings\+Unit}. \\
+{\em g} & Pointer to the \doxylink{classGovernment}{Government} instance managing this \doxylink{classBuildingsUnit}{Buildings\+Unit}. \\
 \hline
 \end{DoxyParams}
 
@@ -101,7 +99,7 @@ Constructs a \doxylink{classBuildingsUnit}{Buildings\+Unit} with a specified \do
 \index{BuildingsUnit@{BuildingsUnit}!add@{add}}
 \index{add@{add}!BuildingsUnit@{BuildingsUnit}}
 \doxysubsubsection{\texorpdfstring{add()}{add()}}
-{\footnotesize\ttfamily void Buildings\+Unit\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}}]{childrenp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Buildings\+Unit\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}}]{comp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -109,9 +107,7 @@ Adds a building component to the unit if funds are sufficient.
 
 
 \begin{DoxyParams}{Parameters}
-{\em comp} & Pointer to the \doxylink{classBuildings}{Buildings} object to add.\\
-\hline
-{\em childrenp} & Pointer to the \doxylink{classBuildings}{Buildings} object to add. \\
+{\em comp} & Pointer to the \doxylink{classBuildings}{Buildings} object to add. \\
 \hline
 \end{DoxyParams}
 
@@ -122,7 +118,7 @@ Reimplemented from \mbox{\hyperlink{classBuildings_a539cdc54c303b592ac980b093b91
 \index{BuildingsUnit@{BuildingsUnit}!deleteSpecificTree@{deleteSpecificTree}}
 \index{deleteSpecificTree@{deleteSpecificTree}!BuildingsUnit@{BuildingsUnit}}
 \doxysubsubsection{\texorpdfstring{deleteSpecificTree()}{deleteSpecificTree()}}
-{\footnotesize\ttfamily void Buildings\+Unit\+::delete\+Specific\+Tree (\begin{DoxyParamCaption}\item[{string}]{mT }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Buildings\+Unit\+::delete\+Specific\+Tree (\begin{DoxyParamCaption}\item[{string}]{my\+Type }\end{DoxyParamCaption})}
 
 
 
@@ -130,16 +126,14 @@ Deletes all buildings of a specific type within the unit.
 
 
 \begin{DoxyParams}{Parameters}
-{\em my\+Type} & The type of buildings to delete.\\
-\hline
-{\em mT} & The type of buildings to delete. \\
+{\em my\+Type} & The type of buildings to delete. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{classBuildingsUnit_a84aa7e4a38c67c37366f67b33a329e93}\label{classBuildingsUnit_a84aa7e4a38c67c37366f67b33a329e93} 
 \index{BuildingsUnit@{BuildingsUnit}!getChild@{getChild}}
 \index{getChild@{getChild}!BuildingsUnit@{BuildingsUnit}}
 \doxysubsubsection{\texorpdfstring{getChild()}{getChild()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*} Buildings\+Unit\+::get\+Child (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*} Buildings\+Unit\+::get\+Child (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
 
 
 
@@ -151,15 +145,7 @@ Retrieves a child building component at a specified index.
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
-Pointer to the \doxylink{classBuildings}{Buildings} object at the specified index.
-\end{DoxyReturn}
-
-\begin{DoxyParams}{Parameters}
-{\em i} & Index of the building component to retrieve. \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-Pointer to the \doxylink{classBuildings}{Buildings} object at the specified index, or NULL if out of bounds. 
+Pointer to the \doxylink{classBuildings}{Buildings} object at the specified index. 
 \end{DoxyReturn}
 \Hypertarget{classBuildingsUnit_a23a09753b20989e6b84d16d06f01957c}\label{classBuildingsUnit_a23a09753b20989e6b84d16d06f01957c} 
 \index{BuildingsUnit@{BuildingsUnit}!getEmployment@{getEmployment}}
@@ -191,7 +177,7 @@ True if a house was found and marked as occupied, otherwise false.
 \index{BuildingsUnit@{BuildingsUnit}!getTreePrice@{getTreePrice}}
 \index{getTreePrice@{getTreePrice}!BuildingsUnit@{BuildingsUnit}}
 \doxysubsubsection{\texorpdfstring{getTreePrice()}{getTreePrice()}}
-{\footnotesize\ttfamily void Buildings\+Unit\+::get\+Tree\+Price (\begin{DoxyParamCaption}\item[{string}]{mT }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Buildings\+Unit\+::get\+Tree\+Price (\begin{DoxyParamCaption}\item[{string}]{my\+Type }\end{DoxyParamCaption})}
 
 
 
@@ -199,16 +185,14 @@ Calculates and outputs the total price of all buildings of a specific type.
 
 
 \begin{DoxyParams}{Parameters}
-{\em my\+Type} & The type of buildings to calculate the total price for.\\
-\hline
-{\em mT} & The type of buildings to calculate the total price for. \\
+{\em my\+Type} & The type of buildings to calculate the total price for. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{classBuildingsUnit_ac53c8e776b12965cbad8287ac4797bd5}\label{classBuildingsUnit_ac53c8e776b12965cbad8287ac4797bd5} 
 \index{BuildingsUnit@{BuildingsUnit}!remove@{remove}}
 \index{remove@{remove}!BuildingsUnit@{BuildingsUnit}}
 \doxysubsubsection{\texorpdfstring{remove()}{remove()}}
-{\footnotesize\ttfamily void Buildings\+Unit\+::remove (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Buildings\+Unit\+::remove (\begin{DoxyParamCaption}\item[{int}]{index }\end{DoxyParamCaption})}
 
 
 
@@ -216,16 +200,14 @@ Removes a building component at a specified index.
 
 
 \begin{DoxyParams}{Parameters}
-{\em index} & Index of the building component to remove from the unit.\\
-\hline
-{\em i} & Index of the building component to remove from the unit. \\
+{\em index} & Index of the building component to remove from the unit. \\
 \hline
 \end{DoxyParams}
 \Hypertarget{classBuildingsUnit_a6faf5d2a4709f65ed8b8f8b6e72b837e}\label{classBuildingsUnit_a6faf5d2a4709f65ed8b8f8b6e72b837e} 
 \index{BuildingsUnit@{BuildingsUnit}!setTreePrice@{setTreePrice}}
 \index{setTreePrice@{setTreePrice}!BuildingsUnit@{BuildingsUnit}}
 \doxysubsubsection{\texorpdfstring{setTreePrice()}{setTreePrice()}}
-{\footnotesize\ttfamily void Buildings\+Unit\+::set\+Tree\+Price (\begin{DoxyParamCaption}\item[{string}]{mT,  }\item[{int}]{p }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily void Buildings\+Unit\+::set\+Tree\+Price (\begin{DoxyParamCaption}\item[{string}]{my\+Type,  }\item[{int}]{price }\end{DoxyParamCaption})}
 
 
 
@@ -235,11 +217,7 @@ Sets a new price for all buildings of a specific type.
 \begin{DoxyParams}{Parameters}
 {\em my\+Type} & The type of buildings to update the price for. \\
 \hline
-{\em price} & The new price to set for each building of this type.\\
-\hline
-{\em mT} & The type of buildings to update the price for. \\
-\hline
-{\em p} & The new price to set for each building of this type. \\
+{\em price} & The new price to set for each building of this type. \\
 \hline
 \end{DoxyParams}
 

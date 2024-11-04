@@ -156,14 +156,6 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initialState</td><td>Pointer to the initial state of the water resource. </td></tr>
-    <tr><td class="paramname">initialQuantity</td><td>The initial quantity of the water resource.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This constructor initializes the water resource's state and quantity, and creates instances for the full, empty, and normal states.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">initialState</td><td>Pointer to the initial state of the water resource. </td></tr>
     <tr><td class="paramname">initialQuantity</td><td>The initial quantity of the water resource. </td></tr>
   </table>
   </dd>
@@ -198,13 +190,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Generates a specified quantity of water. </p>
 <p>This method increases the quantity of water and updates the state based on the new quantity. If the quantity exceeds the maximum capacity, it's capped at that maximum, and the state is set to <a class="el" href="classFullState.html" title="Represents the full state of a resource.">FullState</a>. If it's positive but less than maximum, it's set to <a class="el" href="classNormalState.html" title="Class representing the normal state of a resource.">NormalState</a>; if it is zero or less, it's set to <a class="el" href="classEmptyState.html" title="Represents the empty state of a resource.">EmptyState</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quantity</td><td>The amount of water to generate.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method increases the quantity of water and updates the state based on the new quantity. If the quantity exceeds the maximum capacity, it is capped at that maximum, and the state is set to <a class="el" href="classFullState.html" title="Represents the full state of a resource.">FullState</a>. If it is positive but less than maximum, it is set to <a class="el" href="classNormalState.html" title="Class representing the normal state of a resource.">NormalState</a>; if it is zero or less, it is set to <a class="el" href="classEmptyState.html" title="Represents the empty state of a resource.">EmptyState</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quantity</td><td>The amount of water to generate. </td></tr>
@@ -329,13 +314,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Uses a specified quantity of water. </p>
 <p>This method decreases the quantity of water and updates the state based on the remaining quantity. If the quantity becomes zero or negative, the state is set to <a class="el" href="classEmptyState.html" title="Represents the empty state of a resource.">EmptyState</a>. If it's less than the maximum capacity, it's set to <a class="el" href="classNormalState.html" title="Class representing the normal state of a resource.">NormalState</a>; otherwise, it's set to <a class="el" href="classFullState.html" title="Represents the full state of a resource.">FullState</a>.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quantity</td><td>The amount of water to use.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method decreases the quantity of water and updates the state based on the remaining quantity. If the quantity becomes zero or negative, the state is set to <a class="el" href="classEmptyState.html" title="Represents the empty state of a resource.">EmptyState</a>. If it's less than the maximum capacity, it is set to <a class="el" href="classNormalState.html" title="Class representing the normal state of a resource.">NormalState</a>; otherwise, it is set to <a class="el" href="classFullState.html" title="Represents the full state of a resource.">FullState</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quantity</td><td>The amount of water to use. </td></tr>

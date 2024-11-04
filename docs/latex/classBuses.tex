@@ -50,20 +50,11 @@ This class inherits from \doxylink{classTransportationSystem}{Transportation\+Sy
 
 Moves a citizen using the bus transportation system. 
 
-Executes the bus movement logic.
-
 This method checks if the citizen has enough funds in the bank to use the bus. If they do, it prints a success message and deducts the price of the bus fare from their bank balance. Otherwise, it informs them that they do not have enough money.
 
 
 \begin{DoxyParams}{Parameters}
-{\em bank} & A pointer to the \doxylink{classBank}{Bank} object representing the citizen\textquotesingle{}s bank.\\
-\hline
-\end{DoxyParams}
-This method checks the user\textquotesingle{}s bank balance and determines whether they can afford to use the bus. It updates the balance accordingly and provides feedback to the user about the transaction.
-
-
-\begin{DoxyParams}{Parameters}
-{\em bank} & Pointer to the \doxylink{classBank}{Bank} object that manages the user\textquotesingle{}s balance. \\
+{\em bank} & A pointer to the \doxylink{classBank}{Bank} object representing the citizen\textquotesingle{}s bank. \\
 \hline
 \end{DoxyParams}
 

@@ -67,11 +67,7 @@ Constructs a \doxylink{classConcrete}{Concrete} object with an initial state and
 {\em initial\+Quantity} & The initial quantity of concrete. \\
 \hline
 \end{DoxyParams}
-\texorpdfstring{$<$}{<} Initialize the full state of concrete.
 
-\texorpdfstring{$<$}{<} Initialize the empty state of concrete.
-
-\texorpdfstring{$<$}{<} Initialize the normal state of concrete.
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classConcrete_a7d14c59285e5cd65469c29a779fa068b}\label{classConcrete_a7d14c59285e5cd65469c29a779fa068b} 
@@ -85,13 +81,6 @@ Constructs a \doxylink{classConcrete}{Concrete} object with an initial state and
 Generates a specified quantity of concrete. 
 
 Increases the current quantity of concrete by the specified amount, ensuring it does not exceed maximum capacity.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of concrete to generate.\\
-\hline
-\end{DoxyParams}
-This method increases the current quantity of concrete by the specified amount, updates the quantity, and changes the state based on the new quantity. If the quantity exceeds the maximum capacity, it sets it to the maximum and changes the state to full; if the quantity is greater than zero, it sets the state to normal; if the quantity is zero, it sets the state to empty.
 
 
 \begin{DoxyParams}{Parameters}
@@ -150,13 +139,6 @@ Updates the current state of the concrete to the specified new state.
 
 
 \begin{DoxyParams}{Parameters}
-{\em new\+State} & Pointer to the new state to be set.\\
-\hline
-\end{DoxyParams}
-This method updates the current state of the concrete to the specified new state.
-
-
-\begin{DoxyParams}{Parameters}
 {\em new\+State} & Pointer to the new state to be set. \\
 \hline
 \end{DoxyParams}
@@ -171,13 +153,6 @@ This method updates the current state of the concrete to the specified new state
 Uses a specified quantity of concrete. 
 
 Reduces the current quantity of concrete by the specified amount, potentially updating the state if necessary.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of concrete to use.\\
-\hline
-\end{DoxyParams}
-This method reduces the current quantity of concrete by the specified amount, updates the quantity, and changes the state based on the new quantity. If the quantity falls to zero or below, the state changes to empty; if it is below the maximum capacity, the state changes to normal; otherwise, it changes to full.
 
 
 \begin{DoxyParams}{Parameters}

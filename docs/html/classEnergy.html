@@ -156,14 +156,6 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">initialState</td><td>Pointer to the initial state of the energy resource. </td></tr>
-    <tr><td class="paramname">initialQuantity</td><td>The initial quantity of the energy resource.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>Initializes the energy resource with an initial state and quantity, and creates the various states associated with the energy resource.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">initialState</td><td>Pointer to the initial state of the energy resource. </td></tr>
     <tr><td class="paramname">initialQuantity</td><td>The initial quantity of the energy resource. </td></tr>
   </table>
   </dd>
@@ -198,13 +190,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Generates a specified quantity of energy. </p>
 <p>This method increases the quantity of energy and updates the state based on the new quantity.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quantity</td><td>The amount of energy to generate.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method increases the quantity of energy by the specified amount, updates the state based on the new quantity, and ensures it does not exceed maximum capacity.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quantity</td><td>The amount of energy to generate. </td></tr>
@@ -295,13 +280,6 @@ Public Member Functions</h2></td></tr>
 <p>Sets the current state of the energy resource. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">newState</td><td>Pointer to the new state to be set for the energy resource.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method updates the state of the energy resource to the provided state.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramname">newState</td><td>Pointer to the new state to be set for the energy resource. </td></tr>
   </table>
   </dd>
@@ -335,13 +313,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Uses a specified quantity of energy. </p>
 <p>This method reduces the quantity of energy and updates the state based on the remaining quantity.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quantity</td><td>The amount of energy to use.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method reduces the quantity of energy by the specified amount, updates the state of the resource, and ensures that the quantity does not drop below zero.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quantity</td><td>The amount of energy to use. </td></tr>

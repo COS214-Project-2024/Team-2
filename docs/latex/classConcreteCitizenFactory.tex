@@ -46,7 +46,7 @@ This class implements the \doxylink{classCitizenFactory}{Citizen\+Factory} inter
 \index{ConcreteCitizenFactory@{ConcreteCitizenFactory}!ConcreteCitizenFactory@{ConcreteCitizenFactory}}
 \index{ConcreteCitizenFactory@{ConcreteCitizenFactory}!ConcreteCitizenFactory@{ConcreteCitizenFactory}}
 \doxysubsubsection{\texorpdfstring{ConcreteCitizenFactory()}{ConcreteCitizenFactory()}}
-{\footnotesize\ttfamily Concrete\+Citizen\+Factory\+::\+Concrete\+Citizen\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildingsUnit}{Buildings\+Unit}} \texorpdfstring{$\ast$}{*}}]{b,  }\item[{\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}}]{g }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Concrete\+Citizen\+Factory\+::\+Concrete\+Citizen\+Factory (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildingsUnit}{Buildings\+Unit}} \texorpdfstring{$\ast$}{*}}]{building,  }\item[{\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}}]{government }\end{DoxyParamCaption})}
 
 
 
@@ -56,11 +56,7 @@ Constructs a \doxylink{classConcreteCitizenFactory}{Concrete\+Citizen\+Factory} 
 \begin{DoxyParams}{Parameters}
 {\em building} & Pointer to the \doxylink{classBuildingsUnit}{Buildings\+Unit} that citizens will be associated with. \\
 \hline
-{\em government} & Pointer to the \doxylink{classGovernment}{Government} that governs the citizens.\\
-\hline
-{\em b} & Pointer to the \doxylink{classBuildingsUnit}{Buildings\+Unit} that citizens will be associated with. \\
-\hline
-{\em g} & Pointer to the \doxylink{classGovernment}{Government} that governs the citizens. \\
+{\em government} & Pointer to the \doxylink{classGovernment}{Government} that governs the citizens. \\
 \hline
 \end{DoxyParams}
 
@@ -77,11 +73,6 @@ Constructs a \doxylink{classConcreteCitizenFactory}{Concrete\+Citizen\+Factory} 
 Creates a new \doxylink{classConcreteCitizen}{Concrete\+Citizen} instance. 
 
 This method creates a \doxylink{classConcreteCitizen}{Concrete\+Citizen} object associated with the specified \doxylink{classBuildingsUnit}{Buildings\+Unit} and \doxylink{classGovernment}{Government}.
-
-\begin{DoxyReturn}{Returns}
-A pointer to a newly created \doxylink{classConcreteCitizen}{Concrete\+Citizen} object.
-\end{DoxyReturn}
-This method instantiates a \doxylink{classConcreteCitizen}{Concrete\+Citizen} object associated with the \doxylink{classBuildingsUnit}{Buildings\+Unit} and \doxylink{classGovernment}{Government} provided during the factory\textquotesingle{}s construction.
 
 \begin{DoxyReturn}{Returns}
 A pointer to a newly created \doxylink{classConcreteCitizen}{Concrete\+Citizen} object. 

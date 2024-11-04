@@ -167,14 +167,6 @@ Public Attributes</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">buildings</td><td>Pointer to the <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a> that the citizen belongs to. </td></tr>
-    <tr><td class="paramname">government</td><td>Pointer to the <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> that governs the citizen.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This constructor initializes a <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object, sets the housing and employment status to false, and creates a new <a class="el" href="classBank.html" title="Represents a bank account for managing a citizen&#39;s funds.">Bank</a> instance. It also triggers the growth of the city's population.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">buildings</td><td>Pointer to the <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a> that the citizen belongs to. </td></tr>
     <tr><td class="paramname">government</td><td>Pointer to the <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> that governs the citizen. </td></tr>
   </table>
   </dd>
@@ -208,8 +200,6 @@ Public Attributes</h2></td></tr>
 
 <p>Clones the <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object. </p>
 <p>This method creates a copy of the <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a new <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object that is a clone of the original.</dd></dl>
-<p>This method creates a copy of the <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object, including its housing and employment status, and bank instance.</p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a new <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object that is a clone of the original. </dd></dl>
 
 <p>Implements <a class="el" href="classCitizen.html">Citizen</a>.</p>
@@ -240,11 +230,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the citizen is employed. </p>
-<p>Checks if the citizen can acquire employment.</p>
 <p>This method returns the employment status of the citizen.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the citizen is employed, false otherwise.</dd></dl>
-<p>This method checks the availability of employment in the buildings unit. If employment is available, the citizen's bank is incremented, and the employment status is set to true.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the citizen successfully acquires employment, false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the citizen is employed, false otherwise. </dd></dl>
 
 <p>Implements <a class="el" href="classCitizen.html">Citizen</a>.</p>
 
@@ -274,11 +261,8 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Checks if the citizen has housing. </p>
-<p>Checks if the citizen can acquire housing.</p>
 <p>This method returns the housing status of the citizen.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the citizen has housing, false otherwise.</dd></dl>
-<p>This method checks the citizen's bank balance and the availability of housing in the buildings unit. If the citizen has enough money and a house is available, the citizen's bank is decremented and housing status is set to true.</p>
-<dl class="section return"><dt>Returns</dt><dd>true if the citizen successfully acquires housing, false otherwise. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>true if the citizen has housing, false otherwise. </dd></dl>
 
 <p>Implements <a class="el" href="classCitizen.html">Citizen</a>.</p>
 
@@ -329,14 +313,6 @@ Public Attributes</h2></td></tr>
 
 <p>Uses a specified mode of transportation. </p>
 <p>This method allows the citizen to use the specified transport method.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">transport</td><td>A string indicating the mode of transport to use. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true if the transportation was successful, false otherwise.</dd></dl>
-<p>This method checks if the transportation services are operational and attempts to use the specified transport method (<a class="el" href="classTaxis.html" title="Class representing a taxi transportation system.">Taxis</a>, <a class="el" href="classBuses.html" title="Represents a bus transportation system.">Buses</a>, <a class="el" href="classAirport.html" title="Represents an airport transportation system.">Airport</a>, or <a class="el" href="classTrain.html" title="Class representing a train transportation system.">Train</a>) to travel. If the transport type is invalid, an error message is displayed.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">transport</td><td>A string indicating the mode of transport to use. </td></tr>

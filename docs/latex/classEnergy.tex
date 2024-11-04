@@ -64,15 +64,6 @@ Constructs an \doxylink{classEnergy}{Energy} object with the specified initial s
 \begin{DoxyParams}{Parameters}
 {\em initial\+State} & Pointer to the initial state of the energy resource. \\
 \hline
-{\em initial\+Quantity} & The initial quantity of the energy resource.\\
-\hline
-\end{DoxyParams}
-Initializes the energy resource with an initial state and quantity, and creates the various states associated with the energy resource.
-
-
-\begin{DoxyParams}{Parameters}
-{\em initial\+State} & Pointer to the initial state of the energy resource. \\
-\hline
 {\em initial\+Quantity} & The initial quantity of the energy resource. \\
 \hline
 \end{DoxyParams}
@@ -90,13 +81,6 @@ Initializes the energy resource with an initial state and quantity, and creates 
 Generates a specified quantity of energy. 
 
 This method increases the quantity of energy and updates the state based on the new quantity.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of energy to generate.\\
-\hline
-\end{DoxyParams}
-This method increases the quantity of energy by the specified amount, updates the state based on the new quantity, and ensures it does not exceed maximum capacity.
 
 
 \begin{DoxyParams}{Parameters}
@@ -153,13 +137,6 @@ Sets the current state of the energy resource.
 
 
 \begin{DoxyParams}{Parameters}
-{\em new\+State} & Pointer to the new state to be set for the energy resource.\\
-\hline
-\end{DoxyParams}
-This method updates the state of the energy resource to the provided state.
-
-
-\begin{DoxyParams}{Parameters}
 {\em new\+State} & Pointer to the new state to be set for the energy resource. \\
 \hline
 \end{DoxyParams}
@@ -174,13 +151,6 @@ This method updates the state of the energy resource to the provided state.
 Uses a specified quantity of energy. 
 
 This method reduces the quantity of energy and updates the state based on the remaining quantity.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of energy to use.\\
-\hline
-\end{DoxyParams}
-This method reduces the quantity of energy by the specified amount, updates the state of the resource, and ensures that the quantity does not drop below zero.
 
 
 \begin{DoxyParams}{Parameters}

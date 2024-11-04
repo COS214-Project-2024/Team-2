@@ -65,18 +65,11 @@ This class defines commercial buildings such as shops, offices, and malls. It pr
 \index{Commercial@{Commercial}!Commercial@{Commercial}}
 \index{Commercial@{Commercial}!Commercial@{Commercial}}
 \doxysubsubsection{\texorpdfstring{Commercial()}{Commercial()}}
-{\footnotesize\ttfamily Commercial\+::\+Commercial (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
+{\footnotesize\ttfamily Commercial\+::\+Commercial (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
 
 
 
 Constructs a \doxylink{classCommercial}{Commercial} object with the specified type. 
-
-
-\begin{DoxyParams}{Parameters}
-{\em t} & The type of the commercial building (e.\+g., "{}shops"{}, "{}offices"{}, "{}malls"{}).\\
-\hline
-\end{DoxyParams}
-This constructor initializes the \doxylink{classCommercial}{Commercial} object based on the provided type of building. It assigns the corresponding position in the type array.
 
 
 \begin{DoxyParams}{Parameters}
@@ -97,11 +90,6 @@ This constructor initializes the \doxylink{classCommercial}{Commercial} object b
 Gets the position of the commercial building in the type array. 
 
 \begin{DoxyReturn}{Returns}
-An integer representing the position.
-\end{DoxyReturn}
-This method returns the index of the commercial building\textquotesingle{}s type in the predefined type array.
-
-\begin{DoxyReturn}{Returns}
 An integer representing the position. 
 \end{DoxyReturn}
 \Hypertarget{classCommercial_a66cfaf0f3eab2024873223d9140e6f75}\label{classCommercial_a66cfaf0f3eab2024873223d9140e6f75} 
@@ -113,11 +101,6 @@ An integer representing the position.
 
 
 Gets the price of the commercial building. 
-
-\begin{DoxyReturn}{Returns}
-The price of the building as an integer.
-\end{DoxyReturn}
-This method retrieves the price of the building based on its position in the type array.
 
 \begin{DoxyReturn}{Returns}
 The price of the building as an integer. 
@@ -137,11 +120,6 @@ Reimplemented from \mbox{\hyperlink{classBuildings_a4812213ed8b85fa5dfa15a9307ac
 Gets the satisfaction rate of the commercial building. 
 
 \begin{DoxyReturn}{Returns}
-The satisfaction rate as an integer.
-\end{DoxyReturn}
-This method returns the current satisfaction rate of the building.
-
-\begin{DoxyReturn}{Returns}
 The satisfaction rate as an integer. 
 \end{DoxyReturn}
 \Hypertarget{classCommercial_aa2c4d48d6a21d108e46500b3452df53b}\label{classCommercial_aa2c4d48d6a21d108e46500b3452df53b} 
@@ -153,11 +131,6 @@ The satisfaction rate as an integer.
 
 
 Checks if the commercial building is occupied. 
-
-\begin{DoxyReturn}{Returns}
-true if the building is occupied, false otherwise.
-\end{DoxyReturn}
-This method returns the occupancy status of the commercial building.
 
 \begin{DoxyReturn}{Returns}
 true if the building is occupied, false otherwise. 
@@ -177,11 +150,6 @@ Reimplemented from \mbox{\hyperlink{classBuildings_a025eed67a659b27440348623e31b
 Gets the type of the commercial building. 
 
 \begin{DoxyReturn}{Returns}
-A string representing the type of the building.
-\end{DoxyReturn}
-This method returns the type identifier of the commercial building.
-
-\begin{DoxyReturn}{Returns}
 A string representing the type of the building. 
 \end{DoxyReturn}
 
@@ -192,7 +160,7 @@ Reimplemented from \mbox{\hyperlink{classBuildings_a47b2092a289c9c317d4ad953f381
 \index{Commercial@{Commercial}!setPrice@{setPrice}}
 \index{setPrice@{setPrice}!Commercial@{Commercial}}
 \doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
-{\footnotesize\ttfamily void Commercial\+::set\+Price (\begin{DoxyParamCaption}\item[{int}]{pric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Commercial\+::set\+Price (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -200,14 +168,7 @@ Sets the price of the commercial building.
 
 
 \begin{DoxyParams}{Parameters}
-{\em p} & The new price to set for the building.\\
-\hline
-\end{DoxyParams}
-This method updates the price of the commercial building based on its current position in the type array.
-
-
-\begin{DoxyParams}{Parameters}
-{\em pric} & The new price to set for the building. \\
+{\em p} & The new price to set for the building. \\
 \hline
 \end{DoxyParams}
 
@@ -218,7 +179,7 @@ Reimplemented from \mbox{\hyperlink{classBuildings_a55f87163ac9cc48673778eac7e47
 \index{Commercial@{Commercial}!setTaken@{setTaken}}
 \index{setTaken@{setTaken}!Commercial@{Commercial}}
 \doxysubsubsection{\texorpdfstring{setTaken()}{setTaken()}}
-{\footnotesize\ttfamily void Commercial\+::set\+Taken (\begin{DoxyParamCaption}\item[{bool}]{tak }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily void Commercial\+::set\+Taken (\begin{DoxyParamCaption}\item[{bool}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
 
 
 
@@ -226,14 +187,7 @@ Sets the occupancy status of the commercial building.
 
 
 \begin{DoxyParams}{Parameters}
-{\em t} & A boolean indicating whether the building is occupied (true) or not (false).\\
-\hline
-\end{DoxyParams}
-This method updates the occupancy status of the commercial building.
-
-
-\begin{DoxyParams}{Parameters}
-{\em tak} & A boolean indicating whether the building is occupied (true) or not (false). \\
+{\em t} & A boolean indicating whether the building is occupied (true) or not (false). \\
 \hline
 \end{DoxyParams}
 

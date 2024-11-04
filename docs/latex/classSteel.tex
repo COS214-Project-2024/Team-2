@@ -67,11 +67,7 @@ Constructs a \doxylink{classSteel}{Steel} object with a specified initial state 
 {\em initial\+Quantity} & The initial quantity of the steel resource. \\
 \hline
 \end{DoxyParams}
-\texorpdfstring{$<$}{<} Create a new \doxylink{classFullState}{Full\+State} instance.
 
-\texorpdfstring{$<$}{<} Create a new \doxylink{classEmptyState}{Empty\+State} instance, passing this \doxylink{classSteel}{Steel} object.
-
-\texorpdfstring{$<$}{<} Create a new \doxylink{classNormalState}{Normal\+State} instance.
 
 \doxysubsection{Member Function Documentation}
 \Hypertarget{classSteel_a27f1364d7a4ba817f62495c088ab6077}\label{classSteel_a27f1364d7a4ba817f62495c088ab6077} 
@@ -85,13 +81,6 @@ Constructs a \doxylink{classSteel}{Steel} object with a specified initial state 
 Generates a specified quantity of steel. 
 
 This method increases the quantity of steel and updates the state based on the new quantity.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of steel to generate.\\
-\hline
-\end{DoxyParams}
-This method increases the quantity of steel and updates the state based on the new quantity. If the quantity exceeds the maximum capacity, it\textquotesingle{}s capped at that maximum, and the state is set to \doxylink{classFullState}{Full\+State}. If it\textquotesingle{}s positive but less than maximum, it\textquotesingle{}s set to \doxylink{classNormalState}{Normal\+State}; if it is zero or less, it\textquotesingle{}s set to \doxylink{classEmptyState}{Empty\+State}.
 
 
 \begin{DoxyParams}{Parameters}
@@ -164,13 +153,6 @@ This method updates the current state of the steel resource to a new state.
 Uses a specified quantity of steel. 
 
 This method decreases the quantity of steel and updates the state based on the remaining quantity.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of steel to use.\\
-\hline
-\end{DoxyParams}
-This method decreases the quantity of steel and updates the state based on the remaining quantity. If the quantity becomes zero or negative, the state is set to \doxylink{classEmptyState}{Empty\+State}. If it\textquotesingle{}s less than the maximum capacity, it\textquotesingle{}s set to \doxylink{classNormalState}{Normal\+State}; otherwise, it\textquotesingle{}s set to \doxylink{classFullState}{Full\+State}.
 
 
 \begin{DoxyParams}{Parameters}

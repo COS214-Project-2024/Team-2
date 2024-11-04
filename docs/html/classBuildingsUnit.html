@@ -172,7 +172,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
           <td class="memname">BuildingsUnit::BuildingsUnit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classGovernment.html">Government</a> *&#160;</td>
-          <td class="paramname"><em>gover</em></td><td>)</td>
+          <td class="paramname"><em>g</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -181,8 +181,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
 <p>Constructs a <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a> with a specified <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> authority. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">g</td><td>Pointer to the <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> instance managing this <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a>.</td></tr>
-    <tr><td class="paramname">gover</td><td>Pointer to the <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> instance managing this <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a>. </td></tr>
+    <tr><td class="paramname">g</td><td>Pointer to the <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> instance managing this <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a>. </td></tr>
   </table>
   </dd>
 </dl>
@@ -203,7 +202,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
           <td class="memname">void BuildingsUnit::add </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classBuildings.html">Buildings</a> *&#160;</td>
-          <td class="paramname"><em>childrenp</em></td><td>)</td>
+          <td class="paramname"><em>comp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -217,8 +216,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
 <p>Adds a building component to the unit if funds are sufficient. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">comp</td><td>Pointer to the <a class="el" href="classBuildings.html" title="Represents a building component in a structure hierarchy.">Buildings</a> object to add.</td></tr>
-    <tr><td class="paramname">childrenp</td><td>Pointer to the <a class="el" href="classBuildings.html" title="Represents a building component in a structure hierarchy.">Buildings</a> object to add. </td></tr>
+    <tr><td class="paramname">comp</td><td>Pointer to the <a class="el" href="classBuildings.html" title="Represents a building component in a structure hierarchy.">Buildings</a> object to add. </td></tr>
   </table>
   </dd>
 </dl>
@@ -237,7 +235,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
           <td class="memname">void BuildingsUnit::deleteSpecificTree </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mT</em></td><td>)</td>
+          <td class="paramname"><em>myType</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -246,8 +244,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
 <p>Deletes all buildings of a specific type within the unit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">myType</td><td>The type of buildings to delete.</td></tr>
-    <tr><td class="paramname">mT</td><td>The type of buildings to delete. </td></tr>
+    <tr><td class="paramname">myType</td><td>The type of buildings to delete. </td></tr>
   </table>
   </dd>
 </dl>
@@ -264,7 +261,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
           <td class="memname"><a class="el" href="classBuildings.html">Buildings</a> * BuildingsUnit::getChild </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -277,14 +274,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classBuildings.html" title="Represents a building component in a structure hierarchy.">Buildings</a> object at the specified index.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">i</td><td>Index of the building component to retrieve. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classBuildings.html" title="Represents a building component in a structure hierarchy.">Buildings</a> object at the specified index, or NULL if out of bounds. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>Pointer to the <a class="el" href="classBuildings.html" title="Represents a building component in a structure hierarchy.">Buildings</a> object at the specified index. </dd></dl>
 
 </div>
 </div>
@@ -338,7 +328,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
           <td class="memname">void BuildingsUnit::getTreePrice </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mT</em></td><td>)</td>
+          <td class="paramname"><em>myType</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -347,8 +337,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
 <p>Calculates and outputs the total price of all buildings of a specific type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">myType</td><td>The type of buildings to calculate the total price for.</td></tr>
-    <tr><td class="paramname">mT</td><td>The type of buildings to calculate the total price for. </td></tr>
+    <tr><td class="paramname">myType</td><td>The type of buildings to calculate the total price for. </td></tr>
   </table>
   </dd>
 </dl>
@@ -365,7 +354,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
           <td class="memname">void BuildingsUnit::remove </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>i</em></td><td>)</td>
+          <td class="paramname"><em>index</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -374,8 +363,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
 <p>Removes a building component at a specified index. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">index</td><td>Index of the building component to remove from the unit.</td></tr>
-    <tr><td class="paramname">i</td><td>Index of the building component to remove from the unit. </td></tr>
+    <tr><td class="paramname">index</td><td>Index of the building component to remove from the unit. </td></tr>
   </table>
   </dd>
 </dl>
@@ -392,13 +380,13 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
           <td class="memname">void BuildingsUnit::setTreePrice </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>mT</em>, </td>
+          <td class="paramname"><em>myType</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>p</em>&#160;</td>
+          <td class="paramname"><em>price</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -412,9 +400,7 @@ void&#160;</td><td class="memItemRight" valign="bottom"><b>requestUtilities</b> 
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">myType</td><td>The type of buildings to update the price for. </td></tr>
-    <tr><td class="paramname">price</td><td>The new price to set for each building of this type.</td></tr>
-    <tr><td class="paramname">mT</td><td>The type of buildings to update the price for. </td></tr>
-    <tr><td class="paramname">p</td><td>The new price to set for each building of this type. </td></tr>
+    <tr><td class="paramname">price</td><td>The new price to set for each building of this type. </td></tr>
   </table>
   </dd>
 </dl>

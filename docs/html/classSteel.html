@@ -164,9 +164,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>&lt; Create a new <a class="el" href="classFullState.html" title="Represents the full state of a resource.">FullState</a> instance.</p>
-<p>&lt; Create a new <a class="el" href="classEmptyState.html" title="Represents the empty state of a resource.">EmptyState</a> instance, passing this <a class="el" href="classSteel.html" title="Class representing the Steel material resource.">Steel</a> object.</p>
-<p>&lt; Create a new <a class="el" href="classNormalState.html" title="Class representing the normal state of a resource.">NormalState</a> instance.</p>
 
 </div>
 </div>
@@ -197,13 +194,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Generates a specified quantity of steel. </p>
 <p>This method increases the quantity of steel and updates the state based on the new quantity.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quantity</td><td>The amount of steel to generate.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method increases the quantity of steel and updates the state based on the new quantity. If the quantity exceeds the maximum capacity, it's capped at that maximum, and the state is set to <a class="el" href="classFullState.html" title="Represents the full state of a resource.">FullState</a>. If it's positive but less than maximum, it's set to <a class="el" href="classNormalState.html" title="Class representing the normal state of a resource.">NormalState</a>; if it is zero or less, it's set to <a class="el" href="classEmptyState.html" title="Represents the empty state of a resource.">EmptyState</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quantity</td><td>The amount of steel to generate. </td></tr>
@@ -328,13 +318,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Uses a specified quantity of steel. </p>
 <p>This method decreases the quantity of steel and updates the state based on the remaining quantity.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quantity</td><td>The amount of steel to use.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method decreases the quantity of steel and updates the state based on the remaining quantity. If the quantity becomes zero or negative, the state is set to <a class="el" href="classEmptyState.html" title="Represents the empty state of a resource.">EmptyState</a>. If it's less than the maximum capacity, it's set to <a class="el" href="classNormalState.html" title="Class representing the normal state of a resource.">NormalState</a>; otherwise, it's set to <a class="el" href="classFullState.html" title="Represents the full state of a resource.">FullState</a>.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quantity</td><td>The amount of steel to use. </td></tr>

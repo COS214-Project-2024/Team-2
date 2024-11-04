@@ -54,8 +54,6 @@ The \doxylink{classEmptyState}{Empty\+State} class implements the \doxylink{clas
 
 Constructs an \doxylink{classEmptyState}{Empty\+State} object for a given resource. 
 
-Constructs an \doxylink{classEmptyState}{Empty\+State} object for the specified resource.
-
 
 \begin{DoxyParams}{Parameters}
 {\em resource} & Pointer to the resource that is in the empty state. \\
@@ -75,13 +73,6 @@ Constructs an \doxylink{classEmptyState}{Empty\+State} object for the specified 
 Generates a specified quantity of the resource. 
 
 This method updates the associated resource, transitioning it from the empty state to another state if resources are generated.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of resource to generate.\\
-\hline
-\end{DoxyParams}
-This method outputs a message indicating the quantity being generated and calls the generate\+Resource method of the associated resource to increase its quantity.
 
 
 \begin{DoxyParams}{Parameters}
@@ -106,14 +97,7 @@ In the empty state, this method typically would not allow the consumption of res
 
 
 \begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of resource to use.\\
-\hline
-\end{DoxyParams}
-In the empty state, this method outputs a message indicating that the resource quantity is low and triggers the generation of more resources.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of resource to use, which will lead to an attempt to generate more of the resource. \\
+{\em quantity} & The amount of resource to use. \\
 \hline
 \end{DoxyParams}
 

@@ -3,16 +3,6 @@
 #include "Government.h"
 using namespace std;
 
-/**
- * @brief Executes the crime situation command.
- * 
- * This method prompts the user to choose a superhero to respond
- * to a crime situation. It randomly determines if the chosen 
- * superhero is successful or not.
- * 
- * @return true if the superhero successfully resolves the crime, 
- *         false otherwise.
- */
 bool Crime::execute()
 {
     string response;

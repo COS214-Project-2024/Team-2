@@ -149,7 +149,7 @@ Public Member Functions</h2></td></tr>
           <td class="memname">Residential::Residential </td>
           <td>(</td>
           <td class="paramtype">string&#160;</td>
-          <td class="paramname"><em>t</em></td><td>)</td>
+          <td class="paramname"><em>type</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -158,14 +158,7 @@ Public Member Functions</h2></td></tr>
 <p>Constructs a <a class="el" href="classResidential.html" title="Class representing residential buildings in the city.">Residential</a> object of a specified type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">type</td><td>The type of residential building to create.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This constructor initializes the position of the residential building based on the provided type.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">t</td><td>The type of residential building to create. </td></tr>
+    <tr><td class="paramname">type</td><td>The type of residential building to create. </td></tr>
   </table>
   </dd>
 </dl>
@@ -217,9 +210,7 @@ Public Member Functions</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Retrieves the price of the residential building. </p>
-<dl class="section return"><dt>Returns</dt><dd>The price of the building.</dd>
-<dd>
-The price of the building corresponding to its type. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>The price of the building. </dd></dl>
 
 <p>Reimplemented from <a class="el" href="classBuildings.html#a4812213ed8b85fa5dfa15a9307acd5ba">Buildings</a>.</p>
 
@@ -318,7 +309,7 @@ The price of the building corresponding to its type. </dd></dl>
           <td class="memname">void Residential::setPrice </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>pric</em></td><td>)</td>
+          <td class="paramname"><em>p</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -332,8 +323,7 @@ The price of the building corresponding to its type. </dd></dl>
 <p>Sets the price of the residential building. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">p</td><td>The new price to set for the building.</td></tr>
-    <tr><td class="paramname">pric</td><td>The new price to set for the building. </td></tr>
+    <tr><td class="paramname">p</td><td>The new price to set for the building. </td></tr>
   </table>
   </dd>
 </dl>
@@ -355,7 +345,7 @@ The price of the building corresponding to its type. </dd></dl>
           <td class="memname">void Residential::setTaken </td>
           <td>(</td>
           <td class="paramtype">bool&#160;</td>
-          <td class="paramname"><em>tak</em></td><td>)</td>
+          <td class="paramname"><em>t</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
@@ -369,8 +359,7 @@ The price of the building corresponding to its type. </dd></dl>
 <p>Sets the taken status of the residential building type. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">t</td><td>The new taken status to set.</td></tr>
-    <tr><td class="paramname">tak</td><td>The new taken status to set. </td></tr>
+    <tr><td class="paramname">t</td><td>The new taken status to set. </td></tr>
   </table>
   </dd>
 </dl>

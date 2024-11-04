@@ -64,15 +64,6 @@ Constructs a \doxylink{classWater}{Water} object with a specified initial state 
 \begin{DoxyParams}{Parameters}
 {\em initial\+State} & Pointer to the initial state of the water resource. \\
 \hline
-{\em initial\+Quantity} & The initial quantity of the water resource.\\
-\hline
-\end{DoxyParams}
-This constructor initializes the water resource\textquotesingle{}s state and quantity, and creates instances for the full, empty, and normal states.
-
-
-\begin{DoxyParams}{Parameters}
-{\em initial\+State} & Pointer to the initial state of the water resource. \\
-\hline
 {\em initial\+Quantity} & The initial quantity of the water resource. \\
 \hline
 \end{DoxyParams}
@@ -90,13 +81,6 @@ This constructor initializes the water resource\textquotesingle{}s state and qua
 Generates a specified quantity of water. 
 
 This method increases the quantity of water and updates the state based on the new quantity. If the quantity exceeds the maximum capacity, it\textquotesingle{}s capped at that maximum, and the state is set to \doxylink{classFullState}{Full\+State}. If it\textquotesingle{}s positive but less than maximum, it\textquotesingle{}s set to \doxylink{classNormalState}{Normal\+State}; if it is zero or less, it\textquotesingle{}s set to \doxylink{classEmptyState}{Empty\+State}.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of water to generate.\\
-\hline
-\end{DoxyParams}
-This method increases the quantity of water and updates the state based on the new quantity. If the quantity exceeds the maximum capacity, it is capped at that maximum, and the state is set to \doxylink{classFullState}{Full\+State}. If it is positive but less than maximum, it is set to \doxylink{classNormalState}{Normal\+State}; if it is zero or less, it is set to \doxylink{classEmptyState}{Empty\+State}.
 
 
 \begin{DoxyParams}{Parameters}
@@ -169,13 +153,6 @@ This method updates the current state of the water resource to a new state.
 Uses a specified quantity of water. 
 
 This method decreases the quantity of water and updates the state based on the remaining quantity. If the quantity becomes zero or negative, the state is set to \doxylink{classEmptyState}{Empty\+State}. If it\textquotesingle{}s less than the maximum capacity, it\textquotesingle{}s set to \doxylink{classNormalState}{Normal\+State}; otherwise, it\textquotesingle{}s set to \doxylink{classFullState}{Full\+State}.
-
-
-\begin{DoxyParams}{Parameters}
-{\em quantity} & The amount of water to use.\\
-\hline
-\end{DoxyParams}
-This method decreases the quantity of water and updates the state based on the remaining quantity. If the quantity becomes zero or negative, the state is set to \doxylink{classEmptyState}{Empty\+State}. If it\textquotesingle{}s less than the maximum capacity, it is set to \doxylink{classNormalState}{Normal\+State}; otherwise, it is set to \doxylink{classFullState}{Full\+State}.
 
 
 \begin{DoxyParams}{Parameters}

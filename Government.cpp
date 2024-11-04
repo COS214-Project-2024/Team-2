@@ -7,14 +7,6 @@
 
 using namespace std;
 
-/**
- * @brief Constructs a Government object, initializes resources and bank balance.
- * 
- * This constructor sets the initial state for the government, including 
- * transport permission, initializes the city bank with a starting amount, 
- * and sets the states of various resources to their empty states. It also 
- * generates an initial quantity of each resource.
- */
 Government::Government()
 {
     transportAllowed = true;
@@ -32,56 +24,27 @@ Government::Government()
     concrete->generateResource(100);
 }
 
-/**
- * @brief Gets the current amount of money in the city's bank.
- * 
- * @return The current bank balance.
- */
 int Government::get()
 {
     return cityBank->get();
 }
 
-/**
- * @brief Increments the bank balance by a specified amount.
- * 
- * @param amount The amount to add to the bank balance.
- */
 void Government::increment(int amount)
 {
     cityBank->increment(amount);
 }
 
-/**
- * @brief Decrements the bank balance by a specified amount.
- * 
- * @param amount The amount to subtract from the bank balance.
- */
 void Government::decrement(int amount)
 {
     cityBank->decrement(amount);
 }
 
-/**
- * @brief Sets whether transport is allowed or not.
- * 
- * @param t Boolean indicating if transport is allowed.
- */
 void Government::setTransport(bool t)
 {
     transportAllowed = t;
     cout << "Transport is set to: " << transportAllowed << endl;
 }
 
-/**
- * @brief Handles city growth based on the specified category.
- * 
- * The city can grow in various categories: population, residential, 
- * commercial, industrial, and infrastructure. Each category has its 
- * associated growth strategy and updates citizen satisfaction.
- * 
- * @param wh The category of growth (e.g., "population", "residential").
- */
 void Government::cityGrow(string wh)
 {
     if(wh == "population")
@@ -150,12 +113,6 @@ void Government::cityGrow(string wh)
     }
 }
 
-/**
- * @brief Handles a random event that may affect citizen satisfaction.
- * 
- * The method randomly selects an event (accident, loadshedding, or crime) 
- * and executes it, potentially reducing the citizen satisfaction.
- */
 void Government::randomEvent()
 {
     int randomValue = rand() % 21;
@@ -214,15 +171,6 @@ void Government::randomEvent()
     }
 }
 
-/**
- * @brief Handles city shrinkage based on the specified category.
- * 
- * The city can shrink in various categories: population, housing, 
- * economic, and infrastructure. Each category reduces its size and 
- * triggers a random event.
- * 
- * @param wh The category of shrinkage (e.g., "population", "housing").
- */
 void Government::cityShrink(string wh)
 {
     if(wh == "population")
@@ -255,25 +203,11 @@ void Government::cityShrink(string wh)
     }
 }
 
-/**
- * @brief Sets the tax strategy to be used for tax collection.
- * 
- * @param strat Pointer to the TaxStrategy to be set.
- */
 void Government::setStrategy(TaxStrategy* strat)
 {
     strategy = strat;
 }
 
-/**
- * @brief Collects taxes based on the current growth category.
- * 
- * The method calculates and collects taxes using the current tax strategy 
- * for the relevant growth category (population, housing, economic, or 
- * infrastructure).
- * 
- * @return The amount of tax collected.
- */
 int Government::collectTax()
 {
     if(currentCG == "population")
@@ -310,14 +244,6 @@ int Government::collectTax()
     }
 }
 
-/**
- * @brief Applies a cheat code for special actions.
- * 
- * The method checks if the cheat code is valid and, if so, applies the 
- * cheat code to the city bank balance.
- * 
- * @param cheatCode The cheat code to be applied.
- */
 void Government::cheat(string cheatCode)
 {
     if(cheatCode == "weewooweewoo")
@@ -327,15 +253,6 @@ void Government::cheat(string cheatCode)
     }
 }
 
-/**
- * @brief Uses a specified resource and updates the resource state accordingly.
- * 
- * The method attempts to use a resource (energy, water, wood, steel, or 
- * concrete). If the resource state is not empty, it decrements the resource 
- * amount; otherwise, it generates an error message.
- * 
- * @param resource The name of the resource to use.
- */
 void Government::useResource(string wh)
 {
     if(wh == "energy")
@@ -385,32 +302,17 @@ void Government::useResource(string wh)
     }
 }
 
-/**
- * @brief Checks if transport is allowed.
- * 
- * @return True if transport is allowed, false otherwise.
- */
 bool Government::getTransport()
 {
     randomEvent();
     return transportAllowed;
 }
 
-/**
- * @brief Gets the current citizen satisfaction level.
- * 
- * @return The current citizen satisfaction level.
- */
 int Government::getSatisfaction()
 {
     return department->getSatisfaction();
 }
 
-/**
- * @brief Sets the citizen satisfaction level.
- * 
- * @param sat The new citizen satisfaction level to set.
- */
 void Government::setSatisfaction(int lvl)
 {
     department->setSatisfaction(lvl, cityBank);

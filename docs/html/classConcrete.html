@@ -164,9 +164,6 @@ Public Member Functions</h2></td></tr>
   </table>
   </dd>
 </dl>
-<p>&lt; Initialize the full state of concrete.</p>
-<p>&lt; Initialize the empty state of concrete.</p>
-<p>&lt; Initialize the normal state of concrete.</p>
 
 </div>
 </div>
@@ -197,13 +194,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Generates a specified quantity of concrete. </p>
 <p>Increases the current quantity of concrete by the specified amount, ensuring it does not exceed maximum capacity.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quantity</td><td>The amount of concrete to generate.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method increases the current quantity of concrete by the specified amount, updates the quantity, and changes the state based on the new quantity. If the quantity exceeds the maximum capacity, it sets it to the maximum and changes the state to full; if the quantity is greater than zero, it sets the state to normal; if the quantity is zero, it sets the state to empty.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quantity</td><td>The amount of concrete to generate. </td></tr>
@@ -295,13 +285,6 @@ Public Member Functions</h2></td></tr>
 <p>Updates the current state of the concrete to the specified new state.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">newState</td><td>Pointer to the new state to be set.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method updates the current state of the concrete to the specified new state.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
     <tr><td class="paramname">newState</td><td>Pointer to the new state to be set. </td></tr>
   </table>
   </dd>
@@ -335,13 +318,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Uses a specified quantity of concrete. </p>
 <p>Reduces the current quantity of concrete by the specified amount, potentially updating the state if necessary.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">quantity</td><td>The amount of concrete to use.</td></tr>
-  </table>
-  </dd>
-</dl>
-<p>This method reduces the current quantity of concrete by the specified amount, updates the quantity, and changes the state based on the new quantity. If the quantity falls to zero or below, the state changes to empty; if it is below the maximum capacity, the state changes to normal; otherwise, it changes to full.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">quantity</td><td>The amount of concrete to use. </td></tr>

@@ -124,13 +124,13 @@ Public Member Functions</h2></td></tr>
           <td class="memname">ConcreteCitizenFactory::ConcreteCitizenFactory </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="classBuildingsUnit.html">BuildingsUnit</a> *&#160;</td>
-          <td class="paramname"><em>b</em>, </td>
+          <td class="paramname"><em>building</em>, </td>
         </tr>
         <tr>
           <td class="paramkey"></td>
           <td></td>
           <td class="paramtype"><a class="el" href="classGovernment.html">Government</a> *&#160;</td>
-          <td class="paramname"><em>g</em>&#160;</td>
+          <td class="paramname"><em>government</em>&#160;</td>
         </tr>
         <tr>
           <td></td>
@@ -144,9 +144,7 @@ Public Member Functions</h2></td></tr>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">building</td><td>Pointer to the <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a> that citizens will be associated with. </td></tr>
-    <tr><td class="paramname">government</td><td>Pointer to the <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> that governs the citizens.</td></tr>
-    <tr><td class="paramname">b</td><td>Pointer to the <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a> that citizens will be associated with. </td></tr>
-    <tr><td class="paramname">g</td><td>Pointer to the <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> that governs the citizens. </td></tr>
+    <tr><td class="paramname">government</td><td>Pointer to the <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> that governs the citizens. </td></tr>
   </table>
   </dd>
 </dl>
@@ -179,8 +177,6 @@ Public Member Functions</h2></td></tr>
 
 <p>Creates a new <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> instance. </p>
 <p>This method creates a <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object associated with the specified <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a> and <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a>.</p>
-<dl class="section return"><dt>Returns</dt><dd>A pointer to a newly created <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object.</dd></dl>
-<p>This method instantiates a <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object associated with the <a class="el" href="classBuildingsUnit.html" title="Represents a unit of buildings within a city that is governed by a central authority.">BuildingsUnit</a> and <a class="el" href="classGovernment.html" title="Represents the government of a city, managing various resources, tax strategies, and city growth.">Government</a> provided during the factory's construction.</p>
 <dl class="section return"><dt>Returns</dt><dd>A pointer to a newly created <a class="el" href="classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen.">ConcreteCitizen</a> object. </dd></dl>
 
 <p>Implements <a class="el" href="classCitizenFactory.html#af006882e22ab31d1dea3475eaafca797">CitizenFactory</a>.</p>
