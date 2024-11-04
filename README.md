@@ -33,6 +33,11 @@ These include, but are not limited to:
 
 UML Diagrams and more details on patterns can be found in the project documentation (Structures, Report etc...)
 
+---
+## Find files
+
+You can find UML diagrams under the Structures folder.
+You will find extensive documentation under Report.
 
 ---
 
