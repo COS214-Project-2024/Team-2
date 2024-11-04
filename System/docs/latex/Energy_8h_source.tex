@@ -1,0 +1,35 @@
+\doxysection{Energy.\+h}
+\hypertarget{Energy_8h_source}{}\label{Energy_8h_source}\index{Resources/Energy.h@{Resources/Energy.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ ENERGY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ ENERGY\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Resources.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}StateOfResources.h"{}}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00012\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classEnergy}{Energy}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classResources}{Resources}}\ \{}
+\DoxyCodeLine{00013\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00014\ \ \ \ \ \textcolor{keywordtype}{int}\ quantity;\ }
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ state;\ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ fullState;\ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ emptyState;\ }
+\DoxyCodeLine{00018\ \ \ \ \ \mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ normalState;\ }
+\DoxyCodeLine{00019\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00027\ \ \ \ \ \mbox{\hyperlink{classEnergy}{Energy}}(\mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ initialState,\ \textcolor{keywordtype}{int}\ initialQuantity);}
+\DoxyCodeLine{00028\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEnergy_ac87f543498ec82602128c1b251390e03}{useResource}}(\textcolor{keywordtype}{int}\ quantity)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00045\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEnergy_a6cdf06f7defb617e4ede9923a461b423}{generateResource}}(\textcolor{keywordtype}{int}\ quantity)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00046\ }
+\DoxyCodeLine{00052\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classEnergy_abfe3e7edefb8e161ac36c48ccab8fcc6}{setState}}(\mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ newState);}
+\DoxyCodeLine{00053\ }
+\DoxyCodeLine{00059\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEnergy_a62df0325e410b05f479871781b5bdd95}{getQuantity}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00060\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classEnergy_acd58ef4fe29479989d07a627f29b819e}{getMaxCapacity}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00067\ \};}
+\DoxyCodeLine{00068\ }
+\DoxyCodeLine{00069\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

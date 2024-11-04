@@ -1,0 +1,112 @@
+\doxysection{Empty\+State Class Reference}
+\hypertarget{classEmptyState}{}\label{classEmptyState}\index{EmptyState@{EmptyState}}
+
+
+Represents the empty state of a resource.  
+
+
+
+
+{\ttfamily \#include $<$Empty\+State.\+h$>$}
+
+
+
+Inheritance diagram for Empty\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classEmptyState__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Empty\+State\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=184pt]{classEmptyState__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEmptyState_a61116494ecbc3f71ab457becb3128885}{Empty\+State}} (\mbox{\hyperlink{classResources}{Resources}} \texorpdfstring{$\ast$}{*}resource)
+\begin{DoxyCompactList}\small\item\em Constructs an \doxylink{classEmptyState}{Empty\+State} object for a given resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEmptyState_aadd065d2d4b2f13109c488a97de14421}{use\+Resource}} (int quantity) override
+\begin{DoxyCompactList}\small\item\em Handles the usage of a specified quantity of the resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEmptyState_a8da216a7524a914d3dfae77d91bc00f1}{generate\+Resource}} (int quantity) override
+\begin{DoxyCompactList}\small\item\em Generates a specified quantity of the resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the empty state of a resource. 
+
+The \doxylink{classEmptyState}{Empty\+State} class implements the \doxylink{classStateOfResources}{State\+Of\+Resources} interface, defining the behavior of a resource when it is in an empty state. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classEmptyState_a61116494ecbc3f71ab457becb3128885}\label{classEmptyState_a61116494ecbc3f71ab457becb3128885} 
+\index{EmptyState@{EmptyState}!EmptyState@{EmptyState}}
+\index{EmptyState@{EmptyState}!EmptyState@{EmptyState}}
+\doxysubsubsection{\texorpdfstring{EmptyState()}{EmptyState()}}
+{\footnotesize\ttfamily Empty\+State\+::\+Empty\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classResources}{Resources}} \texorpdfstring{$\ast$}{*}}]{resource }\end{DoxyParamCaption})}
+
+
+
+Constructs an \doxylink{classEmptyState}{Empty\+State} object for a given resource. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & Pointer to the resource that is in the empty state. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classEmptyState_a8da216a7524a914d3dfae77d91bc00f1}\label{classEmptyState_a8da216a7524a914d3dfae77d91bc00f1} 
+\index{EmptyState@{EmptyState}!generateResource@{generateResource}}
+\index{generateResource@{generateResource}!EmptyState@{EmptyState}}
+\doxysubsubsection{\texorpdfstring{generateResource()}{generateResource()}}
+{\footnotesize\ttfamily void Empty\+State\+::generate\+Resource (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a specified quantity of the resource. 
+
+This method updates the associated resource, transitioning it from the empty state to another state if resources are generated.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The amount of resource to generate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classStateOfResources_ac12b422b91ab5417e8c42936fb58bf2b}{State\+Of\+Resources}}.
+
+\Hypertarget{classEmptyState_aadd065d2d4b2f13109c488a97de14421}\label{classEmptyState_aadd065d2d4b2f13109c488a97de14421} 
+\index{EmptyState@{EmptyState}!useResource@{useResource}}
+\index{useResource@{useResource}!EmptyState@{EmptyState}}
+\doxysubsubsection{\texorpdfstring{useResource()}{useResource()}}
+{\footnotesize\ttfamily void Empty\+State\+::use\+Resource (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles the usage of a specified quantity of the resource. 
+
+In the empty state, this method typically would not allow the consumption of resources. The behavior can be defined based on specific requirements, such as throwing an exception or logging a warning.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The amount of resource to use. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classStateOfResources_afa55fa97612a4423db4ce68dcf4b8ff8}{State\+Of\+Resources}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Resources/Empty\+State.\+h\item 
+Resources/Empty\+State.\+cpp\end{DoxyCompactItemize}

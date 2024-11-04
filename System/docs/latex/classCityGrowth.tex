@@ -1,0 +1,99 @@
+\doxysection{City\+Growth Class Reference}
+\hypertarget{classCityGrowth}{}\label{classCityGrowth}\index{CityGrowth@{CityGrowth}}
+
+
+Abstract base class for managing city growth.  
+
+
+
+
+{\ttfamily \#include $<$City\+Growth.\+h$>$}
+
+
+
+Inheritance diagram for City\+Growth\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classCityGrowth__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{classCityGrowth_a38a835f2d86d317a55282609ff349c98}{grow}} ()=0
+\begin{DoxyCompactList}\small\item\em Increases the size of the city. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classCityGrowth_ac0ee56a8ad83b611589dad61bcbd2465}{shrink}} ()=0
+\begin{DoxyCompactList}\small\item\em Decreases the size of the city. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classCityGrowth_a8702eed519ae55f843b19744f5c94ac6}{get}} () const =0
+\begin{DoxyCompactList}\small\item\em Retrieves the current size of the city. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for managing city growth. 
+
+This class serves as an interface for handling the growth and shrinkage of a city. Derived classes must implement the functionalities for growing and shrinking the city\textquotesingle{}s size. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCityGrowth_a8702eed519ae55f843b19744f5c94ac6}\label{classCityGrowth_a8702eed519ae55f843b19744f5c94ac6} 
+\index{CityGrowth@{CityGrowth}!get@{get}}
+\index{get@{get}!CityGrowth@{CityGrowth}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily virtual int City\+Growth\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the current size of the city. 
+
+This pure virtual method must be implemented by derived classes to return the current size of the city.
+
+\begin{DoxyReturn}{Returns}
+The current size of the city. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classEconomic_a9482022d3114c75588d47018861d68bc}{Economic}}, \mbox{\hyperlink{classHousing_a4c01b2403fe3f206c606e10fb94bb5c1}{Housing}}, \mbox{\hyperlink{classInfrastructure_a7dc4352f813ec0dc07e05ffa8151036e}{Infrastructure}}, and \mbox{\hyperlink{classPopulation_aa195c5732dfcfb3c6324a708374add9c}{Population}}.
+
+\Hypertarget{classCityGrowth_a38a835f2d86d317a55282609ff349c98}\label{classCityGrowth_a38a835f2d86d317a55282609ff349c98} 
+\index{CityGrowth@{CityGrowth}!grow@{grow}}
+\index{grow@{grow}!CityGrowth@{CityGrowth}}
+\doxysubsubsection{\texorpdfstring{grow()}{grow()}}
+{\footnotesize\ttfamily virtual bool City\+Growth\+::grow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Increases the size of the city. 
+
+This pure virtual method must be implemented by derived classes to define how the city grows.
+
+\begin{DoxyReturn}{Returns}
+true if the city growth was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classEconomic_a3fa80aa727b15a455554bb61b9ed472b}{Economic}}, \mbox{\hyperlink{classHousing_a25066b5031f916cd3389a452805b53ad}{Housing}}, \mbox{\hyperlink{classInfrastructure_aced91a53ec41f141f02ac7eaf427f152}{Infrastructure}}, and \mbox{\hyperlink{classPopulation_a32c944aebdf34891bdbd5ce2fa48a22f}{Population}}.
+
+\Hypertarget{classCityGrowth_ac0ee56a8ad83b611589dad61bcbd2465}\label{classCityGrowth_ac0ee56a8ad83b611589dad61bcbd2465} 
+\index{CityGrowth@{CityGrowth}!shrink@{shrink}}
+\index{shrink@{shrink}!CityGrowth@{CityGrowth}}
+\doxysubsubsection{\texorpdfstring{shrink()}{shrink()}}
+{\footnotesize\ttfamily virtual bool City\+Growth\+::shrink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Decreases the size of the city. 
+
+This pure virtual method must be implemented by derived classes to define how the city shrinks.
+
+\begin{DoxyReturn}{Returns}
+true if the city shrinkage was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classEconomic_aae0e8e9d3c5b8832f830ce46b57f9692}{Economic}}, \mbox{\hyperlink{classHousing_a730ada6a2a4dc66d712ebe9775edf34a}{Housing}}, \mbox{\hyperlink{classInfrastructure_a50d5c2a88e8da5a429c499b9c46534b5}{Infrastructure}}, and \mbox{\hyperlink{classPopulation_a85ca962f02813565790eb4220a49b9cf}{Population}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+City\+Growth.\+h\end{DoxyCompactItemize}

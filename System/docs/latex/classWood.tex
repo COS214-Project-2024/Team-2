@@ -1,0 +1,173 @@
+\doxysection{Wood Class Reference}
+\hypertarget{classWood}{}\label{classWood}\index{Wood@{Wood}}
+
+
+Represents a \doxylink{classWood}{Wood} resource in the system.  
+
+
+
+
+{\ttfamily \#include $<$Wood.\+h$>$}
+
+
+
+Inheritance diagram for Wood\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classWood__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Wood\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classWood__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWood_adebe0d0aad920506815b58f5d4b1b97d}{Wood}} (\mbox{\hyperlink{classStateOfResources}{State\+Of\+Resources}} \texorpdfstring{$\ast$}{*}initial\+State, int initial\+Quantity)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classWood}{Wood} object with a specified initial state and quantity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWood_ade0c92dfee5c89b0efd1ecafebcc5ea9}{use\+Resource}} (int quantity) override
+\begin{DoxyCompactList}\small\item\em Uses a specified quantity of wood. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWood_a2bfc7df7f997e1d8d05b5dcf1530a79f}{generate\+Resource}} (int quantity) override
+\begin{DoxyCompactList}\small\item\em Generates a specified quantity of wood. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWood_a8dcb18b6665bc37f34a4b346370d1e40}{set\+State}} (\mbox{\hyperlink{classStateOfResources}{State\+Of\+Resources}} \texorpdfstring{$\ast$}{*}new\+State)
+\begin{DoxyCompactList}\small\item\em Sets the state of the wood resource. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWood_ac69802d805a36bacc6f66af32416ff6c}{get\+Quantity}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the current quantity of wood. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWood_ac7d0fbd89719e694cd1fee64c75e0a27}{get\+Max\+Capacity}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the maximum capacity of the wood resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a \doxylink{classWood}{Wood} resource in the system. 
+
+The \doxylink{classWood}{Wood} class is derived from the \doxylink{classMaterials}{Materials} class and manages the quantity of wood resources and their states (Full, Empty, Normal). It allows for using and generating wood resources while ensuring the state transitions based on the current quantity. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classWood_adebe0d0aad920506815b58f5d4b1b97d}\label{classWood_adebe0d0aad920506815b58f5d4b1b97d} 
+\index{Wood@{Wood}!Wood@{Wood}}
+\index{Wood@{Wood}!Wood@{Wood}}
+\doxysubsubsection{\texorpdfstring{Wood()}{Wood()}}
+{\footnotesize\ttfamily Wood\+::\+Wood (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStateOfResources}{State\+Of\+Resources}} \texorpdfstring{$\ast$}{*}}]{initial\+State,  }\item[{int}]{initial\+Quantity }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classWood}{Wood} object with a specified initial state and quantity. 
+
+This constructor initializes the wood resource\textquotesingle{}s state and quantity, and creates instances for the full, empty, and normal states.
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+State} & Pointer to the initial state of the wood resource. \\
+\hline
+{\em initial\+Quantity} & The initial quantity of the wood resource. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classWood_a2bfc7df7f997e1d8d05b5dcf1530a79f}\label{classWood_a2bfc7df7f997e1d8d05b5dcf1530a79f} 
+\index{Wood@{Wood}!generateResource@{generateResource}}
+\index{generateResource@{generateResource}!Wood@{Wood}}
+\doxysubsubsection{\texorpdfstring{generateResource()}{generateResource()}}
+{\footnotesize\ttfamily void Wood\+::generate\+Resource (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a specified quantity of wood. 
+
+This method increases the quantity of wood and updates the state based on the new quantity. If the quantity exceeds the maximum capacity, it is capped at that maximum, and the state is set to \doxylink{classFullState}{Full\+State}. If it is positive but less than maximum, it is set to \doxylink{classNormalState}{Normal\+State}; if it is zero or less, it is set to \doxylink{classEmptyState}{Empty\+State}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The amount of wood to generate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMaterials_afc787c47cd300fcbb1809741c4c8cf35}{Materials}}.
+
+\Hypertarget{classWood_ac7d0fbd89719e694cd1fee64c75e0a27}\label{classWood_ac7d0fbd89719e694cd1fee64c75e0a27} 
+\index{Wood@{Wood}!getMaxCapacity@{getMaxCapacity}}
+\index{getMaxCapacity@{getMaxCapacity}!Wood@{Wood}}
+\doxysubsubsection{\texorpdfstring{getMaxCapacity()}{getMaxCapacity()}}
+{\footnotesize\ttfamily int Wood\+::get\+Max\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the maximum capacity of the wood resource. 
+
+\begin{DoxyReturn}{Returns}
+The maximum capacity of wood, typically a fixed value. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResources_a54db930d4d04070fb0432fbaf237362f}{Resources}}.
+
+\Hypertarget{classWood_ac69802d805a36bacc6f66af32416ff6c}\label{classWood_ac69802d805a36bacc6f66af32416ff6c} 
+\index{Wood@{Wood}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!Wood@{Wood}}
+\doxysubsubsection{\texorpdfstring{getQuantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Wood\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current quantity of wood. 
+
+\begin{DoxyReturn}{Returns}
+The current quantity of wood. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResources_a7a987345a025c78433f5935990b69e79}{Resources}}.
+
+\Hypertarget{classWood_a8dcb18b6665bc37f34a4b346370d1e40}\label{classWood_a8dcb18b6665bc37f34a4b346370d1e40} 
+\index{Wood@{Wood}!setState@{setState}}
+\index{setState@{setState}!Wood@{Wood}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Wood\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStateOfResources}{State\+Of\+Resources}} \texorpdfstring{$\ast$}{*}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Sets the state of the wood resource. 
+
+This method updates the current state of the wood resource to a new state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+State} & Pointer to the new state to be set for the wood resource. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classWood_ade0c92dfee5c89b0efd1ecafebcc5ea9}\label{classWood_ade0c92dfee5c89b0efd1ecafebcc5ea9} 
+\index{Wood@{Wood}!useResource@{useResource}}
+\index{useResource@{useResource}!Wood@{Wood}}
+\doxysubsubsection{\texorpdfstring{useResource()}{useResource()}}
+{\footnotesize\ttfamily void Wood\+::use\+Resource (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Uses a specified quantity of wood. 
+
+This method decreases the quantity of wood and updates the state based on the remaining quantity. If the quantity becomes zero or negative, the state is set to \doxylink{classEmptyState}{Empty\+State}. If it\textquotesingle{}s less than the maximum capacity, it is set to \doxylink{classNormalState}{Normal\+State}; otherwise, it is set to \doxylink{classFullState}{Full\+State}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The amount of wood to use. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMaterials_a4177fa79c169dc17faa05312c7fb9623}{Materials}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Resources/Wood.\+h\item 
+Resources/Wood.\+cpp\end{DoxyCompactItemize}

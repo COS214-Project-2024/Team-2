@@ -1,0 +1,44 @@
+\doxysection{Landmarks.\+h}
+\hypertarget{Landmarks_8h_source}{}\label{Landmarks_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ Landmarks\_h}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ Landmarks\_h}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <iostream>}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ <vector>}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ <map>}}
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#include\ <list>}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#include\ "{}Buildings.h"{}}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00018\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classLandmarks}{Landmarks}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classBuildings}{Buildings}}}
+\DoxyCodeLine{00019\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ type[3]\ =\ \{\textcolor{stringliteral}{"{}parks"{}},\ \textcolor{stringliteral}{"{}monuments"{}},\ \textcolor{stringliteral}{"{}culturecenters"{}}\};\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ price[3]\ =\ \{300,\ 500,\ 350\};\ }
+\DoxyCodeLine{00023\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ position;\ }
+\DoxyCodeLine{00024\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ satisfactionRate\ =\ 2;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ myType\ =\ \textcolor{stringliteral}{"{}landmarks"{}};\ }
+\DoxyCodeLine{00026\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ taken\ =\ \textcolor{keyword}{false};\ }
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00028\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00036\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classLandmarks}{Landmarks}}(\textcolor{keywordtype}{string}\ type);}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00043\ \ \ \ \ \ \ \ \ std::string\ \mbox{\hyperlink{classLandmarks_a0ba3f70b2f7c28c64cc9df4039843889}{getType}}();}
+\DoxyCodeLine{00044\ }
+\DoxyCodeLine{00050\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classLandmarks_a533fa6ac4840f1a1054b54e3ed5a5a75}{getPrice}}();}
+\DoxyCodeLine{00051\ }
+\DoxyCodeLine{00057\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classLandmarks_a649d697f6fd8340304951bf247d9573f}{getPosition}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00064\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classLandmarks_a8704238cc83a7329d867996514d6e94d}{getSatisfaction}}();}
+\DoxyCodeLine{00065\ }
+\DoxyCodeLine{00071\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLandmarks_a1a462cb4a2260b94423ca659bbf97a45}{setPrice}}(\textcolor{keywordtype}{int}\ p);}
+\DoxyCodeLine{00072\ }
+\DoxyCodeLine{00078\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classLandmarks_a85b484decd942b2ff4e52afc65f3f6f0}{getTaken}}();}
+\DoxyCodeLine{00079\ }
+\DoxyCodeLine{00085\ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classLandmarks_acaf3c7b5b2399984c325dfb9e8c68d2b}{setTaken}}(\textcolor{keywordtype}{bool}\ t);}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

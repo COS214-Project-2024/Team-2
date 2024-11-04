@@ -1,0 +1,57 @@
+\doxysection{Citizen\+Factory Class Reference}
+\hypertarget{classCitizenFactory}{}\label{classCitizenFactory}\index{CitizenFactory@{CitizenFactory}}
+
+
+Abstract base class for creating \doxylink{classCitizen}{Citizen} objects.  
+
+
+
+
+{\ttfamily \#include $<$Citizen\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Citizen\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=209pt]{classCitizenFactory__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classConcreteCitizen}{Concrete\+Citizen}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classCitizenFactory_af006882e22ab31d1dea3475eaafca797}{create\+Citizen}} ()=0
+\begin{DoxyCompactList}\small\item\em Creates a new \doxylink{classConcreteCitizen}{Concrete\+Citizen} instance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for creating \doxylink{classCitizen}{Citizen} objects. 
+
+This factory class defines an interface for creating \doxylink{classConcreteCitizen}{Concrete\+Citizen} instances. \doxylink{classConcrete}{Concrete} implementations of this factory must provide a concrete implementation of the create\+Citizen method. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCitizenFactory_af006882e22ab31d1dea3475eaafca797}\label{classCitizenFactory_af006882e22ab31d1dea3475eaafca797} 
+\index{CitizenFactory@{CitizenFactory}!createCitizen@{createCitizen}}
+\index{createCitizen@{createCitizen}!CitizenFactory@{CitizenFactory}}
+\doxysubsubsection{\texorpdfstring{createCitizen()}{createCitizen()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classConcreteCitizen}{Concrete\+Citizen}} \texorpdfstring{$\ast$}{*} Citizen\+Factory\+::create\+Citizen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Creates a new \doxylink{classConcreteCitizen}{Concrete\+Citizen} instance. 
+
+This method is a factory method that must be implemented by derived classes to create and return a new instance of \doxylink{classConcreteCitizen}{Concrete\+Citizen}.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created \doxylink{classConcreteCitizen}{Concrete\+Citizen} object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classConcreteCitizenFactory_a716ff0dced7fcfbb4429dbc778b37de0}{Concrete\+Citizen\+Factory}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Citizen\+Factory.\+h\end{DoxyCompactItemize}
