@@ -53,8 +53,7 @@ int main()
     cityShrink("population");
     cout << "Population: " << population->get() << endl;
     collectTax();
-    cout << "Bank after: " << cityBank->get() << endl;
-    cout << "Bank after: " << cityBank->get() << "Current population: " << population->get()<< endl;
+    cout << "Bank after: " << cityBank->get() << "Current population: " << populationion->get()<< endl;
     
     delete population;
     delete housing;
