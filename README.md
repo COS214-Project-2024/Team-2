@@ -37,11 +37,11 @@ UML Diagrams and more details on patterns can be found in the project documentat
 ---
 
 ## 💻 Guide to running:
-Run:
+Run:<br/>
 make clean<br/>
 make<br/>
 
-demo:
+Demo:<br/>
 ./main<br/>
 Y<br/>
 Batman<br/>
