@@ -1,0 +1,59 @@
+\doxysection{Transportation\+System Class Reference}
+\hypertarget{classTransportationSystem}{}\label{classTransportationSystem}\index{TransportationSystem@{TransportationSystem}}
+
+
+Abstract base class for transportation systems.  
+
+
+
+
+{\ttfamily \#include $<$Transportation\+System.\+h$>$}
+
+
+
+Inheritance diagram for Transportation\+System\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=312pt]{classTransportationSystem__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classTransportationSystem_a0c7e0ee81b95581e9d2b599c06e267a1}{move}} (\mbox{\hyperlink{classBank}{Bank}} \texorpdfstring{$\ast$}{*}bank)=0
+\begin{DoxyCompactList}\small\item\em Moves a citizen using the transportation system. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for transportation systems. 
+
+This class defines the interface for all transportation systems. Any class that derives from \doxylink{classTransportationSystem}{Transportation\+System} must implement the move method, which facilitates the movement of a citizen using a specific transportation mode. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTransportationSystem_a0c7e0ee81b95581e9d2b599c06e267a1}\label{classTransportationSystem_a0c7e0ee81b95581e9d2b599c06e267a1} 
+\index{TransportationSystem@{TransportationSystem}!move@{move}}
+\index{move@{move}!TransportationSystem@{TransportationSystem}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily virtual void Transportation\+System\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBank}{Bank}} \texorpdfstring{$\ast$}{*}}]{bank }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Moves a citizen using the transportation system. 
+
+This pure virtual function must be overridden in derived classes. It takes a pointer to a \doxylink{classBank}{Bank} object, which is used to check the financial status of the citizen before allowing them to use the transportation service.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bank} & A pointer to the \doxylink{classBank}{Bank} object representing the citizen\textquotesingle{}s financial state. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classAirport_adf7a13235454fb7ba2294df17a9fce83}{Airport}}, \mbox{\hyperlink{classBuses_aca79e569d5c5f39dbca70a9018bf8895}{Buses}}, \mbox{\hyperlink{classTaxis_a26e59f4b653058bde810c268e089f061}{Taxis}}, and \mbox{\hyperlink{classTrain_a7a91b0cb2bb597ac125239869b25752f}{Train}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Transportation\+System.\+h\end{DoxyCompactItemize}

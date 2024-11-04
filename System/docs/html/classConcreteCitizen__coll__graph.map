@@ -1,0 +1,7 @@
+<map id="ConcreteCitizen" name="ConcreteCitizen">
+<area shape="rect" id="Node000001" title="Represents a concrete implementation of a Citizen." alt="" coords="19,93,144,119"/>
+<area shape="rect" id="Node000002" href="$classCitizen.html" title="Abstract base class representing a citizen in the transportation system." alt="" coords="5,5,72,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="53,42,78,92,73,94,48,44"/>
+<area shape="rect" id="Node000003" href="$classBank.html" title="Represents a bank account for managing a citizen&#39;s funds." alt="" coords="97,5,151,31"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="115,44,90,94,85,92,110,42"/>
+</map>

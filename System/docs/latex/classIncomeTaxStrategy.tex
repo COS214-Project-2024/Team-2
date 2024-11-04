@@ -1,0 +1,71 @@
+\doxysection{Income\+Tax\+Strategy Class Reference}
+\hypertarget{classIncomeTaxStrategy}{}\label{classIncomeTaxStrategy}\index{IncomeTaxStrategy@{IncomeTaxStrategy}}
+
+
+Implements a strategy for calculating income tax.  
+
+
+
+
+{\ttfamily \#include $<$Income\+Tax\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Income\+Tax\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classIncomeTaxStrategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Income\+Tax\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classIncomeTaxStrategy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classIncomeTaxStrategy_ab7e743911279e5fc0099d7ff6ce238ab}{calculate\+Tax}} (int total)
+\begin{DoxyCompactList}\small\item\em Calculates the income tax based on the total income. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements a strategy for calculating income tax. 
+
+This class provides a specific implementation of the \doxylink{classTaxStrategy}{Tax\+Strategy} for calculating tax based on a fixed percentage of the total income. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classIncomeTaxStrategy_ab7e743911279e5fc0099d7ff6ce238ab}\label{classIncomeTaxStrategy_ab7e743911279e5fc0099d7ff6ce238ab} 
+\index{IncomeTaxStrategy@{IncomeTaxStrategy}!calculateTax@{calculateTax}}
+\index{calculateTax@{calculateTax}!IncomeTaxStrategy@{IncomeTaxStrategy}}
+\doxysubsubsection{\texorpdfstring{calculateTax()}{calculateTax()}}
+{\footnotesize\ttfamily int Income\+Tax\+Strategy\+::calculate\+Tax (\begin{DoxyParamCaption}\item[{int}]{total }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the income tax based on the total income. 
+
+This method applies a tax rate of 10\% to the given total income.
+
+
+\begin{DoxyParams}{Parameters}
+{\em total} & The total income on which the tax is to be calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated income tax amount. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTaxStrategy_a5ec1f4b614478b080f4288fab9460141}{Tax\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Income\+Tax\+Strategy.\+h\end{DoxyCompactItemize}

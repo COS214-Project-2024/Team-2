@@ -1,0 +1,209 @@
+\doxysection{Buildings Class Reference}
+\hypertarget{classBuildings}{}\label{classBuildings}\index{Buildings@{Buildings}}
+
+
+Represents a building component in a structure hierarchy.  
+
+
+
+
+{\ttfamily \#include $<$Buildings.\+h$>$}
+
+
+
+Inheritance diagram for Buildings\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classBuildings__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classBuildings_a539cdc54c303b592ac980b093b91b20c}{add}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Adds a building component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a1cb9eec9d04270777cdde92d29f56b30}{remove}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Removes a building component. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classBuildings_a47b2092a289c9c317d4ad953f381974f}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_a4812213ed8b85fa5dfa15a9307acd5ba}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Gets the price of the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a55f87163ac9cc48673778eac7e47ecfd}{set\+Price}} (int p)
+\begin{DoxyCompactList}\small\item\em Sets the price of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBuildings_a025eed67a659b27440348623e31b4ce7}{get\+Taken}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the building is occupied. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a2324249c330ec1e43576516e63148320}{set\+Taken}} (bool t)
+\begin{DoxyCompactList}\small\item\em Sets the occupancy status of the building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a building component in a structure hierarchy. 
+
+The \doxylink{classBuildings}{Buildings} class serves as a base class for different types of building structures. It provides virtual methods that can be overridden in derived classes, allowing for adding and removing components, retrieving and setting prices, and checking occupancy status. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBuildings_a539cdc54c303b592ac980b093b91b20c}\label{classBuildings_a539cdc54c303b592ac980b093b91b20c} 
+\index{Buildings@{Buildings}!add@{add}}
+\index{add@{add}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Buildings\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a building component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & Pointer to the \doxylink{classBuildings}{Buildings} object to add. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If the operation is not supported by the derived class. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classBuildingsUnit_a758357ead5f95c42c6663e3a786cdeca}{Buildings\+Unit}}.
+
+\Hypertarget{classBuildings_a4812213ed8b85fa5dfa15a9307acd5ba}\label{classBuildings_a4812213ed8b85fa5dfa15a9307acd5ba} 
+\index{Buildings@{Buildings}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily int Buildings\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the price of the building. 
+
+\begin{DoxyReturn}{Returns}
+The price of the building. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If the operation is not supported by the derived class. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classCommercial_a66cfaf0f3eab2024873223d9140e6f75}{Commercial}}, \mbox{\hyperlink{classIndustrial_ae302ffdc3e723d0454193bef7604a619}{Industrial}}, \mbox{\hyperlink{classLandmarks_a533fa6ac4840f1a1054b54e3ed5a5a75}{Landmarks}}, and \mbox{\hyperlink{classResidential_afc7921d98923f7704c5aad1c9d3f112b}{Residential}}.
+
+\Hypertarget{classBuildings_a025eed67a659b27440348623e31b4ce7}\label{classBuildings_a025eed67a659b27440348623e31b4ce7} 
+\index{Buildings@{Buildings}!getTaken@{getTaken}}
+\index{getTaken@{getTaken}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getTaken()}{getTaken()}}
+{\footnotesize\ttfamily bool Buildings\+::get\+Taken (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the building is occupied. 
+
+\begin{DoxyReturn}{Returns}
+A boolean indicating if the building is occupied. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If the operation is not supported by the derived class. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classCommercial_aa2c4d48d6a21d108e46500b3452df53b}{Commercial}}, \mbox{\hyperlink{classIndustrial_a171e900ba9201f9d30df9c57d206c047}{Industrial}}, \mbox{\hyperlink{classLandmarks_a85b484decd942b2ff4e52afc65f3f6f0}{Landmarks}}, and \mbox{\hyperlink{classResidential_a13b19fb70efc82a38ec7f59796289618}{Residential}}.
+
+\Hypertarget{classBuildings_a47b2092a289c9c317d4ad953f381974f}\label{classBuildings_a47b2092a289c9c317d4ad953f381974f} 
+\index{Buildings@{Buildings}!getType@{getType}}
+\index{getType@{getType}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Buildings\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the building. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the type of the building. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If the operation is not supported by the derived class. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classCommercial_aa574ca0125e149e87c3f3bdc9039a49f}{Commercial}}, \mbox{\hyperlink{classIndustrial_a6a29bac4a108c7a07a33b1fed002082f}{Industrial}}, \mbox{\hyperlink{classLandmarks_a0ba3f70b2f7c28c64cc9df4039843889}{Landmarks}}, and \mbox{\hyperlink{classResidential_af31717231d3df537ba804b7c061ee574}{Residential}}.
+
+\Hypertarget{classBuildings_a1cb9eec9d04270777cdde92d29f56b30}\label{classBuildings_a1cb9eec9d04270777cdde92d29f56b30} 
+\index{Buildings@{Buildings}!remove@{remove}}
+\index{remove@{remove}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Buildings\+::remove (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}}]{component }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Removes a building component. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em component} & Pointer to the \doxylink{classBuildings}{Buildings} object to remove. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If the operation is not supported by the derived class. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classBuildings_a55f87163ac9cc48673778eac7e47ecfd}\label{classBuildings_a55f87163ac9cc48673778eac7e47ecfd} 
+\index{Buildings@{Buildings}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily void Buildings\+::set\+Price (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the price of the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The price to set for the building. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If the operation is not supported by the derived class. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classCommercial_a274793742ea729627e5af769d5d30665}{Commercial}}, \mbox{\hyperlink{classIndustrial_af92b9b369dc92667ddf91759c630a44c}{Industrial}}, \mbox{\hyperlink{classLandmarks_a1a462cb4a2260b94423ca659bbf97a45}{Landmarks}}, and \mbox{\hyperlink{classResidential_ae9dcb566367465873c4735ecb0cf745a}{Residential}}.
+
+\Hypertarget{classBuildings_a2324249c330ec1e43576516e63148320}\label{classBuildings_a2324249c330ec1e43576516e63148320} 
+\index{Buildings@{Buildings}!setTaken@{setTaken}}
+\index{setTaken@{setTaken}!Buildings@{Buildings}}
+\doxysubsubsection{\texorpdfstring{setTaken()}{setTaken()}}
+{\footnotesize\ttfamily void Buildings\+::set\+Taken (\begin{DoxyParamCaption}\item[{bool}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the occupancy status of the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The occupancy status to set. \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & If the operation is not supported by the derived class. \\
+\hline
+\end{DoxyExceptions}
+
+
+Reimplemented in \mbox{\hyperlink{classCommercial_a3747080633be8233e1194ce27e666422}{Commercial}}, \mbox{\hyperlink{classIndustrial_ae9d4ffe0e103f715d51b75e66cea94a5}{Industrial}}, \mbox{\hyperlink{classLandmarks_acaf3c7b5b2399984c325dfb9e8c68d2b}{Landmarks}}, and \mbox{\hyperlink{classResidential_a8faeebe1ef502e60521f326ff462c4e2}{Residential}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Buildings.\+h\item 
+Buildings.\+cpp\end{DoxyCompactItemize}

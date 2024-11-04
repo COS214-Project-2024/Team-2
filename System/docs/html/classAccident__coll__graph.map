@@ -1,0 +1,5 @@
+<map id="Accident" name="Accident">
+<area shape="rect" id="Node000001" title="Represents a command to handle accident situations in the simulation." alt="" coords="43,79,122,104"/>
+<area shape="rect" id="Node000002" href="$classSituationsCommand.html" title="Abstract base class for command situations." alt="" coords="5,5,160,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="85,44,85,79,80,79,80,44"/>
+</map>

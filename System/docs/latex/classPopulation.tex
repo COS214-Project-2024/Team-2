@@ -1,0 +1,106 @@
+\doxysection{Population Class Reference}
+\hypertarget{classPopulation}{}\label{classPopulation}\index{Population@{Population}}
+
+
+Represents the population of a city and its growth dynamics.  
+
+
+
+
+{\ttfamily \#include $<$Population.\+h$>$}
+
+
+
+Inheritance diagram for Population\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPopulation__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Population\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classPopulation__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classPopulation_a32c944aebdf34891bdbd5ce2fa48a22f}{grow}} () override
+\begin{DoxyCompactList}\small\item\em Increases the population size by one. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPopulation_a85ca962f02813565790eb4220a49b9cf}{shrink}} () override
+\begin{DoxyCompactList}\small\item\em Decreases the population size by one. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPopulation_aa195c5732dfcfb3c6324a708374add9c}{get}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the current population size. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the population of a city and its growth dynamics. 
+
+The \doxylink{classPopulation}{Population} class inherits from the \doxylink{classCityGrowth}{City\+Growth} class and implements methods to grow and shrink the city\textquotesingle{}s population. It maintains the current size of the population and provides functionality to check the size. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPopulation_aa195c5732dfcfb3c6324a708374add9c}\label{classPopulation_aa195c5732dfcfb3c6324a708374add9c} 
+\index{Population@{Population}!get@{get}}
+\index{get@{get}!Population@{Population}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily int Population\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current population size. 
+
+\begin{DoxyReturn}{Returns}
+The current size of the population. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCityGrowth_a8702eed519ae55f843b19744f5c94ac6}{City\+Growth}}.
+
+\Hypertarget{classPopulation_a32c944aebdf34891bdbd5ce2fa48a22f}\label{classPopulation_a32c944aebdf34891bdbd5ce2fa48a22f} 
+\index{Population@{Population}!grow@{grow}}
+\index{grow@{grow}!Population@{Population}}
+\doxysubsubsection{\texorpdfstring{grow()}{grow()}}
+{\footnotesize\ttfamily bool Population\+::grow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increases the population size by one. 
+
+This method increments the population size and determines whether the population is now at an even number.
+
+\begin{DoxyReturn}{Returns}
+true if the new size is even, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCityGrowth_a38a835f2d86d317a55282609ff349c98}{City\+Growth}}.
+
+\Hypertarget{classPopulation_a85ca962f02813565790eb4220a49b9cf}\label{classPopulation_a85ca962f02813565790eb4220a49b9cf} 
+\index{Population@{Population}!shrink@{shrink}}
+\index{shrink@{shrink}!Population@{Population}}
+\doxysubsubsection{\texorpdfstring{shrink()}{shrink()}}
+{\footnotesize\ttfamily bool Population\+::shrink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the population size by one. 
+
+This method decrements the population size if it is greater than zero. If the population is already at zero, it outputs a message indicating this and does not change the size.
+
+\begin{DoxyReturn}{Returns}
+true if the new size is even after shrinking, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCityGrowth_ac0ee56a8ad83b611589dad61bcbd2465}{City\+Growth}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Population.\+h\end{DoxyCompactItemize}

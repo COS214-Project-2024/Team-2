@@ -1,0 +1,171 @@
+\doxysection{Concrete Class Reference}
+\hypertarget{classConcrete}{}\label{classConcrete}\index{Concrete@{Concrete}}
+
+
+Represents a concrete material in the resource management system.  
+
+
+
+
+{\ttfamily \#include $<$Concrete.\+h$>$}
+
+
+
+Inheritance diagram for Concrete\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classConcrete__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=147pt]{classConcrete__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConcrete_a961143aa261bca011f0ce653a6a68287}{Concrete}} (\mbox{\hyperlink{classStateOfResources}{State\+Of\+Resources}} \texorpdfstring{$\ast$}{*}initial\+State, int initial\+Quantity)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classConcrete}{Concrete} object with an initial state and quantity. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcrete_a1752578ef432394d3713572cd4a90caa}{use\+Resource}} (int quantity) override
+\begin{DoxyCompactList}\small\item\em Uses a specified quantity of concrete. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcrete_a7d14c59285e5cd65469c29a779fa068b}{generate\+Resource}} (int quantity) override
+\begin{DoxyCompactList}\small\item\em Generates a specified quantity of concrete. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcrete_ad066ef70195b8ecc6f30afe1f86d3b4e}{set\+State}} (\mbox{\hyperlink{classStateOfResources}{State\+Of\+Resources}} \texorpdfstring{$\ast$}{*}new\+State)
+\begin{DoxyCompactList}\small\item\em Sets a new state for the concrete. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classConcrete_a9b312c247d9c6986c5a537b6f495d63f}{get\+Quantity}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the current quantity of concrete. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classConcrete_a27201bd88fde038f7f1f0706ebbacf0d}{get\+Max\+Capacity}} () const override
+\begin{DoxyCompactList}\small\item\em Retrieves the maximum capacity for concrete. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a concrete material in the resource management system. 
+
+The \doxylink{classConcrete}{Concrete} class manages the quantity of concrete resources, and tracks its state using various {\ttfamily \doxylink{classStateOfResources}{State\+Of\+Resources}}. It supports resource usage and generation, as well as state transitions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classConcrete_a961143aa261bca011f0ce653a6a68287}\label{classConcrete_a961143aa261bca011f0ce653a6a68287} 
+\index{Concrete@{Concrete}!Concrete@{Concrete}}
+\index{Concrete@{Concrete}!Concrete@{Concrete}}
+\doxysubsubsection{\texorpdfstring{Concrete()}{Concrete()}}
+{\footnotesize\ttfamily Concrete\+::\+Concrete (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStateOfResources}{State\+Of\+Resources}} \texorpdfstring{$\ast$}{*}}]{initial\+State,  }\item[{int}]{initial\+Quantity }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classConcrete}{Concrete} object with an initial state and quantity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+State} & Pointer to the initial state of the concrete. \\
+\hline
+{\em initial\+Quantity} & The initial quantity of concrete. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classConcrete_a7d14c59285e5cd65469c29a779fa068b}\label{classConcrete_a7d14c59285e5cd65469c29a779fa068b} 
+\index{Concrete@{Concrete}!generateResource@{generateResource}}
+\index{generateResource@{generateResource}!Concrete@{Concrete}}
+\doxysubsubsection{\texorpdfstring{generateResource()}{generateResource()}}
+{\footnotesize\ttfamily void Concrete\+::generate\+Resource (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Generates a specified quantity of concrete. 
+
+Increases the current quantity of concrete by the specified amount, ensuring it does not exceed maximum capacity.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The amount of concrete to generate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMaterials_afc787c47cd300fcbb1809741c4c8cf35}{Materials}}.
+
+\Hypertarget{classConcrete_a27201bd88fde038f7f1f0706ebbacf0d}\label{classConcrete_a27201bd88fde038f7f1f0706ebbacf0d} 
+\index{Concrete@{Concrete}!getMaxCapacity@{getMaxCapacity}}
+\index{getMaxCapacity@{getMaxCapacity}!Concrete@{Concrete}}
+\doxysubsubsection{\texorpdfstring{getMaxCapacity()}{getMaxCapacity()}}
+{\footnotesize\ttfamily int Concrete\+::get\+Max\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the maximum capacity for concrete. 
+
+\begin{DoxyReturn}{Returns}
+The maximum capacity for this concrete resource. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResources_a54db930d4d04070fb0432fbaf237362f}{Resources}}.
+
+\Hypertarget{classConcrete_a9b312c247d9c6986c5a537b6f495d63f}\label{classConcrete_a9b312c247d9c6986c5a537b6f495d63f} 
+\index{Concrete@{Concrete}!getQuantity@{getQuantity}}
+\index{getQuantity@{getQuantity}!Concrete@{Concrete}}
+\doxysubsubsection{\texorpdfstring{getQuantity()}{getQuantity()}}
+{\footnotesize\ttfamily int Concrete\+::get\+Quantity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the current quantity of concrete. 
+
+\begin{DoxyReturn}{Returns}
+The current quantity of concrete. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResources_a7a987345a025c78433f5935990b69e79}{Resources}}.
+
+\Hypertarget{classConcrete_ad066ef70195b8ecc6f30afe1f86d3b4e}\label{classConcrete_ad066ef70195b8ecc6f30afe1f86d3b4e} 
+\index{Concrete@{Concrete}!setState@{setState}}
+\index{setState@{setState}!Concrete@{Concrete}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Concrete\+::set\+State (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classStateOfResources}{State\+Of\+Resources}} \texorpdfstring{$\ast$}{*}}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Sets a new state for the concrete. 
+
+Updates the current state of the concrete to the specified new state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+State} & Pointer to the new state to be set. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classConcrete_a1752578ef432394d3713572cd4a90caa}\label{classConcrete_a1752578ef432394d3713572cd4a90caa} 
+\index{Concrete@{Concrete}!useResource@{useResource}}
+\index{useResource@{useResource}!Concrete@{Concrete}}
+\doxysubsubsection{\texorpdfstring{useResource()}{useResource()}}
+{\footnotesize\ttfamily void Concrete\+::use\+Resource (\begin{DoxyParamCaption}\item[{int}]{quantity }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Uses a specified quantity of concrete. 
+
+Reduces the current quantity of concrete by the specified amount, potentially updating the state if necessary.
+
+
+\begin{DoxyParams}{Parameters}
+{\em quantity} & The amount of concrete to use. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classMaterials_a4177fa79c169dc17faa05312c7fb9623}{Materials}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Resources/Concrete.\+h\item 
+Resources/Concrete.\+cpp\end{DoxyCompactItemize}

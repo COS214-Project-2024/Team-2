@@ -1,0 +1,204 @@
+\doxysection{Landmarks Class Reference}
+\hypertarget{classLandmarks}{}\label{classLandmarks}\index{Landmarks@{Landmarks}}
+
+
+Class representing landmarks in the city.  
+
+
+
+
+{\ttfamily \#include $<$Landmarks.\+h$>$}
+
+
+
+Inheritance diagram for Landmarks\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classLandmarks__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Landmarks\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classLandmarks__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLandmarks_a1854520ca5feca5fb6739060f69cb9d3}{Landmarks}} (string type)
+\begin{DoxyCompactList}\small\item\em Constructor for the \doxylink{classLandmarks}{Landmarks} class. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classLandmarks_a0ba3f70b2f7c28c64cc9df4039843889}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the type of the landmark. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLandmarks_a533fa6ac4840f1a1054b54e3ed5a5a75}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the price of the landmark. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLandmarks_a649d697f6fd8340304951bf247d9573f}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the position of the landmark in the type array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLandmarks_a8704238cc83a7329d867996514d6e94d}{get\+Satisfaction}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the satisfaction rate of the landmark. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLandmarks_a1a462cb4a2260b94423ca659bbf97a45}{set\+Price}} (int p)
+\begin{DoxyCompactList}\small\item\em Sets the price of the landmark. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classLandmarks_a85b484decd942b2ff4e52afc65f3f6f0}{get\+Taken}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the landmark is taken. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLandmarks_acaf3c7b5b2399984c325dfb9e8c68d2b}{set\+Taken}} (bool t)
+\begin{DoxyCompactList}\small\item\em Sets the taken status of the landmark. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBuildings}{Buildings}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classBuildings_a539cdc54c303b592ac980b093b91b20c}{add}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Adds a building component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a1cb9eec9d04270777cdde92d29f56b30}{remove}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Removes a building component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing landmarks in the city. 
+
+This class inherits from \doxylink{classBuildings}{Buildings} and provides methods to manage different types of landmarks, including their prices and satisfaction rates. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classLandmarks_a1854520ca5feca5fb6739060f69cb9d3}\label{classLandmarks_a1854520ca5feca5fb6739060f69cb9d3} 
+\index{Landmarks@{Landmarks}!Landmarks@{Landmarks}}
+\index{Landmarks@{Landmarks}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{Landmarks()}{Landmarks()}}
+{\footnotesize\ttfamily Landmarks\+::\+Landmarks (\begin{DoxyParamCaption}\item[{string}]{type }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \doxylink{classLandmarks}{Landmarks} class. 
+
+Initializes a \doxylink{classLandmarks}{Landmarks} object with the specified type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of the landmark (parks, monuments, culturecenters). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classLandmarks_a649d697f6fd8340304951bf247d9573f}\label{classLandmarks_a649d697f6fd8340304951bf247d9573f} 
+\index{Landmarks@{Landmarks}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily int Landmarks\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the position of the landmark in the type array. 
+
+\begin{DoxyReturn}{Returns}
+The position of the landmark as an integer. 
+\end{DoxyReturn}
+\Hypertarget{classLandmarks_a533fa6ac4840f1a1054b54e3ed5a5a75}\label{classLandmarks_a533fa6ac4840f1a1054b54e3ed5a5a75} 
+\index{Landmarks@{Landmarks}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily int Landmarks\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the price of the landmark. 
+
+\begin{DoxyReturn}{Returns}
+The price of the landmark as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a4812213ed8b85fa5dfa15a9307acd5ba}{Buildings}}.
+
+\Hypertarget{classLandmarks_a8704238cc83a7329d867996514d6e94d}\label{classLandmarks_a8704238cc83a7329d867996514d6e94d} 
+\index{Landmarks@{Landmarks}!getSatisfaction@{getSatisfaction}}
+\index{getSatisfaction@{getSatisfaction}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{getSatisfaction()}{getSatisfaction()}}
+{\footnotesize\ttfamily int Landmarks\+::get\+Satisfaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the satisfaction rate of the landmark. 
+
+\begin{DoxyReturn}{Returns}
+The satisfaction rate as an integer. 
+\end{DoxyReturn}
+\Hypertarget{classLandmarks_a85b484decd942b2ff4e52afc65f3f6f0}\label{classLandmarks_a85b484decd942b2ff4e52afc65f3f6f0} 
+\index{Landmarks@{Landmarks}!getTaken@{getTaken}}
+\index{getTaken@{getTaken}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{getTaken()}{getTaken()}}
+{\footnotesize\ttfamily bool Landmarks\+::get\+Taken (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the landmark is taken. 
+
+\begin{DoxyReturn}{Returns}
+true if the landmark is taken, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a025eed67a659b27440348623e31b4ce7}{Buildings}}.
+
+\Hypertarget{classLandmarks_a0ba3f70b2f7c28c64cc9df4039843889}\label{classLandmarks_a0ba3f70b2f7c28c64cc9df4039843889} 
+\index{Landmarks@{Landmarks}!getType@{getType}}
+\index{getType@{getType}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Landmarks\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the type of the landmark. 
+
+\begin{DoxyReturn}{Returns}
+The type of the landmark as a string. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a47b2092a289c9c317d4ad953f381974f}{Buildings}}.
+
+\Hypertarget{classLandmarks_a1a462cb4a2260b94423ca659bbf97a45}\label{classLandmarks_a1a462cb4a2260b94423ca659bbf97a45} 
+\index{Landmarks@{Landmarks}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily void Landmarks\+::set\+Price (\begin{DoxyParamCaption}\item[{int}]{p }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the price of the landmark. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The new price for the landmark. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a55f87163ac9cc48673778eac7e47ecfd}{Buildings}}.
+
+\Hypertarget{classLandmarks_acaf3c7b5b2399984c325dfb9e8c68d2b}\label{classLandmarks_acaf3c7b5b2399984c325dfb9e8c68d2b} 
+\index{Landmarks@{Landmarks}!setTaken@{setTaken}}
+\index{setTaken@{setTaken}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{setTaken()}{setTaken()}}
+{\footnotesize\ttfamily void Landmarks\+::set\+Taken (\begin{DoxyParamCaption}\item[{bool}]{t }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the taken status of the landmark. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The new taken status. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a2324249c330ec1e43576516e63148320}{Buildings}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Landmarks.\+h\item 
+Landmarks.\+cpp\end{DoxyCompactItemize}

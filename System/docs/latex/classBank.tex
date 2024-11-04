@@ -1,0 +1,93 @@
+\doxysection{Bank Class Reference}
+\hypertarget{classBank}{}\label{classBank}\index{Bank@{Bank}}
+
+
+Represents a bank account for managing a citizen\textquotesingle{}s funds.  
+
+
+
+
+{\ttfamily \#include $<$Bank.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classBank_a6cee66b8c4a6cc6d0e82837885a5f720}{get}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current balance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBank_a8d7f3cb08588ad86609522159a7788a7}{increment}} (int amount)
+\begin{DoxyCompactList}\small\item\em Increases the balance by a specified amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBank_afaf96bdf56d878623d2c055d19ba4d01}{decrement}} (int amount)
+\begin{DoxyCompactList}\small\item\em Decreases the balance by a specified amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBank_ab46c21aac927684a362a6b1af88d0f06}{correct\+Budget}} ()
+\begin{DoxyCompactList}\small\item\em Adjusts the budget based on the current balance. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a bank account for managing a citizen\textquotesingle{}s funds. 
+
+The \doxylink{classBank}{Bank} class provides functionality to get the current balance, increment or decrement the balance, and automatically adjust the budget based on the balance. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBank_ab46c21aac927684a362a6b1af88d0f06}\label{classBank_ab46c21aac927684a362a6b1af88d0f06} 
+\index{Bank@{Bank}!correctBudget@{correctBudget}}
+\index{correctBudget@{correctBudget}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{correctBudget()}{correctBudget()}}
+{\footnotesize\ttfamily void Bank\+::correct\+Budget (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adjusts the budget based on the current balance. 
+
+This method recalculates the budget as 80\% of the current balance. \Hypertarget{classBank_afaf96bdf56d878623d2c055d19ba4d01}\label{classBank_afaf96bdf56d878623d2c055d19ba4d01} 
+\index{Bank@{Bank}!decrement@{decrement}}
+\index{decrement@{decrement}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{decrement()}{decrement()}}
+{\footnotesize\ttfamily void Bank\+::decrement (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Decreases the balance by a specified amount. 
+
+This method decrements the account balance and adjusts the budget accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to subtract from the balance. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBank_a6cee66b8c4a6cc6d0e82837885a5f720}\label{classBank_a6cee66b8c4a6cc6d0e82837885a5f720} 
+\index{Bank@{Bank}!get@{get}}
+\index{get@{get}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily int Bank\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current balance. 
+
+\begin{DoxyReturn}{Returns}
+The current balance in the account. 
+\end{DoxyReturn}
+\Hypertarget{classBank_a8d7f3cb08588ad86609522159a7788a7}\label{classBank_a8d7f3cb08588ad86609522159a7788a7} 
+\index{Bank@{Bank}!increment@{increment}}
+\index{increment@{increment}!Bank@{Bank}}
+\doxysubsubsection{\texorpdfstring{increment()}{increment()}}
+{\footnotesize\ttfamily void Bank\+::increment (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Increases the balance by a specified amount. 
+
+This method increments the account balance and adjusts the budget accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to add to the balance. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bank.\+h\item 
+Bank.\+cpp\end{DoxyCompactItemize}
