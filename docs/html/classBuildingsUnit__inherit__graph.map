@@ -1,5 +1,0 @@
-<map id="BuildingsUnit" name="BuildingsUnit">
-<area shape="rect" id="Node000001" title="Represents a unit of buildings within a city that is governed by a central authority." alt="" coords="5,79,115,104"/>
-<area shape="rect" id="Node000002" href="$classBuildings.html" title="Represents a building component in a structure hierarchy." alt="" coords="19,5,101,31"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="63,44,63,79,57,79,57,44"/>
-</map>

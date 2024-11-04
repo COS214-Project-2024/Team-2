@@ -1,5 +1,0 @@
-<map id="Citizen" name="Citizen">
-<area shape="rect" id="Node000001" title="Abstract base class representing a citizen in the transportation system." alt="" coords="35,5,101,31"/>
-<area shape="rect" id="Node000002" href="$classConcreteCitizen.html" title="Represents a concrete implementation of a Citizen." alt="" coords="5,79,131,104"/>
-<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="71,44,71,79,65,79,65,44"/>
-</map>

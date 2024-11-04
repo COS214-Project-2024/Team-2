@@ -1,9 +1,0 @@
-<map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="Node000000" href="$classSituationsCommand.html" title="Abstract base class for command situations." alt="" coords="5,55,160,80"/>
-<area shape="rect" id="Node000001" href="$classAccident.html" title="Represents a command to handle accident situations in the simulation." alt="" coords="225,5,303,31"/>
-<area shape="poly" id="edge18_Node000000_Node000001" title=" " alt="" coords="142,48,224,26,225,31,144,54"/>
-<area shape="rect" id="Node000002" href="$classCrime.html" title="Class representing a crime situation." alt="" coords="233,55,295,80"/>
-<area shape="poly" id="edge19_Node000000_Node000002" title=" " alt="" coords="174,65,233,65,233,70,174,70"/>
-<area shape="rect" id="Node000003" href="$classLoadshedding.html" title="Class representing a load shedding command." alt="" coords="208,104,320,129"/>
-<area shape="poly" id="edge20_Node000000_Node000003" title=" " alt="" coords="144,81,217,101,215,106,143,86"/>
-</map>
