@@ -1,4 +1,8 @@
-class Resources {
+#ifndef RESOURCES_H
+#define RESOURCES_H
+
+class Resources 
+{
     private:
         int maxCapacity;
     public:
@@ -7,3 +11,5 @@ class Resources {
         virtual int getQuantity() const = 0;
         virtual int getMaxCapacity() const = 0;
 };
+
+#endif

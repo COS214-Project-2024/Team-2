@@ -6,7 +6,7 @@ using namespace std;
 bool Accident::execute()
 {
     string response;
-    cout << "An accident has occured in the city.\n Resolve issue by typing Y: " << endl;
+    cout << endl << endl << "-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\nAn accident has occured in the city.\nResolve issue by typing Y: ";
     cin >> response;
     int randomValue = std::rand() % 2;
     if (randomValue == 1)

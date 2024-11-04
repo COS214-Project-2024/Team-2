@@ -20,23 +20,44 @@ ConcreteCitizen::ConcreteCitizen(BuildingsUnit* buildings, Government* governmen
     this->government = government;
 }
 
-ConcreteCitizen* ConcreteCitizen::clone(ConcreteCitizen &other)
+ConcreteCitizen* ConcreteCitizen::clone()
 {
-    ConcreteCitizen* citizen = new ConcreteCitizen(other.buildings, other.government);
-    citizen->housing = other.housing;
-    citizen->employed = other.employed;
-    citizen->bank = other.bank;
+    ConcreteCitizen* citizen = new ConcreteCitizen(buildings, government);
+    citizen->housing = housing;
+    citizen->employed = employed;
+    citizen->bank = bank;
     return citizen;
 }
 
 bool ConcreteCitizen::getHouse()
 {
-    this->buildings->getHouse();
+    if(bank->get() >= 600)
+    {
+        if(this->buildings->getHouse())
+        {
+            cout << "Citizen Has Gotten a House " << endl;
+        }
+        bank->decrement(500);
+        return true;
+    }
+    else
+    {
+        cout << "Citizen does not have enough more (Need atleast 600 money),\nCurrenlty has: " << bank->get() << " money, Consider getting an employment!" << endl;
+        return false;
+    }
+    return false;
 }
 
 bool ConcreteCitizen::getEmployment()
 {
-    this->buildings->getEmployment();
+    if(this->buildings->getEmployment())
+    {
+        cout << "Citizen Has Gotten an Employment " << endl;
+        bank->increment(600);
+        cout << "Currently has: " << bank->get() << " money" << endl;
+        return true;
+    }
+    return false;
 }
 
 bool ConcreteCitizen::useTransport(string transport)
@@ -80,7 +101,7 @@ bool ConcreteCitizen::useTransport(string transport)
     }
 }
 
-void ConcreteCitizen::getTax(double tax)
+void ConcreteCitizen::getTax(int tax)
 {
     bank->decrement(tax);
 }

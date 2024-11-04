@@ -6,7 +6,7 @@ using namespace std;
 bool Crime::execute()
 {
     string response;
-    cout << "Crime has occured in the city.\n On which superhero will you call, if any? (Batman, Superman, Spiderman or None)" << endl;
+    cout << endl << endl << "-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-\nCrime has occured in the city.\nOn which superhero will you call, if any? (Batman, Superman, Spiderman or None)";
     cin >> response;
     int randomValue = std::rand() % 2;
     if (response == "Batman")

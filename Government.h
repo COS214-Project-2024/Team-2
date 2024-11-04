@@ -9,7 +9,7 @@
 #include "IncomeTaxStrategy.h"
 #include "PropertyTaxStrategy.h"
 #include "SalesTaxStrategy.h"
-// #include "Department.h"
+#include "Department.h"
 #include "TaxStrategy.h"
 #include "Bank.h"
 #include "CityGrowth.h"
@@ -38,20 +38,34 @@ using namespace std;
 class Government
 {
     private:
-        // Department* department;
+        Department* department = new Department();
         TaxStrategy* strategy = new IncomeTaxStrategy();
-        Bank* cityBank;
+        Bank* cityBank = new Bank();
         string cheatCode = "weewooweewoo";
         CityGrowth* population = new Population();
         CityGrowth* housing = new Housing();
         CityGrowth* economic = new Economic();
         CityGrowth* infrastructure = new Infrastructure();
-        // Resources* energy = new Energy();
-        // Resources* water = new Water();
-        Wood* wood = new Wood(nullptr, 100);
-        StateOfResources* empty = new EmptyState(wood);
-        // Resources* steel = new Steel();
-        // Resources* concrete = new Concrete();
+        // StateOfResources* emptyStateE = new EmptyState(energy);
+        // StateOfResources* emptyStateWa = new EmptyState(water);
+        // StateOfResources* emptyStateWo = new EmptyState(wood);
+        // StateOfResources* emptyStateS = new EmptyState(steel);
+        // StateOfResources* emptyStateC = new EmptyState(concrete);
+        // Energy* energy = new Energy(emptyStateE, 0);
+        // Water* water = new Water(emptyStateWa, 0);
+        // Wood* wood = new Wood(emptyStateWo, 0);
+        // Steel* steel = new Steel(emptyStateS, 0);
+        // Concrete* concrete = new Concrete(emptyStateC, 0);
+        Energy* energy = new Energy(nullptr, 0);
+        Water* water = new Water(nullptr, 0);
+        Wood* wood = new Wood(nullptr, 0);
+        Steel* steel = new Steel(nullptr, 0);
+        Concrete* concrete = new Concrete(nullptr, 0);
+        StateOfResources* emptyStateE = new EmptyState(energy);
+        StateOfResources* emptyStateWa = new EmptyState(water);
+        StateOfResources* emptyStateWo = new EmptyState(wood);
+        StateOfResources* emptyStateS = new EmptyState(steel);
+        StateOfResources* emptyStateC = new EmptyState(concrete);
         bool transportAllowed;
         string currentCG = "population";
     public:
@@ -59,12 +73,17 @@ class Government
         void cityGrow(string who);
         void cityShrink(string who);
         void setStrategy(TaxStrategy* strat);
-        double collectTax();
+        int collectTax();
         void cheat(string cheatCode);
-        void userResource(string who);
+        void useResource(string who);
         bool getTransport();
         void setTransport(bool t);
         void randomEvent();
+        int getSatisfaction();
+        void setSatisfaction(int level);
+        int get();
+        void increment(int amount);
+        void decrement(int amount);
 };
 
 #endif

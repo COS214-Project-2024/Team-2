@@ -6,9 +6,9 @@
 class IncomeTaxStrategy : public TaxStrategy
 {
     public:
-        int calculateTax(int total) override
+        int calculateTax(int total)
         {
-            return total * (10/100);            
+            return (total * 0.1);            
         };
 };
 

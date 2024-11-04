@@ -15,15 +15,15 @@ class ConcreteCitizen: public Citizen{
         Government* government;
         bool housing = 0;
         bool employed = 0;    
-        Bank* bank;
 
     public:
+        Bank* bank;
         ConcreteCitizen(BuildingsUnit* buildings, Government* government);
-        ConcreteCitizen* clone(ConcreteCitizen& other);
+        ConcreteCitizen* clone();
         bool getHouse();
         bool getEmployment();
         bool useTransport(string transport);
-        void getTax(double tax);
+        void getTax(int tax);
 };
 
 #endif

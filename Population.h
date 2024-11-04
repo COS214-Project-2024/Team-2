@@ -15,7 +15,7 @@ class Population : public CityGrowth
         {
             size ++;
 
-            if(size % 50 == 0)
+            if(size % 2 == 0)
             {
                 return true;
             }
@@ -38,7 +38,7 @@ class Population : public CityGrowth
 
             size--;
 
-            if(size % 50 == 0)
+            if(size % 2 == 0)
             {
                 return true;
             }

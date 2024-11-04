@@ -1,8 +1,9 @@
 #include "MaterialFactory.h"
 
-void MaterialFactory::handleRequest(Government* govern) override {
-    govern->userResource("steel");
-    govern->userResource("wood");
-    govern->userResource("concrete");
+void MaterialFactory::handleRequest(Government* govern)
+{
+    govern->useResource("steel");
+    govern->useResource("wood");
+    govern->useResource("concrete");
     Utilities::handleRequest(govern);
 }
