@@ -1,0 +1,28 @@
+\doxysection{Concrete\+Citizen\+Factory.\+h}
+\hypertarget{ConcreteCitizenFactory_8h_source}{}\label{ConcreteCitizenFactory_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONCRETECITIZENFACTORY\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONCRETECITIZENFACTORY\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}CitizenFactory.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ "{}ConcreteCitizen.h"{}}}
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#include\ "{}Government.h"{}}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#include\ "{}BuildingsUnit.h"{}}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBuildingsUnit}{BuildingsUnit}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGovernment}{Government}};}
+\DoxyCodeLine{00011\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classConcreteCitizenFactory}{ConcreteCitizenFactory}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classCitizenFactory}{CitizenFactory}}\ \{}
+\DoxyCodeLine{00020\ \ \ \ \ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00021\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classBuildingsUnit}{BuildingsUnit}}*\ buildings;\ }
+\DoxyCodeLine{00022\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classGovernment}{Government}}*\ government;\ \ \ \ }
+\DoxyCodeLine{00023\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00031\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classConcreteCitizenFactory}{ConcreteCitizenFactory}}(\mbox{\hyperlink{classBuildingsUnit}{BuildingsUnit}}*\ building,\ \mbox{\hyperlink{classGovernment}{Government}}*\ government);}
+\DoxyCodeLine{00032\ }
+\DoxyCodeLine{00041\ \ \ \ \ \ \ \ \ \mbox{\hyperlink{classConcreteCitizen}{ConcreteCitizen}}*\ \mbox{\hyperlink{classConcreteCitizenFactory_a716ff0dced7fcfbb4429dbc778b37de0}{createCitizen}}();}
+\DoxyCodeLine{00042\ \};}
+\DoxyCodeLine{00043\ }
+\DoxyCodeLine{00044\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

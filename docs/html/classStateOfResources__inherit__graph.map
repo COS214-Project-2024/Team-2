@@ -1,0 +1,9 @@
+<map id="StateOfResources" name="StateOfResources">
+<area shape="rect" id="Node000001" title="Abstract base class representing the state of resources." alt="" coords="99,5,237,31"/>
+<area shape="rect" id="Node000002" href="$classEmptyState.html" title="Represents the empty state of a resource." alt="" coords="5,79,104,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="139,40,75,81,72,76,136,36"/>
+<area shape="rect" id="Node000003" href="$classFullState.html" title="Represents the full state of a resource." alt="" coords="129,79,207,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="171,44,171,79,165,79,165,44"/>
+<area shape="rect" id="Node000004" href="$classNormalState.html" title="Class representing the normal state of a resource." alt="" coords="232,79,336,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="200,35,266,76,264,81,197,40"/>
+</map>

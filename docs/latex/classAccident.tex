@@ -1,0 +1,74 @@
+\doxysection{Accident Class Reference}
+\hypertarget{classAccident}{}\label{classAccident}\index{Accident@{Accident}}
+
+
+Represents a command to handle accident situations in the simulation.  
+
+
+
+
+{\ttfamily \#include $<$Accident.\+h$>$}
+
+
+
+Inheritance diagram for Accident\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classAccident__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Accident\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classAccident__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classAccident_a0b317967b3cefed80f02c13bab86eda9}{execute}} ()
+\begin{DoxyCompactList}\small\item\em Executes the accident response command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a command to handle accident situations in the simulation. 
+
+This class inherits from {\ttfamily \doxylink{classSituationsCommand}{Situations\+Command}} and provides the functionality to execute a response to an accident scenario. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classAccident_a0b317967b3cefed80f02c13bab86eda9}\label{classAccident_a0b317967b3cefed80f02c13bab86eda9} 
+\index{Accident@{Accident}!execute@{execute}}
+\index{execute@{execute}!Accident@{Accident}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily bool Accident\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Executes the accident response command. 
+
+Executes the response command for an accident situation.
+
+\begin{DoxyReturn}{Returns}
+True if the command executed successfully, otherwise false.
+\end{DoxyReturn}
+This method contains the logic to handle an accident situation within the simulation.
+
+This method simulates an accident event occurring in the city and prompts the user for a response. A random value determines the outcome of the event, indicating whether the accident was successfully resolved or not.
+
+\begin{DoxyReturn}{Returns}
+True if the accident is resolved successfully, otherwise false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classSituationsCommand_adf993317cbc1b57b9f015ec1a36d1fc4}{Situations\+Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Accident.\+h\item 
+Accident.\+cpp\end{DoxyCompactItemize}

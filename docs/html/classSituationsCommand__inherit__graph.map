@@ -1,0 +1,9 @@
+<map id="SituationsCommand" name="SituationsCommand">
+<area shape="rect" id="Node000001" title="Abstract base class for command situations." alt="" coords="62,5,217,31"/>
+<area shape="rect" id="Node000002" href="$classAccident.html" title="Represents a command to handle accident situations in the simulation." alt="" coords="5,79,84,104"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="115,41,62,81,59,76,112,37"/>
+<area shape="rect" id="Node000003" href="$classCrime.html" title="Class representing a crime situation." alt="" coords="109,79,170,104"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="142,44,142,79,137,79,137,44"/>
+<area shape="rect" id="Node000004" href="$classLoadshedding.html" title="Class representing a load shedding command." alt="" coords="194,79,306,104"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="170,36,233,76,230,81,167,40"/>
+</map>

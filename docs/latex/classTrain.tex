@@ -1,0 +1,76 @@
+\doxysection{Train Class Reference}
+\hypertarget{classTrain}{}\label{classTrain}\index{Train@{Train}}
+
+
+Class representing a train transportation system.  
+
+
+
+
+{\ttfamily \#include $<$Train.\+h$>$}
+
+
+
+Inheritance diagram for Train\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classTrain__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Train\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=203pt]{classTrain__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classTrain_a7a91b0cb2bb597ac125239869b25752f}{move}} (\mbox{\hyperlink{classBank}{Bank}} \texorpdfstring{$\ast$}{*}bank)
+\begin{DoxyCompactList}\small\item\em Moves a citizen using the train if they can afford the fare. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing a train transportation system. 
+
+This class extends the \doxylink{classTransportationSystem}{Transportation\+System} and provides an implementation for moving citizens using train transportation. It includes information about the speed and cost associated with the train. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classTrain_a7a91b0cb2bb597ac125239869b25752f}\label{classTrain_a7a91b0cb2bb597ac125239869b25752f} 
+\index{Train@{Train}!move@{move}}
+\index{move@{move}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{move()}{move()}}
+{\footnotesize\ttfamily void Train\+::move (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBank}{Bank}} \texorpdfstring{$\ast$}{*}}]{bank }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Moves a citizen using the train if they can afford the fare. 
+
+This function checks the bank balance of the citizen. If the balance is greater than the train fare, the citizen will use the train for transportation. Otherwise, a message indicating insufficient funds is displayed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bank} & A pointer to the \doxylink{classBank}{Bank} object that contains the citizen\textquotesingle{}s bank balance.\\
+\hline
+\end{DoxyParams}
+This method checks the bank balance of the citizen. If the balance is greater than the fare for the train, the citizen will use the train for transportation. The method also prints the speed of the train and decrements the bank balance by the train fare. If the balance is not sufficient, a message indicating that the citizen cannot afford the transportation is displayed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bank} & A pointer to the \doxylink{classBank}{Bank} object that contains the citizen\textquotesingle{}s bank balance. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransportationSystem_a0c7e0ee81b95581e9d2b599c06e267a1}{Transportation\+System}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Train.\+h\item 
+Train.\+cpp\end{DoxyCompactItemize}

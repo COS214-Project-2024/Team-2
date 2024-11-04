@@ -30,6 +30,63 @@
 
 using namespace std;
 
+/** 
+ * @mainpage
+ * 
+ * # Project Documentation
+ * 
+ * City Builder Simulation
+ * Welcome to our COS 214 City Builder Simulation project! Built as a 2nd year group project, this C++ simulation allows players to engage with various aspects of a virtual city, integrating key urban components like infrastructure, citizen satisfaction, resource management, and more.<br/>
+ * Designed with flexibility and scalability, this simulation employs numerous design patterns to achieve a complex, dynamic urban environment.
+ * 
+ * 👥 The Team: IDK<br/>
+ * Student Number   Name<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;u23587832&   Hannah Koorbanally<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;u23673941&   Louise Bruwer<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;u23530996&   Kiara Hodgson<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;u23605376&   Brendan du Plooy<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;u21439631&   Euan Botha<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;u21437883&   Nolan Kühn<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;u23782219&   Ruan le Roux<br/><br/>
+ * 
+ * 🧠 Design Patterns<br/>
+ * This project utilises various software design patterns to manage different components of the city. These include, but are not limited to:
+ * 
+ * &nbsp;&nbsp;&nbsp;&nbsp;State<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;Strategy<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;Mediator<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;Composite<br/><br/>
+ * 
+ * UML Diagrams and more details on patterns can be found in the project documentation (Structures, Report etc...)<br/><br/>
+ * 
+ * 💻 Guide to running:<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;make clean<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;make<br/>
+ * 
+ * Demo:<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;./main<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;Y<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;Batman<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;Batman<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;Y<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;None<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;None<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;None<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;Batman<br/>
+ * &nbsp;&nbsp;&nbsp;&nbsp;weewooweewoo<br/>
+ */
+
+
+/**
+ * @brief The main entry point for the city simulation application.
+ *
+ * This program initializes a government and a collection of buildings,
+ * adds them to a building unit, creates citizens, assigns properties and 
+ * jobs to them, and processes taxes. It also simulates various situations 
+ * affecting the city.
+ *
+ * @return int Exit status of the program.
+ */
 int main()
 {
     //Instantiate Government and BuildingsUnit for constant static use

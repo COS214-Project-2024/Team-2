@@ -1,0 +1,5 @@
+<map id="WaterSupply" name="WaterSupply">
+<area shape="rect" id="Node000001" title="Concrete handler for managing water supply requests." alt="" coords="5,79,109,104"/>
+<area shape="rect" id="Node000002" href="$classUtilities.html" title="Abstract base class for utility handlers." alt="" coords="21,5,94,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="60,44,60,79,55,79,55,44"/>
+</map>

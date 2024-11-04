@@ -1,0 +1,250 @@
+\doxysection{Buildings\+Unit Class Reference}
+\hypertarget{classBuildingsUnit}{}\label{classBuildingsUnit}\index{BuildingsUnit@{BuildingsUnit}}
+
+
+Represents a unit of buildings within a city that is governed by a central authority.  
+
+
+
+
+{\ttfamily \#include $<$Buildings\+Unit.\+h$>$}
+
+
+
+Inheritance diagram for Buildings\+Unit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classBuildingsUnit__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Buildings\+Unit\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=162pt]{classBuildingsUnit__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildingsUnit_acbac2a1ef38a7c7dcd8d4cdeef1f26b4}{Buildings\+Unit}} (\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}g)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classBuildingsUnit}{Buildings\+Unit} with a specified \doxylink{classGovernment}{Government} authority. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuildingsUnit_a758357ead5f95c42c6663e3a786cdeca}{add}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}comp)
+\begin{DoxyCompactList}\small\item\em Adds a building component to the unit if funds are sufficient. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuildingsUnit_ac53c8e776b12965cbad8287ac4797bd5}{remove}} (int index)
+\begin{DoxyCompactList}\small\item\em Removes a building component at a specified index. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classBuildingsUnit_a84aa7e4a38c67c37366f67b33a329e93}{get\+Child}} (int index)
+\begin{DoxyCompactList}\small\item\em Retrieves a child building component at a specified index. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuildingsUnit_a61b1ce6a1c37784600a751851b7059e0}{delete\+Specific\+Tree}} (string my\+Type)
+\begin{DoxyCompactList}\small\item\em Deletes all buildings of a specific type within the unit. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuildingsUnit_aaa6b318d831aae08e6f8042e8987dcec}{get\+Tree\+Price}} (string my\+Type)
+\begin{DoxyCompactList}\small\item\em Calculates and outputs the total price of all buildings of a specific type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuildingsUnit_a6faf5d2a4709f65ed8b8f8b6e72b837e}{set\+Tree\+Price}} (string my\+Type, int price)
+\begin{DoxyCompactList}\small\item\em Sets a new price for all buildings of a specific type. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuildingsUnit_a4fc7e446cd071a70b9e43c8a0ee30c68}{get\+House}} ()
+\begin{DoxyCompactList}\small\item\em Attempts to find an available house within the unit. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuildingsUnit_a23a09753b20989e6b84d16d06f01957c}{get\+Employment}} ()
+\begin{DoxyCompactList}\small\item\em Attempts to find available employment within the unit. \end{DoxyCompactList}\item 
+\Hypertarget{classBuildingsUnit_a253476e728114dc9eba2768b84c072cf}\label{classBuildingsUnit_a253476e728114dc9eba2768b84c072cf} 
+void {\bfseries request\+Utilities} ()
+\begin{DoxyCompactList}\small\item\em Requests utilities required for the unit, including materials, water, and power. \end{DoxyCompactList}\item 
+\Hypertarget{classBuildingsUnit_ae11576442be17828feb63974452278e7}\label{classBuildingsUnit_ae11576442be17828feb63974452278e7} 
+{\bfseries \texorpdfstring{$\sim$}{\string~}\+Buildings\+Unit} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \doxylink{classBuildingsUnit}{Buildings\+Unit}, deallocates all child building components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBuildings}{Buildings}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classBuildings_a1cb9eec9d04270777cdde92d29f56b30}{remove}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Removes a building component. \end{DoxyCompactList}\item 
+virtual string \mbox{\hyperlink{classBuildings_a47b2092a289c9c317d4ad953f381974f}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the building. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classBuildings_a4812213ed8b85fa5dfa15a9307acd5ba}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Gets the price of the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a55f87163ac9cc48673778eac7e47ecfd}{set\+Price}} (int p)
+\begin{DoxyCompactList}\small\item\em Sets the price of the building. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classBuildings_a025eed67a659b27440348623e31b4ce7}{get\+Taken}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the building is occupied. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a2324249c330ec1e43576516e63148320}{set\+Taken}} (bool t)
+\begin{DoxyCompactList}\small\item\em Sets the occupancy status of the building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a unit of buildings within a city that is governed by a central authority. 
+
+\doxylink{classBuildingsUnit}{Buildings\+Unit} provides methods to manage a collection of buildings, including adding, removing, retrieving specific buildings, and managing utilities. It interacts with the \doxylink{classGovernment}{Government} class to ensure the construction and modification of buildings are within the city\textquotesingle{}s budget. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classBuildingsUnit_acbac2a1ef38a7c7dcd8d4cdeef1f26b4}\label{classBuildingsUnit_acbac2a1ef38a7c7dcd8d4cdeef1f26b4} 
+\index{BuildingsUnit@{BuildingsUnit}!BuildingsUnit@{BuildingsUnit}}
+\index{BuildingsUnit@{BuildingsUnit}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{BuildingsUnit()}{BuildingsUnit()}}
+{\footnotesize\ttfamily Buildings\+Unit\+::\+Buildings\+Unit (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}}]{gover }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classBuildingsUnit}{Buildings\+Unit} with a specified \doxylink{classGovernment}{Government} authority. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em g} & Pointer to the \doxylink{classGovernment}{Government} instance managing this \doxylink{classBuildingsUnit}{Buildings\+Unit}.\\
+\hline
+{\em gover} & Pointer to the \doxylink{classGovernment}{Government} instance managing this \doxylink{classBuildingsUnit}{Buildings\+Unit}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classBuildingsUnit_a758357ead5f95c42c6663e3a786cdeca}\label{classBuildingsUnit_a758357ead5f95c42c6663e3a786cdeca} 
+\index{BuildingsUnit@{BuildingsUnit}!add@{add}}
+\index{add@{add}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Buildings\+Unit\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}}]{childrenp }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a building component to the unit if funds are sufficient. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em comp} & Pointer to the \doxylink{classBuildings}{Buildings} object to add.\\
+\hline
+{\em childrenp} & Pointer to the \doxylink{classBuildings}{Buildings} object to add. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a539cdc54c303b592ac980b093b91b20c}{Buildings}}.
+
+\Hypertarget{classBuildingsUnit_a61b1ce6a1c37784600a751851b7059e0}\label{classBuildingsUnit_a61b1ce6a1c37784600a751851b7059e0} 
+\index{BuildingsUnit@{BuildingsUnit}!deleteSpecificTree@{deleteSpecificTree}}
+\index{deleteSpecificTree@{deleteSpecificTree}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{deleteSpecificTree()}{deleteSpecificTree()}}
+{\footnotesize\ttfamily void Buildings\+Unit\+::delete\+Specific\+Tree (\begin{DoxyParamCaption}\item[{string}]{mT }\end{DoxyParamCaption})}
+
+
+
+Deletes all buildings of a specific type within the unit. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Type} & The type of buildings to delete.\\
+\hline
+{\em mT} & The type of buildings to delete. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBuildingsUnit_a84aa7e4a38c67c37366f67b33a329e93}\label{classBuildingsUnit_a84aa7e4a38c67c37366f67b33a329e93} 
+\index{BuildingsUnit@{BuildingsUnit}!getChild@{getChild}}
+\index{getChild@{getChild}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{getChild()}{getChild()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*} Buildings\+Unit\+::get\+Child (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Retrieves a child building component at a specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the building component to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{classBuildings}{Buildings} object at the specified index.
+\end{DoxyReturn}
+
+\begin{DoxyParams}{Parameters}
+{\em i} & Index of the building component to retrieve. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Pointer to the \doxylink{classBuildings}{Buildings} object at the specified index, or NULL if out of bounds. 
+\end{DoxyReturn}
+\Hypertarget{classBuildingsUnit_a23a09753b20989e6b84d16d06f01957c}\label{classBuildingsUnit_a23a09753b20989e6b84d16d06f01957c} 
+\index{BuildingsUnit@{BuildingsUnit}!getEmployment@{getEmployment}}
+\index{getEmployment@{getEmployment}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{getEmployment()}{getEmployment()}}
+{\footnotesize\ttfamily bool Buildings\+Unit\+::get\+Employment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Attempts to find available employment within the unit. 
+
+\begin{DoxyReturn}{Returns}
+True if employment was found and marked as occupied, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{classBuildingsUnit_a4fc7e446cd071a70b9e43c8a0ee30c68}\label{classBuildingsUnit_a4fc7e446cd071a70b9e43c8a0ee30c68} 
+\index{BuildingsUnit@{BuildingsUnit}!getHouse@{getHouse}}
+\index{getHouse@{getHouse}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{getHouse()}{getHouse()}}
+{\footnotesize\ttfamily bool Buildings\+Unit\+::get\+House (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Attempts to find an available house within the unit. 
+
+\begin{DoxyReturn}{Returns}
+True if a house was found and marked as occupied, otherwise false. 
+\end{DoxyReturn}
+\Hypertarget{classBuildingsUnit_aaa6b318d831aae08e6f8042e8987dcec}\label{classBuildingsUnit_aaa6b318d831aae08e6f8042e8987dcec} 
+\index{BuildingsUnit@{BuildingsUnit}!getTreePrice@{getTreePrice}}
+\index{getTreePrice@{getTreePrice}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{getTreePrice()}{getTreePrice()}}
+{\footnotesize\ttfamily void Buildings\+Unit\+::get\+Tree\+Price (\begin{DoxyParamCaption}\item[{string}]{mT }\end{DoxyParamCaption})}
+
+
+
+Calculates and outputs the total price of all buildings of a specific type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Type} & The type of buildings to calculate the total price for.\\
+\hline
+{\em mT} & The type of buildings to calculate the total price for. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBuildingsUnit_ac53c8e776b12965cbad8287ac4797bd5}\label{classBuildingsUnit_ac53c8e776b12965cbad8287ac4797bd5} 
+\index{BuildingsUnit@{BuildingsUnit}!remove@{remove}}
+\index{remove@{remove}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{remove()}{remove()}}
+{\footnotesize\ttfamily void Buildings\+Unit\+::remove (\begin{DoxyParamCaption}\item[{int}]{i }\end{DoxyParamCaption})}
+
+
+
+Removes a building component at a specified index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em index} & Index of the building component to remove from the unit.\\
+\hline
+{\em i} & Index of the building component to remove from the unit. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classBuildingsUnit_a6faf5d2a4709f65ed8b8f8b6e72b837e}\label{classBuildingsUnit_a6faf5d2a4709f65ed8b8f8b6e72b837e} 
+\index{BuildingsUnit@{BuildingsUnit}!setTreePrice@{setTreePrice}}
+\index{setTreePrice@{setTreePrice}!BuildingsUnit@{BuildingsUnit}}
+\doxysubsubsection{\texorpdfstring{setTreePrice()}{setTreePrice()}}
+{\footnotesize\ttfamily void Buildings\+Unit\+::set\+Tree\+Price (\begin{DoxyParamCaption}\item[{string}]{mT,  }\item[{int}]{p }\end{DoxyParamCaption})}
+
+
+
+Sets a new price for all buildings of a specific type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em my\+Type} & The type of buildings to update the price for. \\
+\hline
+{\em price} & The new price to set for each building of this type.\\
+\hline
+{\em mT} & The type of buildings to update the price for. \\
+\hline
+{\em p} & The new price to set for each building of this type. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Buildings\+Unit.\+h\item 
+Buildings\+Unit.\+cpp\end{DoxyCompactItemize}

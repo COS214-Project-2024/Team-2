@@ -1,0 +1,41 @@
+\doxysection{Concrete\+Citizen.\+h}
+\hypertarget{ConcreteCitizen_8h_source}{}\label{ConcreteCitizen_8h_source}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ CONCRETECITIZEN\_H}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ CONCRETECITIZEN\_H}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ "{}Citizen.h"{}}}
+\DoxyCodeLine{00005\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00006\ }
+\DoxyCodeLine{00007\ \textcolor{keyword}{using\ namespace\ }std;}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBank}{Bank}};}
+\DoxyCodeLine{00010\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classBuildingsUnit}{BuildingsUnit}};}
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classGovernment}{Government}};}
+\DoxyCodeLine{00012\ }
+\DoxyCodeLine{00020\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classConcreteCitizen}{ConcreteCitizen}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classCitizen}{Citizen}}\ \{}
+\DoxyCodeLine{00021\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00022\ \ \ \ \ \mbox{\hyperlink{classBuildingsUnit}{BuildingsUnit}}*\ buildings;\ }
+\DoxyCodeLine{00023\ \ \ \ \ \mbox{\hyperlink{classGovernment}{Government}}*\ government;\ }
+\DoxyCodeLine{00024\ \ \ \ \ \textcolor{keywordtype}{bool}\ housing\ =\ 0;\ }
+\DoxyCodeLine{00025\ \ \ \ \ \textcolor{keywordtype}{bool}\ employed\ =\ 0;\ }
+\DoxyCodeLine{00026\ }
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{classBank}{Bank}}*\ \mbox{\hyperlink{classConcreteCitizen_a2264041652a389a83016a563704152a0}{bank}};\ }
+\DoxyCodeLine{00029\ }
+\DoxyCodeLine{00039\ \ \ \ \ \mbox{\hyperlink{classConcreteCitizen}{ConcreteCitizen}}(\mbox{\hyperlink{classBuildingsUnit}{BuildingsUnit}}*\ buildings,\ \mbox{\hyperlink{classGovernment}{Government}}*\ government);}
+\DoxyCodeLine{00040\ }
+\DoxyCodeLine{00048\ \ \ \ \ \mbox{\hyperlink{classConcreteCitizen}{ConcreteCitizen}}*\ \mbox{\hyperlink{classConcreteCitizen_a92af27ef928e29161784f5046618bb2a}{clone}}();}
+\DoxyCodeLine{00049\ }
+\DoxyCodeLine{00057\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classConcreteCitizen_af256dbaf7c2f3ccb974a9989f0f5d05e}{getHouse}}();}
+\DoxyCodeLine{00058\ }
+\DoxyCodeLine{00066\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classConcreteCitizen_ae04feaae06c617beb475560a15ef618f}{getEmployment}}();}
+\DoxyCodeLine{00067\ }
+\DoxyCodeLine{00076\ \ \ \ \ \textcolor{keywordtype}{bool}\ \mbox{\hyperlink{classConcreteCitizen_a30020c4d341ad38fcb2c8fb0864fe2bd}{useTransport}}(\textcolor{keywordtype}{string}\ transport);}
+\DoxyCodeLine{00077\ }
+\DoxyCodeLine{00085\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConcreteCitizen_ad5c5d3ea2a5c3e41a3215e30fff97527}{getTax}}(\textcolor{keywordtype}{int}\ tax);}
+\DoxyCodeLine{00086\ \};}
+\DoxyCodeLine{00087\ }
+\DoxyCodeLine{00088\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

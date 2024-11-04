@@ -1,0 +1,30 @@
+\doxysection{Concrete.\+h}
+\hypertarget{Concrete_8h_source}{}\label{Concrete_8h_source}\index{Resources/Concrete.h@{Resources/Concrete.h}}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#include\ "{}Materials.h"{}}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#include\ "{}StateOfResources.h"{}}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00011\ \textcolor{keyword}{class\ }\mbox{\hyperlink{classConcrete}{Concrete}}\ :\ \textcolor{keyword}{public}\ \mbox{\hyperlink{classMaterials}{Materials}}\ \{}
+\DoxyCodeLine{00012\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00013\ \ \ \ \ \textcolor{keywordtype}{int}\ quantity;\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00014\ \ \ \ \ \mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ state;\ \ \ \ \ \ \ \ }
+\DoxyCodeLine{00015\ \ \ \ \ \mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ fullState;\ \ \ \ }
+\DoxyCodeLine{00016\ \ \ \ \ \mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ emptyState;\ \ \ }
+\DoxyCodeLine{00017\ \ \ \ \ \mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ normalState;\ \ }
+\DoxyCodeLine{00018\ }
+\DoxyCodeLine{00019\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00026\ \ \ \ \ \mbox{\hyperlink{classConcrete}{Concrete}}(\mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ initialState,\ \textcolor{keywordtype}{int}\ initialQuantity);}
+\DoxyCodeLine{00027\ }
+\DoxyCodeLine{00036\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConcrete_a1752578ef432394d3713572cd4a90caa}{useResource}}(\textcolor{keywordtype}{int}\ quantity)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00037\ }
+\DoxyCodeLine{00046\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConcrete_a7d14c59285e5cd65469c29a779fa068b}{generateResource}}(\textcolor{keywordtype}{int}\ quantity)\ \textcolor{keyword}{override};}
+\DoxyCodeLine{00047\ }
+\DoxyCodeLine{00055\ \ \ \ \ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{classConcrete_ad066ef70195b8ecc6f30afe1f86d3b4e}{setState}}(\mbox{\hyperlink{classStateOfResources}{StateOfResources}}*\ newState);}
+\DoxyCodeLine{00056\ }
+\DoxyCodeLine{00062\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classConcrete_a9b312c247d9c6986c5a537b6f495d63f}{getQuantity}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00063\ }
+\DoxyCodeLine{00069\ \ \ \ \ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{classConcrete_a27201bd88fde038f7f1f0706ebbacf0d}{getMaxCapacity}}()\ \textcolor{keyword}{const\ override};}
+\DoxyCodeLine{00070\ \};}
+
+\end{DoxyCode}

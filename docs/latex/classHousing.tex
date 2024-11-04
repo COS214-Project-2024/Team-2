@@ -1,0 +1,106 @@
+\doxysection{Housing Class Reference}
+\hypertarget{classHousing}{}\label{classHousing}\index{Housing@{Housing}}
+
+
+Represents the housing component of city growth.  
+
+
+
+
+{\ttfamily \#include $<$Housing.\+h$>$}
+
+
+
+Inheritance diagram for Housing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classHousing__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Housing\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classHousing__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{classHousing_a25066b5031f916cd3389a452805b53ad}{grow}} () override
+\begin{DoxyCompactList}\small\item\em Increases the size of housing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classHousing_a730ada6a2a4dc66d712ebe9775edf34a}{shrink}} () override
+\begin{DoxyCompactList}\small\item\em Decreases the size of housing. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHousing_a4c01b2403fe3f206c606e10fb94bb5c1}{get}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the current size of housing. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the housing component of city growth. 
+
+This class is responsible for managing the size of housing in the city, allowing for growth and shrinkage based on specific rules. It inherits from the \doxylink{classCityGrowth}{City\+Growth} base class. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classHousing_a4c01b2403fe3f206c606e10fb94bb5c1}\label{classHousing_a4c01b2403fe3f206c606e10fb94bb5c1} 
+\index{Housing@{Housing}!get@{get}}
+\index{get@{get}!Housing@{Housing}}
+\doxysubsubsection{\texorpdfstring{get()}{get()}}
+{\footnotesize\ttfamily int Housing\+::get (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current size of housing. 
+
+\begin{DoxyReturn}{Returns}
+The current size of housing. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCityGrowth_a8702eed519ae55f843b19744f5c94ac6}{City\+Growth}}.
+
+\Hypertarget{classHousing_a25066b5031f916cd3389a452805b53ad}\label{classHousing_a25066b5031f916cd3389a452805b53ad} 
+\index{Housing@{Housing}!grow@{grow}}
+\index{grow@{grow}!Housing@{Housing}}
+\doxysubsubsection{\texorpdfstring{grow()}{grow()}}
+{\footnotesize\ttfamily bool Housing\+::grow (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increases the size of housing. 
+
+The size is incremented by 1. Returns true if the new size is even, false if it is odd.
+
+\begin{DoxyReturn}{Returns}
+true if the new size is even, false if it is odd. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCityGrowth_a38a835f2d86d317a55282609ff349c98}{City\+Growth}}.
+
+\Hypertarget{classHousing_a730ada6a2a4dc66d712ebe9775edf34a}\label{classHousing_a730ada6a2a4dc66d712ebe9775edf34a} 
+\index{Housing@{Housing}!shrink@{shrink}}
+\index{shrink@{shrink}!Housing@{Housing}}
+\doxysubsubsection{\texorpdfstring{shrink()}{shrink()}}
+{\footnotesize\ttfamily bool Housing\+::shrink (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the size of housing. 
+
+If the size is already 0, prints a message and returns false. Otherwise, the size is decremented by 1. Returns true if the new size is even, false if it is odd.
+
+\begin{DoxyReturn}{Returns}
+true if the new size is even after shrinking, false if it is odd, or if the size was already 0. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCityGrowth_ac0ee56a8ad83b611589dad61bcbd2465}{City\+Growth}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Housing.\+h\end{DoxyCompactItemize}

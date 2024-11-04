@@ -1,0 +1,215 @@
+\doxysection{Residential Class Reference}
+\hypertarget{classResidential}{}\label{classResidential}\index{Residential@{Residential}}
+
+
+Class representing residential buildings in the city.  
+
+
+
+
+{\ttfamily \#include $<$Residential.\+h$>$}
+
+
+
+Inheritance diagram for Residential\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classResidential__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Residential\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=151pt]{classResidential__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResidential_ab72689fc340088dbebf71ab9fac2242a}{Residential}} (string type)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classResidential}{Residential} object of a specified type. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classResidential_af31717231d3df537ba804b7c061ee574}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the type of the residential building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResidential_afc7921d98923f7704c5aad1c9d3f112b}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the price of the residential building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResidential_ab389aae13f2fece52dd9ec8f7c1508bb}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the position/index of the building type. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classResidential_a6737cd0deec28e3a29aaaa683cfb81a4}{get\+Satisfaction}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the satisfaction rate of the residential building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResidential_ae9dcb566367465873c4735ecb0cf745a}{set\+Price}} (int p)
+\begin{DoxyCompactList}\small\item\em Sets the price of the residential building. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classResidential_a13b19fb70efc82a38ec7f59796289618}{get\+Taken}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the residential building type is taken. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResidential_a8faeebe1ef502e60521f326ff462c4e2}{set\+Taken}} (bool t)
+\begin{DoxyCompactList}\small\item\em Sets the taken status of the residential building type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBuildings}{Buildings}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classBuildings_a539cdc54c303b592ac980b093b91b20c}{add}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Adds a building component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a1cb9eec9d04270777cdde92d29f56b30}{remove}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Removes a building component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Class representing residential buildings in the city. 
+
+The \doxylink{classResidential}{Residential} class is derived from the \doxylink{classBuildings}{Buildings} class and defines different types of residential buildings, their prices, and satisfaction rates. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classResidential_ab72689fc340088dbebf71ab9fac2242a}\label{classResidential_ab72689fc340088dbebf71ab9fac2242a} 
+\index{Residential@{Residential}!Residential@{Residential}}
+\index{Residential@{Residential}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{Residential()}{Residential()}}
+{\footnotesize\ttfamily Residential\+::\+Residential (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classResidential}{Residential} object of a specified type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em type} & The type of residential building to create.\\
+\hline
+\end{DoxyParams}
+This constructor initializes the position of the residential building based on the provided type.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The type of residential building to create. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classResidential_ab389aae13f2fece52dd9ec8f7c1508bb}\label{classResidential_ab389aae13f2fece52dd9ec8f7c1508bb} 
+\index{Residential@{Residential}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily int Residential\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the position/index of the building type. 
+
+\begin{DoxyReturn}{Returns}
+The position of the building type in the array. 
+\end{DoxyReturn}
+\Hypertarget{classResidential_afc7921d98923f7704c5aad1c9d3f112b}\label{classResidential_afc7921d98923f7704c5aad1c9d3f112b} 
+\index{Residential@{Residential}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily int Residential\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the price of the residential building. 
+
+\begin{DoxyReturn}{Returns}
+The price of the building.
+
+The price of the building corresponding to its type. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a4812213ed8b85fa5dfa15a9307acd5ba}{Buildings}}.
+
+\Hypertarget{classResidential_a6737cd0deec28e3a29aaaa683cfb81a4}\label{classResidential_a6737cd0deec28e3a29aaaa683cfb81a4} 
+\index{Residential@{Residential}!getSatisfaction@{getSatisfaction}}
+\index{getSatisfaction@{getSatisfaction}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{getSatisfaction()}{getSatisfaction()}}
+{\footnotesize\ttfamily int Residential\+::get\+Satisfaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the satisfaction rate of the residential building. 
+
+\begin{DoxyReturn}{Returns}
+The satisfaction rate. 
+\end{DoxyReturn}
+\Hypertarget{classResidential_a13b19fb70efc82a38ec7f59796289618}\label{classResidential_a13b19fb70efc82a38ec7f59796289618} 
+\index{Residential@{Residential}!getTaken@{getTaken}}
+\index{getTaken@{getTaken}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{getTaken()}{getTaken()}}
+{\footnotesize\ttfamily bool Residential\+::get\+Taken (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the residential building type is taken. 
+
+\begin{DoxyReturn}{Returns}
+True if the building type is taken, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a025eed67a659b27440348623e31b4ce7}{Buildings}}.
+
+\Hypertarget{classResidential_af31717231d3df537ba804b7c061ee574}\label{classResidential_af31717231d3df537ba804b7c061ee574} 
+\index{Residential@{Residential}!getType@{getType}}
+\index{getType@{getType}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Residential\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the type of the residential building. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the type of building. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a47b2092a289c9c317d4ad953f381974f}{Buildings}}.
+
+\Hypertarget{classResidential_ae9dcb566367465873c4735ecb0cf745a}\label{classResidential_ae9dcb566367465873c4735ecb0cf745a} 
+\index{Residential@{Residential}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily void Residential\+::set\+Price (\begin{DoxyParamCaption}\item[{int}]{pric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the price of the residential building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The new price to set for the building.\\
+\hline
+{\em pric} & The new price to set for the building. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a55f87163ac9cc48673778eac7e47ecfd}{Buildings}}.
+
+\Hypertarget{classResidential_a8faeebe1ef502e60521f326ff462c4e2}\label{classResidential_a8faeebe1ef502e60521f326ff462c4e2} 
+\index{Residential@{Residential}!setTaken@{setTaken}}
+\index{setTaken@{setTaken}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{setTaken()}{setTaken()}}
+{\footnotesize\ttfamily void Residential\+::set\+Taken (\begin{DoxyParamCaption}\item[{bool}]{tak }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the taken status of the residential building type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The new taken status to set.\\
+\hline
+{\em tak} & The new taken status to set. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a2324249c330ec1e43576516e63148320}{Buildings}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Residential.\+h\item 
+Residential.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,248 @@
+\doxysection{Commercial Class Reference}
+\hypertarget{classCommercial}{}\label{classCommercial}\index{Commercial@{Commercial}}
+
+
+Represents commercial buildings in the city.  
+
+
+
+
+{\ttfamily \#include $<$Commercial.\+h$>$}
+
+
+
+Inheritance diagram for Commercial\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classCommercial__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Commercial\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=156pt]{classCommercial__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCommercial_af4dac9d7d5534306d98ef1bdf64a92e9}{Commercial}} (string type)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classCommercial}{Commercial} object with the specified type. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classCommercial_aa574ca0125e149e87c3f3bdc9039a49f}{get\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the type of the commercial building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCommercial_a66cfaf0f3eab2024873223d9140e6f75}{get\+Price}} ()
+\begin{DoxyCompactList}\small\item\em Gets the price of the commercial building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCommercial_a57234e4216c5babfe1369144e7fa0721}{get\+Position}} ()
+\begin{DoxyCompactList}\small\item\em Gets the position of the commercial building in the type array. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCommercial_a7728f01468067314740de117e8ea5606}{get\+Satisfaction}} ()
+\begin{DoxyCompactList}\small\item\em Gets the satisfaction rate of the commercial building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCommercial_a274793742ea729627e5af769d5d30665}{set\+Price}} (int p)
+\begin{DoxyCompactList}\small\item\em Sets the price of the commercial building. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCommercial_aa2c4d48d6a21d108e46500b3452df53b}{get\+Taken}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the commercial building is occupied. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCommercial_a3747080633be8233e1194ce27e666422}{set\+Taken}} (bool t)
+\begin{DoxyCompactList}\small\item\em Sets the occupancy status of the commercial building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classBuildings}{Buildings}}}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classBuildings_a539cdc54c303b592ac980b093b91b20c}{add}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Adds a building component. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildings_a1cb9eec9d04270777cdde92d29f56b30}{remove}} (\mbox{\hyperlink{classBuildings}{Buildings}} \texorpdfstring{$\ast$}{*}component)
+\begin{DoxyCompactList}\small\item\em Removes a building component. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents commercial buildings in the city. 
+
+This class defines commercial buildings such as shops, offices, and malls. It provides methods to get the type, price, and satisfaction rate of the building. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classCommercial_af4dac9d7d5534306d98ef1bdf64a92e9}\label{classCommercial_af4dac9d7d5534306d98ef1bdf64a92e9} 
+\index{Commercial@{Commercial}!Commercial@{Commercial}}
+\index{Commercial@{Commercial}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{Commercial()}{Commercial()}}
+{\footnotesize\ttfamily Commercial\+::\+Commercial (\begin{DoxyParamCaption}\item[{string}]{t }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classCommercial}{Commercial} object with the specified type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The type of the commercial building (e.\+g., "{}shops"{}, "{}offices"{}, "{}malls"{}).\\
+\hline
+\end{DoxyParams}
+This constructor initializes the \doxylink{classCommercial}{Commercial} object based on the provided type of building. It assigns the corresponding position in the type array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & The type of the commercial building (e.\+g., "{}shops"{}, "{}offices"{}, "{}malls"{}). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classCommercial_a57234e4216c5babfe1369144e7fa0721}\label{classCommercial_a57234e4216c5babfe1369144e7fa0721} 
+\index{Commercial@{Commercial}!getPosition@{getPosition}}
+\index{getPosition@{getPosition}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{getPosition()}{getPosition()}}
+{\footnotesize\ttfamily int Commercial\+::get\+Position (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the position of the commercial building in the type array. 
+
+\begin{DoxyReturn}{Returns}
+An integer representing the position.
+\end{DoxyReturn}
+This method returns the index of the commercial building\textquotesingle{}s type in the predefined type array.
+
+\begin{DoxyReturn}{Returns}
+An integer representing the position. 
+\end{DoxyReturn}
+\Hypertarget{classCommercial_a66cfaf0f3eab2024873223d9140e6f75}\label{classCommercial_a66cfaf0f3eab2024873223d9140e6f75} 
+\index{Commercial@{Commercial}!getPrice@{getPrice}}
+\index{getPrice@{getPrice}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{getPrice()}{getPrice()}}
+{\footnotesize\ttfamily int Commercial\+::get\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the price of the commercial building. 
+
+\begin{DoxyReturn}{Returns}
+The price of the building as an integer.
+\end{DoxyReturn}
+This method retrieves the price of the building based on its position in the type array.
+
+\begin{DoxyReturn}{Returns}
+The price of the building as an integer. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a4812213ed8b85fa5dfa15a9307acd5ba}{Buildings}}.
+
+\Hypertarget{classCommercial_a7728f01468067314740de117e8ea5606}\label{classCommercial_a7728f01468067314740de117e8ea5606} 
+\index{Commercial@{Commercial}!getSatisfaction@{getSatisfaction}}
+\index{getSatisfaction@{getSatisfaction}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{getSatisfaction()}{getSatisfaction()}}
+{\footnotesize\ttfamily int Commercial\+::get\+Satisfaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the satisfaction rate of the commercial building. 
+
+\begin{DoxyReturn}{Returns}
+The satisfaction rate as an integer.
+\end{DoxyReturn}
+This method returns the current satisfaction rate of the building.
+
+\begin{DoxyReturn}{Returns}
+The satisfaction rate as an integer. 
+\end{DoxyReturn}
+\Hypertarget{classCommercial_aa2c4d48d6a21d108e46500b3452df53b}\label{classCommercial_aa2c4d48d6a21d108e46500b3452df53b} 
+\index{Commercial@{Commercial}!getTaken@{getTaken}}
+\index{getTaken@{getTaken}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{getTaken()}{getTaken()}}
+{\footnotesize\ttfamily bool Commercial\+::get\+Taken (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the commercial building is occupied. 
+
+\begin{DoxyReturn}{Returns}
+true if the building is occupied, false otherwise.
+\end{DoxyReturn}
+This method returns the occupancy status of the commercial building.
+
+\begin{DoxyReturn}{Returns}
+true if the building is occupied, false otherwise. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a025eed67a659b27440348623e31b4ce7}{Buildings}}.
+
+\Hypertarget{classCommercial_aa574ca0125e149e87c3f3bdc9039a49f}\label{classCommercial_aa574ca0125e149e87c3f3bdc9039a49f} 
+\index{Commercial@{Commercial}!getType@{getType}}
+\index{getType@{getType}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{getType()}{getType()}}
+{\footnotesize\ttfamily string Commercial\+::get\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the type of the commercial building. 
+
+\begin{DoxyReturn}{Returns}
+A string representing the type of the building.
+\end{DoxyReturn}
+This method returns the type identifier of the commercial building.
+
+\begin{DoxyReturn}{Returns}
+A string representing the type of the building. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a47b2092a289c9c317d4ad953f381974f}{Buildings}}.
+
+\Hypertarget{classCommercial_a274793742ea729627e5af769d5d30665}\label{classCommercial_a274793742ea729627e5af769d5d30665} 
+\index{Commercial@{Commercial}!setPrice@{setPrice}}
+\index{setPrice@{setPrice}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{setPrice()}{setPrice()}}
+{\footnotesize\ttfamily void Commercial\+::set\+Price (\begin{DoxyParamCaption}\item[{int}]{pric }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the price of the commercial building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em p} & The new price to set for the building.\\
+\hline
+\end{DoxyParams}
+This method updates the price of the commercial building based on its current position in the type array.
+
+
+\begin{DoxyParams}{Parameters}
+{\em pric} & The new price to set for the building. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a55f87163ac9cc48673778eac7e47ecfd}{Buildings}}.
+
+\Hypertarget{classCommercial_a3747080633be8233e1194ce27e666422}\label{classCommercial_a3747080633be8233e1194ce27e666422} 
+\index{Commercial@{Commercial}!setTaken@{setTaken}}
+\index{setTaken@{setTaken}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{setTaken()}{setTaken()}}
+{\footnotesize\ttfamily void Commercial\+::set\+Taken (\begin{DoxyParamCaption}\item[{bool}]{tak }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the occupancy status of the commercial building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em t} & A boolean indicating whether the building is occupied (true) or not (false).\\
+\hline
+\end{DoxyParams}
+This method updates the occupancy status of the commercial building.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tak} & A boolean indicating whether the building is occupied (true) or not (false). \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classBuildings_a2324249c330ec1e43576516e63148320}{Buildings}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Commercial.\+h\item 
+Commercial.\+cpp\end{DoxyCompactItemize}

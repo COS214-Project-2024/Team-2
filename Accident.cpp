@@ -3,6 +3,15 @@
 #include "Government.h"
 using namespace std;
 
+/**
+ * @brief Executes the response command for an accident situation.
+ *
+ * This method simulates an accident event occurring in the city and prompts the user
+ * for a response. A random value determines the outcome of the event, indicating
+ * whether the accident was successfully resolved or not.
+ * 
+ * @return True if the accident is resolved successfully, otherwise false.
+ */
 bool Accident::execute()
 {
     string response;
