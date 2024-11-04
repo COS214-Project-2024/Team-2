@@ -1,0 +1,89 @@
+\doxysection{Department Class Reference}
+\hypertarget{classDepartment}{}\label{classDepartment}\index{Department@{Department}}
+
+
+Represents a department in the system.  
+
+
+
+
+{\ttfamily \#include $<$Department.\+h$>$}
+
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDepartment_a9d85b4973d29f519e09fdafa53a56e8c}{Department}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classDepartment}{Department} object. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classDepartment_a8dad09f752b83a9b1866001dde17c460}{get\+Satisfaction}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current citizen satisfaction rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDepartment_acff3f4d05e70cb7ab3e90acffbe2568a}{set\+Satisfaction}} (int level, \mbox{\hyperlink{classBank}{Bank}} \texorpdfstring{$\ast$}{*}b)
+\begin{DoxyCompactList}\small\item\em Sets the citizen satisfaction rate. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classDepartment_a15f5619c6679ffc80fe6de41c7a2e4a1}{\texorpdfstring{$\sim$}{\string~}\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classDepartment}{Department} class. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a department in the system. 
+
+This class manages the satisfaction rate of citizens related to the services provided by the department. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classDepartment_a9d85b4973d29f519e09fdafa53a56e8c}\label{classDepartment_a9d85b4973d29f519e09fdafa53a56e8c} 
+\index{Department@{Department}!Department@{Department}}
+\index{Department@{Department}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{Department()}{Department()}}
+{\footnotesize\ttfamily Department\+::\+Department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classDepartment}{Department} object. 
+
+Initializes the citizen satisfaction rate to a default value. \Hypertarget{classDepartment_a15f5619c6679ffc80fe6de41c7a2e4a1}\label{classDepartment_a15f5619c6679ffc80fe6de41c7a2e4a1} 
+\index{Department@{Department}!````~Department@{\texorpdfstring{$\sim$}{\string~}Department}}
+\index{````~Department@{\texorpdfstring{$\sim$}{\string~}Department}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{\texorpdfstring{$\sim$}{\string~}Department()}{\string~Department()}}
+{\footnotesize\ttfamily Department\+::\texorpdfstring{$\sim$}{\string~}\+Department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for the \doxylink{classDepartment}{Department} class. 
+
+Cleans up any resources used by the \doxylink{classDepartment}{Department} object. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classDepartment_a8dad09f752b83a9b1866001dde17c460}\label{classDepartment_a8dad09f752b83a9b1866001dde17c460} 
+\index{Department@{Department}!getSatisfaction@{getSatisfaction}}
+\index{getSatisfaction@{getSatisfaction}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{getSatisfaction()}{getSatisfaction()}}
+{\footnotesize\ttfamily int Department\+::get\+Satisfaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the current citizen satisfaction rate. 
+
+\begin{DoxyReturn}{Returns}
+The current satisfaction rate. 
+\end{DoxyReturn}
+\Hypertarget{classDepartment_acff3f4d05e70cb7ab3e90acffbe2568a}\label{classDepartment_acff3f4d05e70cb7ab3e90acffbe2568a} 
+\index{Department@{Department}!setSatisfaction@{setSatisfaction}}
+\index{setSatisfaction@{setSatisfaction}!Department@{Department}}
+\doxysubsubsection{\texorpdfstring{setSatisfaction()}{setSatisfaction()}}
+{\footnotesize\ttfamily void Department\+::set\+Satisfaction (\begin{DoxyParamCaption}\item[{int}]{level,  }\item[{\mbox{\hyperlink{classBank}{Bank}} \texorpdfstring{$\ast$}{*}}]{b }\end{DoxyParamCaption})}
+
+
+
+Sets the citizen satisfaction rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em level} & The new satisfaction level to set. \\
+\hline
+{\em b} & Pointer to a \doxylink{classBank}{Bank} object used for satisfaction updates. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Department.\+h\item 
+Department.\+cpp\end{DoxyCompactItemize}

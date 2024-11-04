@@ -1,0 +1,71 @@
+\doxysection{Property\+Tax\+Strategy Class Reference}
+\hypertarget{classPropertyTaxStrategy}{}\label{classPropertyTaxStrategy}\index{PropertyTaxStrategy@{PropertyTaxStrategy}}
+
+
+Strategy for calculating property tax.  
+
+
+
+
+{\ttfamily \#include $<$Property\+Tax\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Property\+Tax\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classPropertyTaxStrategy__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Property\+Tax\+Strategy\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=196pt]{classPropertyTaxStrategy__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classPropertyTaxStrategy_a6dc1e42f1a620e2c372c362c8ea46f9a}{calculate\+Tax}} (int total)
+\begin{DoxyCompactList}\small\item\em Calculates the property tax based on the total value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Strategy for calculating property tax. 
+
+The \doxylink{classPropertyTaxStrategy}{Property\+Tax\+Strategy} class inherits from the \doxylink{classTaxStrategy}{Tax\+Strategy} class and provides an implementation for calculating property taxes based on the total value provided. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classPropertyTaxStrategy_a6dc1e42f1a620e2c372c362c8ea46f9a}\label{classPropertyTaxStrategy_a6dc1e42f1a620e2c372c362c8ea46f9a} 
+\index{PropertyTaxStrategy@{PropertyTaxStrategy}!calculateTax@{calculateTax}}
+\index{calculateTax@{calculateTax}!PropertyTaxStrategy@{PropertyTaxStrategy}}
+\doxysubsubsection{\texorpdfstring{calculateTax()}{calculateTax()}}
+{\footnotesize\ttfamily int Property\+Tax\+Strategy\+::calculate\+Tax (\begin{DoxyParamCaption}\item[{int}]{total }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the property tax based on the total value. 
+
+This method computes the property tax as 20\% of the total value.
+
+
+\begin{DoxyParams}{Parameters}
+{\em total} & The total value on which the property tax is calculated. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The calculated property tax. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTaxStrategy_a5ec1f4b614478b080f4288fab9460141}{Tax\+Strategy}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Property\+Tax\+Strategy.\+h\end{DoxyCompactItemize}

@@ -1,0 +1,180 @@
+\doxysection{Concrete\+Citizen Class Reference}
+\hypertarget{classConcreteCitizen}{}\label{classConcreteCitizen}\index{ConcreteCitizen@{ConcreteCitizen}}
+
+
+Represents a concrete implementation of a \doxylink{classCitizen}{Citizen}.  
+
+
+
+
+{\ttfamily \#include $<$Concrete\+Citizen.\+h$>$}
+
+
+
+Inheritance diagram for Concrete\+Citizen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=174pt]{classConcreteCitizen__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Concrete\+Citizen\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=190pt]{classConcreteCitizen__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classConcreteCitizen_ad42aeaa45dce7dbd76050e49c26f015e}{Concrete\+Citizen}} (\mbox{\hyperlink{classBuildingsUnit}{Buildings\+Unit}} \texorpdfstring{$\ast$}{*}buildings, \mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}government)
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classConcreteCitizen}{Concrete\+Citizen} with specified buildings and government. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classConcreteCitizen}{Concrete\+Citizen}} \texorpdfstring{$\ast$}{*} \mbox{\hyperlink{classConcreteCitizen_a92af27ef928e29161784f5046618bb2a}{clone}} ()
+\begin{DoxyCompactList}\small\item\em Clones the \doxylink{classConcreteCitizen}{Concrete\+Citizen} object. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classConcreteCitizen_af256dbaf7c2f3ccb974a9989f0f5d05e}{get\+House}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the citizen has housing. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classConcreteCitizen_ae04feaae06c617beb475560a15ef618f}{get\+Employment}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the citizen is employed. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classConcreteCitizen_a30020c4d341ad38fcb2c8fb0864fe2bd}{use\+Transport}} (string transport)
+\begin{DoxyCompactList}\small\item\em Uses a specified mode of transportation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classConcreteCitizen_ad5c5d3ea2a5c3e41a3215e30fff97527}{get\+Tax}} (int tax)
+\begin{DoxyCompactList}\small\item\em Applies tax to the citizen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\Hypertarget{classConcreteCitizen_a2264041652a389a83016a563704152a0}\label{classConcreteCitizen_a2264041652a389a83016a563704152a0} 
+\mbox{\hyperlink{classBank}{Bank}} \texorpdfstring{$\ast$}{*} {\bfseries bank}
+\begin{DoxyCompactList}\small\item\em Pointer to the \doxylink{classBank}{Bank} associated with the citizen. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a concrete implementation of a \doxylink{classCitizen}{Citizen}. 
+
+This class holds the attributes and behaviors of a citizen within the transportation and economic system, including housing and employment status, as well as interactions with buildings and government. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classConcreteCitizen_ad42aeaa45dce7dbd76050e49c26f015e}\label{classConcreteCitizen_ad42aeaa45dce7dbd76050e49c26f015e} 
+\index{ConcreteCitizen@{ConcreteCitizen}!ConcreteCitizen@{ConcreteCitizen}}
+\index{ConcreteCitizen@{ConcreteCitizen}!ConcreteCitizen@{ConcreteCitizen}}
+\doxysubsubsection{\texorpdfstring{ConcreteCitizen()}{ConcreteCitizen()}}
+{\footnotesize\ttfamily Concrete\+Citizen\+::\+Concrete\+Citizen (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuildingsUnit}{Buildings\+Unit}} \texorpdfstring{$\ast$}{*}}]{buildings,  }\item[{\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}}]{government }\end{DoxyParamCaption})}
+
+
+
+Constructs a \doxylink{classConcreteCitizen}{Concrete\+Citizen} with specified buildings and government. 
+
+This constructor initializes a \doxylink{classConcreteCitizen}{Concrete\+Citizen} object with the provided buildings unit and government.
+
+
+\begin{DoxyParams}{Parameters}
+{\em buildings} & Pointer to the \doxylink{classBuildingsUnit}{Buildings\+Unit} that the citizen belongs to. \\
+\hline
+{\em government} & Pointer to the \doxylink{classGovernment}{Government} that governs the citizen. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classConcreteCitizen_a92af27ef928e29161784f5046618bb2a}\label{classConcreteCitizen_a92af27ef928e29161784f5046618bb2a} 
+\index{ConcreteCitizen@{ConcreteCitizen}!clone@{clone}}
+\index{clone@{clone}!ConcreteCitizen@{ConcreteCitizen}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classConcreteCitizen}{Concrete\+Citizen}} \texorpdfstring{$\ast$}{*} Concrete\+Citizen\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Clones the \doxylink{classConcreteCitizen}{Concrete\+Citizen} object. 
+
+This method creates a copy of the \doxylink{classConcreteCitizen}{Concrete\+Citizen} object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to a new \doxylink{classConcreteCitizen}{Concrete\+Citizen} object that is a clone of the original. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCitizen}{Citizen}}.
+
+\Hypertarget{classConcreteCitizen_ae04feaae06c617beb475560a15ef618f}\label{classConcreteCitizen_ae04feaae06c617beb475560a15ef618f} 
+\index{ConcreteCitizen@{ConcreteCitizen}!getEmployment@{getEmployment}}
+\index{getEmployment@{getEmployment}!ConcreteCitizen@{ConcreteCitizen}}
+\doxysubsubsection{\texorpdfstring{getEmployment()}{getEmployment()}}
+{\footnotesize\ttfamily bool Concrete\+Citizen\+::get\+Employment (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the citizen is employed. 
+
+This method returns the employment status of the citizen.
+
+\begin{DoxyReturn}{Returns}
+true if the citizen is employed, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCitizen}{Citizen}}.
+
+\Hypertarget{classConcreteCitizen_af256dbaf7c2f3ccb974a9989f0f5d05e}\label{classConcreteCitizen_af256dbaf7c2f3ccb974a9989f0f5d05e} 
+\index{ConcreteCitizen@{ConcreteCitizen}!getHouse@{getHouse}}
+\index{getHouse@{getHouse}!ConcreteCitizen@{ConcreteCitizen}}
+\doxysubsubsection{\texorpdfstring{getHouse()}{getHouse()}}
+{\footnotesize\ttfamily bool Concrete\+Citizen\+::get\+House (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Checks if the citizen has housing. 
+
+This method returns the housing status of the citizen.
+
+\begin{DoxyReturn}{Returns}
+true if the citizen has housing, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classCitizen}{Citizen}}.
+
+\Hypertarget{classConcreteCitizen_ad5c5d3ea2a5c3e41a3215e30fff97527}\label{classConcreteCitizen_ad5c5d3ea2a5c3e41a3215e30fff97527} 
+\index{ConcreteCitizen@{ConcreteCitizen}!getTax@{getTax}}
+\index{getTax@{getTax}!ConcreteCitizen@{ConcreteCitizen}}
+\doxysubsubsection{\texorpdfstring{getTax()}{getTax()}}
+{\footnotesize\ttfamily void Concrete\+Citizen\+::get\+Tax (\begin{DoxyParamCaption}\item[{int}]{tax }\end{DoxyParamCaption})}
+
+
+
+Applies tax to the citizen. 
+
+This method deducts the specified tax amount from the citizen\textquotesingle{}s bank account.
+
+
+\begin{DoxyParams}{Parameters}
+{\em tax} & The amount of tax to be deducted. \\
+\hline
+\end{DoxyParams}
+\Hypertarget{classConcreteCitizen_a30020c4d341ad38fcb2c8fb0864fe2bd}\label{classConcreteCitizen_a30020c4d341ad38fcb2c8fb0864fe2bd} 
+\index{ConcreteCitizen@{ConcreteCitizen}!useTransport@{useTransport}}
+\index{useTransport@{useTransport}!ConcreteCitizen@{ConcreteCitizen}}
+\doxysubsubsection{\texorpdfstring{useTransport()}{useTransport()}}
+{\footnotesize\ttfamily bool Concrete\+Citizen\+::use\+Transport (\begin{DoxyParamCaption}\item[{string}]{transport }\end{DoxyParamCaption})}
+
+
+
+Uses a specified mode of transportation. 
+
+This method allows the citizen to use the specified transport method.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A string indicating the mode of transport to use. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the transportation was successful, false otherwise. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Concrete\+Citizen.\+h\item 
+Concrete\+Citizen.\+cpp\end{DoxyCompactItemize}

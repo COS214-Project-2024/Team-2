@@ -1,0 +1,84 @@
+\doxysection{Material\+Factory Class Reference}
+\hypertarget{classMaterialFactory}{}\label{classMaterialFactory}\index{MaterialFactory@{MaterialFactory}}
+
+
+A factory class for handling material requests in the context of a \doxylink{classGovernment}{Government}.  
+
+
+
+
+{\ttfamily \#include $<$Material\+Factory.\+h$>$}
+
+
+
+Inheritance diagram for Material\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=172pt]{classMaterialFactory__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Material\+Factory\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=236pt]{classMaterialFactory__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classMaterialFactory_a0fc617870850f9f00da5b67b41a11f7e}{handle\+Request}} (\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}govern) override
+\begin{DoxyCompactList}\small\item\em Handles a material request from the \doxylink{classGovernment}{Government}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions inherited from \mbox{\hyperlink{classUtilities}{Utilities}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUtilities_ab1676c9ce35cf347a73d16f1094e1271}{Utilities}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \doxylink{classUtilities}{Utilities} object. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classUtilities_a6fd32bd91c4171d372f6c86d564496e8}{\texorpdfstring{$\sim$}{\string~}\+Utilities}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \doxylink{classUtilities}{Utilities} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classUtilities_a1887c91f32bbca95c3bb3cf41d2c4994}{set\+Next}} (\mbox{\hyperlink{classUtilities}{Utilities}} \texorpdfstring{$\ast$}{*}next)
+\begin{DoxyCompactList}\small\item\em Sets the next handler in the chain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Additional Inherited Members}
+\doxysubsection*{Protected Attributes inherited from \mbox{\hyperlink{classUtilities}{Utilities}}}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classUtilities}{Utilities}} \texorpdfstring{$\ast$}{*} {\bfseries next\+Handler}
+\begin{DoxyCompactList}\small\item\em Pointer to the next handler in the chain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A factory class for handling material requests in the context of a \doxylink{classGovernment}{Government}. 
+
+The \doxylink{classMaterialFactory}{Material\+Factory} class inherits from the \doxylink{classUtilities}{Utilities} class and implements functionality to handle requests related to materials that the \doxylink{classGovernment}{Government} may require. This class serves as a key component in the management of resources within the government system. 
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classMaterialFactory_a0fc617870850f9f00da5b67b41a11f7e}\label{classMaterialFactory_a0fc617870850f9f00da5b67b41a11f7e} 
+\index{MaterialFactory@{MaterialFactory}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!MaterialFactory@{MaterialFactory}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Material\+Factory\+::handle\+Request (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classGovernment}{Government}} \texorpdfstring{$\ast$}{*}}]{govern }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles a material request from the \doxylink{classGovernment}{Government}. 
+
+This method processes the incoming request by performing the necessary operations required to fulfill the request for materials. It interacts with the \doxylink{classGovernment}{Government} object to achieve this.
+
+
+\begin{DoxyParams}{Parameters}
+{\em govern} & Pointer to the \doxylink{classGovernment}{Government} object that initiates the request. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classUtilities_a3beb74cda963408a40772e3dad8b5581}{Utilities}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Utilities/Material\+Factory.\+h\item 
+Utilities/Material\+Factory.\+cpp\end{DoxyCompactItemize}

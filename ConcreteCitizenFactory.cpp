@@ -3,10 +3,10 @@
 ConcreteCitizenFactory::ConcreteCitizenFactory(BuildingsUnit* b, Government* g)
 {
     buildings = b;
-    goverment = g;
+    government = g;
 }
 
 ConcreteCitizen* ConcreteCitizenFactory::createCitizen()
 {
-    return new ConcreteCitizen(buildings, goverment);
+    return new ConcreteCitizen(buildings, government);
 }

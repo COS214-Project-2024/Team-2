@@ -1,0 +1,11 @@
+<map id="Materials" name="Materials">
+<area shape="rect" id="Node000001" title="Abstract base class for all materials that can be used as resources." alt="" coords="96,79,179,104"/>
+<area shape="rect" id="Node000003" href="$classConcrete.html" title="Represents a concrete material in the resource management system." alt="" coords="5,152,85,177"/>
+<area shape="poly" id="edge2_Node000001_Node000003" title=" " alt="" coords="114,114,62,154,59,150,110,110"/>
+<area shape="rect" id="Node000004" href="$classSteel.html" title="Class representing the Steel material resource." alt="" coords="110,152,165,177"/>
+<area shape="poly" id="edge3_Node000001_Node000004" title=" " alt="" coords="140,118,140,152,135,152,135,118"/>
+<area shape="rect" id="Node000005" href="$classWood.html" title="Represents a Wood resource in the system." alt="" coords="189,152,248,177"/>
+<area shape="poly" id="edge4_Node000001_Node000005" title=" " alt="" coords="162,111,207,150,204,154,159,115"/>
+<area shape="rect" id="Node000002" href="$classResources.html" title="Abstract base class for managing resources." alt="" coords="93,5,182,31"/>
+<area shape="poly" id="edge1_Node000001_Node000002" title=" " alt="" coords="140,44,140,79,135,79,135,44"/>
+</map>
