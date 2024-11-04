@@ -1,6 +1,0 @@
-PROJECT_NAME           = "COS214-Project-IDK"
-INPUT                  = .
-OUTPUT_DIRECTORY       = ./docs
-RECURSIVE              = YES
-EXCLUDE_PATTERNS       = */test/*
-GENERATE_HTML          = YES
