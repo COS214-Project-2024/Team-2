@@ -37,7 +37,7 @@ UML Diagrams and more details on patterns can be found in the project documentat
 ---
 
 ## 💻 Guide to running:
-``` Run:
+Run:
 make clean<br/>
 make<br/>
 
