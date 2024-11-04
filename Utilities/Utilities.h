@@ -1,5 +1,6 @@
 #ifndef UTILITIES_H
 #define UTILITIES_H
+#include "../Government.h"
 
 #include "../Government.h"
 
