@@ -207,7 +207,7 @@ int main()
     cout << "CC1: " << CC1->bank->get() << " money" << endl;
     cout << "CC2: " << CC2->bank->get() << " money" << endl;
     cout << "CC3: " << CC3->bank->get() << " money" << endl;
-    cout << endl << "New City Bank Amount: " << globalGovern->get() << " money" << endl;
+    cout << endl << "New City Bank Amount: " << globalGovernrt->get() << " money" << endl;
 
     cout << endl << "---------Citizen Using all transportation forms---------" << endl;
     cout << "CC2: " << CC2->bank->get() << " money\nTaxis" << endl;
@@ -221,7 +221,7 @@ int main()
     cout << endl;
     cout << "CC2: " << CC2->bank->get() << " money\nTrain" << endl;
     CC2->useTransport("Train");
-    cout << endl << "Total Money left for CC2: " << CC2->bank2->get() << " money" << endl;
+    cout << endl << "Total Money left for CC2: " << CC2->bank2->get() << " moneylaskjdhfgak" << endl;
 
     cout << endl << "---------Situations getting causes---------" << endl;
     for(int i  = 0; i < 23; i++)
