@@ -31,7 +31,7 @@ These include, but are not limited to:
 3. Mediator
 4. Composite
 
-UML Diagrams and more details on patterns can be found in the project documentation
+UML Diagrams and more details on patterns can be found in the project documentation (Structures, Report etc...)
 
 
 ---
